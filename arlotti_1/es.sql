@@ -34,20 +34,34 @@ CREATE TABLE Apiario (
 INSERT INTO Apicoltore (id,nome, cognome, email, password) VALUES
 (0, "fabio", 'bila', 'fabiobila@gmail.com', "wdwdwd"),
 (1, "matteo", 'massa', 'massamatto@gmail.com', "wdwdwd"),
-(2, "luca", 'pontellini', 'lucaplasticiferroviari@gmail.com', "wdwdwd");
+(2, "luca", 'pontellini', 'plasticiferroviari@gmail.com', "wdwdwd");
 
-INSERT INTO Miele (denominazione,Miele_id) VALUES 
-("millefiori"),
-("acacia"),
-("miele di castagno");
 
-INSERT INTO Tipologia_Miele (nome) VALUES ("bila");
-INSERT INTO Tipologia_Miele (nome) VALUES ("massa");
-INSERT INTO Tipologia_Miele (nome) VALUES ("pontos");
+INSERT INTO Tipologia_Miele (id, nome) VALUES
+(1, "bila"),
+(2, "massa"),
+(3, "pontos");
 
-INSERT INTO Apiario (numero_arnire, localita, comune, provincia, regione, anno, quantita_prodotta) VALUES (1, "napoli", "riccione", "scampia", "campania", 2025, 69.104);
-INSERT INTO Apiario (numero_arnire, localita, comune, provincia, regione, anno, quantita_prodotta) VALUES (2, "napoli", "riccione", "scampia", "campania", 2024, 69.104);
-INSERT INTO Apiario (numero_arnire, localita, comune, provincia, regione, anno, quantita_prodotta) VALUES (3, "napoli", "riccione", "scampia", "campania", 2021, 69.104);
+INSERT INTO Miele (id,denominazione,Tipologia_Miele) VALUES 
+(1, "millefiori",1),
+(2, "acacia",1),
+(3, "miele di castagno",3);
+
+INSERT INTO Apiario (
+codice,
+numero_arnire,
+localita,
+comune,
+provincia,
+regione,
+anno,
+quantita_prodotta,
+Apicoltore_id,
+Miele_id
+) VALUES
+("vvdv", 18, "napoli", "riccione", "scampia", "campania", 2025, 69.104, 0, 1),
+("sdfs", 22, "napoli", "riccione", "scampia", "campania", 2024, 69.104, 1, 2),
+("fssf", 37, "napoli", "riccione", "scampia", "campania", 2021, 69.104, 2, 3);
 
 SELECT nome FROM Apicoltore WHERE id = 1;
 SELECT regione FROM Apiario WHERE regione = 'Lombardia';
