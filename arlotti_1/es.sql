@@ -31,13 +31,15 @@ CREATE TABLE Apiario (
     Miele_id INT REFERENCES Miele(id)
 );
 
-INSERT INTO Apicoltore (nome, cognome, email) VALUES ("fabio", 'bila', 'fabiobila@gmail.com');
-INSERT INTO Apicoltore (nome, cognome, email) VALUES ("matteo", 'massa', 'massamatto@gmail.com');
-INSERT INTO Apicoltore (nome, cognome, email) VALUES ("luca", 'pontellini', 'lucaplasticiferroviari@gmail.com');
+INSERT INTO Apicoltore (id,nome, cognome, email, password) VALUES
+(0, "fabio", 'bila', 'fabiobila@gmail.com', "wdwdwd"),
+(1, "matteo", 'massa', 'massamatto@gmail.com', "wdwdwd"),
+(2, "luca", 'pontellini', 'lucaplasticiferroviari@gmail.com', "wdwdwd");
 
-INSERT INTO Miele (denominazione,Miele_id) VALUES ("millefiori");
-INSERT INTO Miele (denominazione,Miele_id) VALUES ("acacia");
-INSERT INTO Miele (denominazione,Miele_id) VALUES ("miele di castagno");
+INSERT INTO Miele (denominazione,Miele_id) VALUES 
+("millefiori"),
+("acacia"),
+("miele di castagno");
 
 INSERT INTO Tipologia_Miele (nome) VALUES ("bila");
 INSERT INTO Tipologia_Miele (nome) VALUES ("massa");
