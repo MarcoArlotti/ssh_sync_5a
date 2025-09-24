@@ -45,3 +45,13 @@ INSERT INTO Tipologia_Miele (nome) VALUES ("pontos");
 INSERT INTO Apiario (numero_arnire, localita, comune, provincia, regione, anno, quantita_prodotta) VALUES (1, "napoli", "riccione", "scampia", "campania", 2025, 69.104);
 INSERT INTO Apiario (numero_arnire, localita, comune, provincia, regione, anno, quantita_prodotta) VALUES (2, "napoli", "riccione", "scampia", "campania", 2024, 69.104);
 INSERT INTO Apiario (numero_arnire, localita, comune, provincia, regione, anno, quantita_prodotta) VALUES (3, "napoli", "riccione", "scampia", "campania", 2021, 69.104);
+
+SELECT nome FROM Apicoltore WHERE id = 1;
+SELECT regione FROM Apiario WHERE regione = 'Lombardia';
+SELECT id, numero_arnire FROM Apiario WHERE numero_arnire > 10;
+SELECT id, localita FROM Apiario WHERE id = 2;
+SELECT Miele_id FROM Tipologia_Miele WHERE id = 3;
+SELECT denominazione FROM Miele WHERE id = 5;
+SELECT Apiario WHERE anno = 2024;
+SELECT Apiario WHERE codice = 'A001';
+SELECT Miele_id FROM Tipologia_Miele WHERE id = 3 AND anno = 2023;
