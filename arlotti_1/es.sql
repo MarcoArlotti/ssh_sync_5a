@@ -1,20 +1,21 @@
+-- database: :memory:
 CREATE TABLE Apicoltore (
     id INT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
     cognome VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL,
-    password VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE Miele (
     id INT PRIMARY KEY,
     denominazione VARCHAR(50) NOT NULL,
-    FOREIGN KEY (Tipologia_Miele_id) REFERENCES Tipologia_Miele(id),
+    Tipologia_Miele INT REFERENCES Tipologia_Miele(id)
 );
 
 CREATE TABLE Tipologia_Miele (
     id INT PRIMARY KEY,
-    nome VARCHAR(50) NOT NULL,
+    nome VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE Apiario (
@@ -26,8 +27,8 @@ CREATE TABLE Apiario (
     regione VARCHAR(50) NOT NULL,
     anno INT NOT NULL,
     quantita_prodotta FLOAT NOT NULL,
-    FOREIGN KEY (Apicoltore_id) REFERENCES Apicoltore(id),
-    FOREIGN KEY (Miele_id) REFERENCES Miele(id),
+    Apicoltore_id INT REFERENCES Apicoltore(id),
+    Miele_id INT REFERENCES Miele(id)
 );
 
 INSERT INTO Apicoltore (nome, cognome, email) VALUES ("fabio", 'bila', 'fabiobila@gmail.com');
