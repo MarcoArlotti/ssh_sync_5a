@@ -60,6 +60,25 @@ Apicoltore_id,
 Miele_id
 ) VALUES
 ("vvdv", 18, "napoli", "riccione", "scampia", "campania", 2025, 69.104, 0, 1),
-("sdfs", 22, "napoli", "riccione", "scampia", "campania", 2024, 69.104, 1, 2),
-("fssf", 37, "napoli", "riccione", "scampia", "campania", 2021, 69.104, 2, 3);
+("sdfs", 22, "napoli", "riccione", "scampia", "campania", 2024, 104.104, 1, 2),
+("fssf", 37, "napoli", "riccione", "scampia", "campania", 2021, 69.69, 2, 3);
+
+SELECT SUM(quantita_prodotta) 
+FROM apiario;
+
+SELECT AVG(quantita_prodotta) 
+FROM apiario;
+
+SELECT SUM(quantita_prodotta)
+FROM apiario
+GROUP BY anno = 2024;
+
+SELECT MAX(quantita_prodotta) 
+FROM Apiario; 
+SELECT MIN(quantita_prodotta) 
+FROM Apiario;
+
+SELECT quantita_prodotta
+FROM Apiario
+GROUP BY quantita_prodotta = 200;
 
