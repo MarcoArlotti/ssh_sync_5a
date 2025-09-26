@@ -1,91 +1,102 @@
 -- database: :memory:
-CREATE TABLE Apicoltore (
+CREATE TABLE Typology (
     id INT PRIMARY KEY,
-    nome VARCHAR(50) NOT NULL,
-    cognome VARCHAR(50) NOT NULL,
-    email VARCHAR(50) NOT NULL,
-    password VARCHAR(50) NOT NULL
+    typology_name VARCHAR(50) NOT NULL,
+    typology_description VARCHAR(300)
 );
 
-CREATE TABLE Miele (
+CREATE TABLE Honey (
     id INT PRIMARY KEY,
-    denominazione VARCHAR(50) NOT NULL,
-    Tipologia_Miele INT REFERENCES Tipologia_Miele(id)
+    denomination VARCHAR(50) NOT NULL,
+    typology_id INT,
+    FOREIGN KEY (typology_id) REFERENCES Typology(id)
 );
 
-CREATE TABLE Tipologia_Miele (
+CREATE TABLE Beekeeper (
     id INT PRIMARY KEY,
-    nome VARCHAR(50) NOT NULL
+    beekeeper_name VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE Apiario (
-    codice VARCHAR(50) PRIMARY KEY,
-    numero_arnire INT NOT NULL,
-    localita VARCHAR(50) NOT NULL,
-    comune VARCHAR(50) NOT NULL,
-    provincia VARCHAR(50) NOT NULL,
-    regione VARCHAR(50) NOT NULL,
-    anno INT NOT NULL,
-    quantita_prodotta FLOAT NOT NULL,
-    Apicoltore_id INT REFERENCES Apicoltore(id),
-    Miele_id INT REFERENCES Miele(id)
+CREATE TABLE Apiary (
+    code INT PRIMARY KEY,
+    num_hives INT NOT NULL,
+    locality VARCHAR(300) NOT NULL,
+    comune VARCHAR(300) NOT NULL,
+    province VARCHAR(300) NOT NULL,
+    region VARCHAR(300) NOT NULL,
+    beekeeper_id INT,
+    FOREIGN KEY (beekeeper_id) REFERENCES Beekeeper(id)
 );
 
-INSERT INTO Apicoltore (id,nome, cognome, email, password) VALUES
-(0, "fabio", 'bila', 'fabiobila@gmail.com', "wdwdwd"),
-(1, "matteo", 'massa', 'massamatto@gmail.com', "wdwdwd"),
-(2, "luca", 'pontellini', 'plasticiferroviari@gmail.com', "wdwdwd");
+CREATE TABLE Production (
+    id INT PRIMARY KEY,
+    year INT,
+    quantity FLOAT,
+    apiary_code INT,
+    honey_id INT,
+    FOREIGN KEY (apiary_code) REFERENCES Apiary(code),
+    FOREIGN KEY (honey_id) REFERENCES Honey(id)
+);
 
+-- Typology
+INSERT INTO Typology (id, typology_name, typology_description) VALUES
+(1, 'Monofloral', 'Miele prodotto prevalentemente da un unico fiore'),
+(2, 'Polyfloral', 'Miele di millefiori, raccolto da più specie floreali'),
+(3, 'Honeydew', 'Miele prodotto a partire dal melato (secrezioni di insetti)');
 
-INSERT INTO Tipologia_Miele (id, nome) VALUES
-(1, "bila"),
-(2, "massa"),
-(3, "pontos");
+-- Beekeeper
+INSERT INTO Beekeeper (id, beekeeper_name) VALUES
+(1, 'Marco Rossi'),
+(2, 'Lucia Bianchi'),
+(3, 'Alessandro Verdi');
 
-INSERT INTO Miele (id,denominazione,Tipologia_Miele) VALUES 
-(1, "millefiori",1),
-(2, "acacia",1),
-(3, "miele di castagno",3);
+-- Honey
+INSERT INTO Honey (id, denomination, typology_id) VALUES
+(1, 'Acacia', 1),
+(2, 'Castagno', 1),
+(3, 'Millefiori', 2),
+(4, 'Eucalipto', 2),
+(5, 'Melata di Bosco', 3);
 
-INSERT INTO Apiario (
-codice,
-numero_arnire,
-localita,
-comune,
-provincia,
-regione,
-anno,
-quantita_prodotta,
-Apicoltore_id,
-Miele_id
-) VALUES
-("vvdv", 18, "napoli", "riccione", "scampia", "campania", 2025, 69.104, 0, 1),
-("sdfs", 22, "napoli", "riccione", "scampia", "campania", 2024, 104.104, 1, 2),
-("fssf", 37, "napoli", "riccione", "scampia", "campania", 2021, 69.69, 2, 3);
+-- Apiary
+INSERT INTO Apiary (code, num_hives, locality, comune, province, region, beekeeper_id) VALUES
+(100, 12, 'Fattoria Le Rose', 'San Pietro', 'Pisa', 'Toscana', 1),
+(101, 8, 'Colle Verde', 'Montevarchi', 'Arezzo', 'Toscana', 2),
+(102, 20, 'Bosco Alto', 'Vercelli', 'Vercelli', 'Piemonte', 3),
+(103, 5, 'Terrazza Sud', 'Verona', 'Verona', 'Veneto', 1);
 
--- Seleziona la quantità totale prodotta per anno.
--- Seleziona la produzione media per apiario.
--- Seleziona il numero di produzioni e la produzione totale per miele.
--- Seleziona la produzione totale per miele nell'anno 2024.
--- Seleziona il valore massimo e minimo di produzione per anno.
--- Seleziona la produzione totale per tipologia di miele (typology_id).
--- Seleziona il numero di mieli per ciascuna tipologia.
--- Seleziona la produzione totale per apicoltore (beekeeper_id).
--- Seleziona la produzione media per arnia (produzione totale divisa per num_hives) per apiario.
--- Seleziona per ogni anno il conteggio delle produzioni con quantità maggiore di 100.
--- Seleziona per ogni miele e anno la somma delle quantità.
+-- Production
+INSERT INTO Production (id, year, quantity, apiary_code, honey_id) VALUES
+(1, 2022, 120.5, 100, 1),
+(2, 2022, 95.2, 101, 3),
+(3, 2023, 210.0, 102, 5),
+(4, 2023, 34.7, 103, 2),
+(5, 2024, 150.0, 100, 3),
+(6, 2024, 78.3, 101, 4);
 
-SELECT SUM(quantita_prodotta) AS totale
-FROM Apiario
-GROUP BY anno
+--1 Seleziona la quantità totale prodotta per anno.
+--2 Seleziona la produzione media per apiario.
+--3 Seleziona il numero di produzioni e la produzione totale per miele.
+--4 Seleziona la produzione totale per miele nell'anno 2024.
+--5 Seleziona il valore massimo e minimo di produzione per anno.
+--6 Seleziona la produzione totale per tipologia di miele (typology_id).
+--7 Seleziona il numero di mieli per ciascuna tipologia.
+--8 Seleziona la produzione totale per apicoltore (beekeeper_id).
+--9 Seleziona la produzione media per arnia (produzione totale divisa per num_hives) per apiario.
+--10 Seleziona per ogni anno il conteggio delle produzioni con quantità maggiore di 100.
+--11 Seleziona per ogni miele e anno la somma delle quantità.
+
+SELECT SUM(quantity) AS totale
+FROM Production
+GROUP BY year
 ;
 
-SELECT AVG(quantita_prodotta) 
-FROM apiario
+SELECT AVG(quantity) as avarage 
+FROM Production
 ;
 
-SELECT SUM(quantita_prodotta)
-FROM apiario
+SELECT SUM(Production)
+
 GROUP BY anno = 2024;
 
 SELECT MAX(quantita_prodotta) 
