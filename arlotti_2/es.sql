@@ -63,11 +63,26 @@ Miele_id
 ("sdfs", 22, "napoli", "riccione", "scampia", "campania", 2024, 104.104, 1, 2),
 ("fssf", 37, "napoli", "riccione", "scampia", "campania", 2021, 69.69, 2, 3);
 
-SELECT SUM(quantita_prodotta) 
-FROM apiario;
+-- Seleziona la quantità totale prodotta per anno.
+-- Seleziona la produzione media per apiario.
+-- Seleziona il numero di produzioni e la produzione totale per miele.
+-- Seleziona la produzione totale per miele nell'anno 2024.
+-- Seleziona il valore massimo e minimo di produzione per anno.
+-- Seleziona la produzione totale per tipologia di miele (typology_id).
+-- Seleziona il numero di mieli per ciascuna tipologia.
+-- Seleziona la produzione totale per apicoltore (beekeeper_id).
+-- Seleziona la produzione media per arnia (produzione totale divisa per num_hives) per apiario.
+-- Seleziona per ogni anno il conteggio delle produzioni con quantità maggiore di 100.
+-- Seleziona per ogni miele e anno la somma delle quantità.
+
+SELECT SUM(quantita_prodotta) AS totale
+FROM Apiario
+GROUP BY anno
+;
 
 SELECT AVG(quantita_prodotta) 
-FROM apiario;
+FROM apiario
+;
 
 SELECT SUM(quantita_prodotta)
 FROM apiario
