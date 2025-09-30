@@ -74,37 +74,38 @@ INSERT INTO Production (id, year, quantity, apiary_code, honey_id) VALUES
 (5, 2024, 150.0, 100, 3),
 (6, 2024, 78.3, 101, 4);
 
---1 Seleziona la quantità totale prodotta per anno.
---2 Seleziona la produzione media per apiario.
---3 Seleziona il numero di produzioni e la produzione totale per miele.
---4 Seleziona la produzione totale per miele nell'anno 2024.
---5 Seleziona il valore massimo e minimo di produzione per anno.
---6 Seleziona la produzione totale per tipologia di miele (typology_id).
---7 Seleziona il numero di mieli per ciascuna tipologia.
---8 Seleziona la produzione totale per apicoltore (beekeeper_id).
---9 Seleziona la produzione media per arnia (produzione totale divisa per num_hives) per apiario.
---10 Seleziona per ogni anno il conteggio delle produzioni con quantità maggiore di 100.
---11 Seleziona per ogni miele e anno la somma delle quantità.
 
+--1 Seleziona la quantità totale prodotta per anno.
 SELECT SUM(quantity) AS totale
 FROM Production
 GROUP BY year
 ;
 
+--2 Seleziona la produzione media per apiario.
 SELECT AVG(quantity) as avarage 
 FROM Production
 ;
+--3 Seleziona (il numero di produzioni e la produzione totale) per miele.
+SELECT honey_id, count(quantity), SUM(quantity) AS PRODUZIONE_TOT
+FROM Production
+GROUP BY honey_id;
 
-SELECT SUM(Production)
+--4 Seleziona la produzione totale per miele nell'anno 2024.
+SELECT honey_id AS HONEY_ID, SUM(quantity) AS PRODUZIONE_TOTALE_DEL_2024
+FROM Production
+WHERE year = 2024;
 
-GROUP BY anno = 2024;
+--5 Seleziona il valore massimo e minimo di produzione per anno.
+SELECT MAX(quantity) AS VALORE_MASSIMO, MIN(quantity) AS VALORE_MINIMO
+FROM Production;
 
-SELECT MAX(quantita_prodotta) 
-FROM Apiario; 
-SELECT MIN(quantita_prodotta) 
-FROM Apiario;
-
+--6 Seleziona la produzione totale per tipologia di miele (typology_id).
 SELECT quantita_prodotta
 FROM Apiario
 GROUP BY quantita_prodotta = 200;
 
+--7 Seleziona il numero di mieli per ciascuna tipologia.
+--8 Seleziona la produzione totale per apicoltore (beekeeper_id).
+--9 Seleziona la produzione media per arnia (produzione totale divisa per num_hives) per apiario.
+--10 Seleziona per ogni anno il conteggio delle produzioni con quantità maggiore di 100.
+--11 Seleziona per ogni miele e anno la somma delle quantità.

@@ -1,37 +1,44 @@
 ```mermaid
 
 erDiagram
-    Apicoltore ||--o{ Apiario : gestisce
-    Miele ||--o{ Apiario : viene_prodotto
-    Tipologia_miele ||--o{ Miele : viene_prodotto
-
-    Apicoltore {
-        int id pk
-        string nome
-        string cognome
-        string email
-        string password
+    BEEKEEPER {
+        int id PK "id_apicoltore"
+        string name "nome"
     }
 
-    Apiario {
-        string codice pk
-        int numero_arnie
-        string località
+    TYPOLOGY {
+        int id PK
+        string name "nome_tipologia"
+        string description
+    }
+
+    HONEY {
+        int id PK
+        string denomination "denominazione"
+        int typology_id FK
+    }
+
+    APIARY {
+        string code PK "codice_apiario"
+        int num_hives "numero_arnie"
+        string locality "località"
         string comune
-        string provincia
-        string regione
-        int anno
-        float quantità_prodotta
-        int apicoltore_id fk
-        int miele_id fk
+        string province
+        string region
+        int beekeeper_id FK
     }
-    Miele {
-        int id pk
-        string denominazione
-        int tipologia_id fk
+
+    PRODUCTION {
+        int id PK
+        int year "anno"
+        float quantity "quantita_annua"
+        int apiary_code FK
+        int honey_id FK
     }
-    Tipologia_miele {
-        int id pk
-        string nome
-    }
+
+    %% Relationships
+    BEEKEEPER ||--o{ APIARY : "possiede"
+    TYPOLOGY ||--o{ HONEY : "classifica"
+    HONEY ||--o{ PRODUCTION : "è_prodotto_in"
+    APIARY ||--o{ PRODUCTION : "registra"
 ```
