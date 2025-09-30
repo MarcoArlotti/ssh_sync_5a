@@ -97,12 +97,13 @@ WHERE year = 2024;
 
 --5 Seleziona il valore massimo e minimo di produzione per anno.
 SELECT MAX(quantity) AS VALORE_MASSIMO, MIN(quantity) AS VALORE_MINIMO
-FROM Production;
+FROM Production
+GROUP BY year;
 
 --6 Seleziona la produzione totale per tipologia di miele (typology_id).
-SELECT quantita_prodotta
-FROM Apiario
-GROUP BY quantita_prodotta = 200;
+SELECT typology_id ,FROM Honey
+SUM(quantity) FROM Production AS PRODUZIONE_TOTALE
+GROUP BY typology_id;
 
 --7 Seleziona il numero di mieli per ciascuna tipologia.
 --8 Seleziona la produzione totale per apicoltore (beekeeper_id).
