@@ -39,7 +39,7 @@ CREATE TABLE Production (
 );
 
 -- Typology
-INSERT INTO Typology (id, typology_name, typology_description) VALUES
+INSERT INTO Typology (id, name, description) VALUES
 (1, 'Monofloral', 'Miele prodotto prevalentemente da un unico fiore'),
 (2, 'Polyfloral', 'Miele di millefiori, raccolto da più specie floreali'),
 (3, 'Honeydew', 'Miele prodotto a partire dal melato (secrezioni di insetti)');
@@ -76,7 +76,7 @@ INSERT INTO Production (id, year, quantity, apiary_code, honey_id) VALUES
 
 
 --1 Seleziona la quantità totale prodotta per anno.
-SELECT SUM(quantity) AS totale
+SELECT SUM(quantity), year
 FROM Production
 GROUP BY year
 ;
@@ -101,12 +101,20 @@ FROM Production
 GROUP BY year;
 
 --6 Seleziona la produzione totale per tipologia di miele (typology_id).
-SELECT typology_id ,FROM Honey
-SUM(quantity) FROM Production AS PRODUZIONE_TOTALE
-GROUP BY typology_id;
+SELECT Typology.typology_name, SUM(Production.quantity) AS total_quantity FROM Production
+JOIN Honey ON Production.honey_id = Honey.id
+JOIN Typology ON Honey.typology_id = typology.id GROUP BY Typology.typology_name;
 
 --7 Seleziona il numero di mieli per ciascuna tipologia.
+SELECT COUNT(denomination) AS NUMERO_MIELI, typology_id FROM Honey GROUP BY typology_id;
 --8 Seleziona la produzione totale per apicoltore (beekeeper_id).
+SELECT B.id, B.name, SUM(quantity) AS TOTAL_QUANTITY 
+FROM Production P
+JOIN Apiary A ON P.apiary_code = A.code
+JOIN Beekeeper B ON A.beekeeper_id = B.id
+GROUP BY B.id;
+
 --9 Seleziona la produzione media per arnia (produzione totale divisa per num_hives) per apiario.
 --10 Seleziona per ogni anno il conteggio delle produzioni con quantità maggiore di 100.
 --11 Seleziona per ogni miele e anno la somma delle quantità.
+
