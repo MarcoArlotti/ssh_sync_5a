@@ -108,7 +108,7 @@ JOIN Typology ON Honey.typology_id = typology.id GROUP BY Typology.typology_name
 --7 Seleziona il numero di mieli per ciascuna tipologia.
 SELECT COUNT(denomination) AS NUMERO_MIELI, typology_id FROM Honey GROUP BY typology_id;
 --8 Seleziona la produzione totale per apicoltore (beekeeper_id).
-SELECT B.id, B.name, SUM(quantity) AS TOTAL_QUANTITY 
+SELECT B.id, B.beekeeper_name, SUM(quantity) AS TOTAL_QUANTITY 
 FROM Production P
 JOIN Apiary A ON P.apiary_code = A.code
 JOIN Beekeeper B ON A.beekeeper_id = B.id
