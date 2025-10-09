@@ -1,8 +1,8 @@
 -- database: :memory:
 CREATE TABLE Typology (
     id INT PRIMARY KEY,
-    typology_name VARCHAR(50) NOT NULL,
-    typology_description VARCHAR(300)
+    name VARCHAR(50) NOT NULL,
+    description VARCHAR(300)
 );
 
 CREATE TABLE Honey (
@@ -14,7 +14,7 @@ CREATE TABLE Honey (
 
 CREATE TABLE Beekeeper (
     id INT PRIMARY KEY,
-    beekeeper_name VARCHAR(50) NOT NULL
+    name VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE Apiary (
@@ -45,7 +45,7 @@ INSERT INTO Typology (id, name, description) VALUES
 (3, 'Honeydew', 'Miele prodotto a partire dal melato (secrezioni di insetti)');
 
 -- Beekeeper
-INSERT INTO Beekeeper (id, beekeeper_name) VALUES
+INSERT INTO Beekeeper (id, name) VALUES
 (1, 'Marco Rossi'),
 (2, 'Lucia Bianchi'),
 (3, 'Alessandro Verdi');
@@ -101,20 +101,27 @@ FROM Production
 GROUP BY year;
 
 --6 Seleziona la produzione totale per tipologia di miele (typology_id).
-SELECT Typology.typology_name, SUM(Production.quantity) AS total_quantity FROM Production
+SELECT Typology.name, SUM(Production.quantity) AS total_quantity FROM Production
 JOIN Honey ON Production.honey_id = Honey.id
-JOIN Typology ON Honey.typology_id = typology.id GROUP BY Typology.typology_name;
+JOIN Typology ON Honey.typology_id = typology.id GROUP BY Typology.name;
 
 --7 Seleziona il numero di mieli per ciascuna tipologia.
 SELECT COUNT(denomination) AS NUMERO_MIELI, typology_id FROM Honey GROUP BY typology_id;
 --8 Seleziona la produzione totale per apicoltore (beekeeper_id).
-SELECT B.id, B.beekeeper_name, SUM(quantity) AS TOTAL_QUANTITY 
+SELECT B.id, B.name, SUM(quantity) AS TOTAL_QUANTITY 
 FROM Production P
 JOIN Apiary A ON P.apiary_code = A.code
 JOIN Beekeeper B ON A.beekeeper_id = B.id
 GROUP BY B.id;
 
 --9 Seleziona la produzione media per arnia (produzione totale divisa per num_hives) per apiario.
+SELECT apiary.code, Apiary.num_hives, (AVG(quantity) / apiary.num_hives) as produzione_per_hiver
+FROM production
+JOIN apiary ON production.apiary_code = apiary.code
+GROUP BY apiary.code
+
 --10 Seleziona per ogni anno il conteggio delle produzioni con quantità maggiore di 100.
+
 --11 Seleziona per ogni miele e anno la somma delle quantità.
+
 
