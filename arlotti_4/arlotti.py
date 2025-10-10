@@ -1,31 +1,93 @@
 import sqlite3
     
-lista_studenti = [
-    (101, 'Mario', 'Rossi'),
-    (102, 'Lucia', 'Bianchi'),
-]
-corsi = [
-    (101, "Matematica", 28),
-    (102, "Informatica", 30),
-    (103, "Fisica", 27),
-]
+
 # 2. Connessione: crea il file 'scuola.db' se non esiste
-conn = sqlite3.connect('scuola.db')
-# 3. Creazione Cursore
+conn = sqlite3.connect('fabio.db')
+# 3. Creazione Cursoredb
 cursor = conn.cursor()
 
 def create_tables():
     try:
-        # Eseguo DDL per creare la tabella se non esiste
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS Studenti (
-                Matricola INTEGER PRIMARY KEY,
-                Nome TEXT NOT NULL,
-                Cognome TEXT NOT NULL"""
+        #AUTORI
+        cursor.execute(""" 
+            CREATE TABLE IF NOT EXISTS Autori (
+                id INTEGER PRIMARY KEY,
+                nome TEXT NOT NULL,
+                titolo TEXT NOT NULL
             )
+        """)
+        #LIBRI
+        cursor.execute(""" 
+            CREATE TABLE IF NOT EXISTS Libri (
+                id INTEGER PRIMARY KEY,
+                titolo TEXT NOT NULL,
+                anno INTEGER,
+                autore_id INTEGER NOT NULL,
+                genere TEXT NOT NULL,
+                FOREIGN KEY (autore_id) REFERENCES Autori(id)
+            )
+        """)
+        #PRESTITI
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS Prestiti (
+                id INTEGER PRIMARY KEY,
+                libro_id INTEGER,
+                Utente TEXT NOT NULL,
+                Data_prestito TEXT,
+                data_restituzione TEXT,
+                FOREIGN KEY (libro_id) REFERENCES Libri(id)
+            )
+        """)
+
     finally:
         # 6. Chiusura Connessione
         conn.close()
+autori = [
+    (1,'Mario','Rossi'),
+    (2,'Lucia','Bianchi'),
+    (3,'Alessandro','Verdi')
+    ]
+
+libri = [
+    (1,'Il mistero del castello', 1, 2020, 'Giallo'),
+    (2,'Viaggio nel tempo', 1, 2018, 'Fantascienza'),
+    (3,'La cucina italiana', 2, 2019, 'Cucina'),
+    (4,'Storia antica', 3, 2021, 'Storia'),
+    (5,'Romanzo moderno', 3, 2022, 'Narrativa'),
+    (6,'Il ritorno del castello', 1, 2023, 'Giallo')
+    ]
+
+prestiti = [
+    (1, 1, 'Mario Rossi', '2023-01-01', '2023-01-15'),
+    (2, 2, 'Lucia Bianchi', '2023-02-01', None),
+    (3, 3, 'Alessandro Verdi', '2023-03-01', '2023-03-10'),
+    (4, 4, 'Mario Rossi', '2023-04-01', None)
+]
 
 def insert_data():
+    # 2. Connessione: crea il file 'scuola.db' se non esiste
+    conn = sqlite3.connect('fabio.db')
+    # 3. Creazione Cursore
+    cursor = conn.cursor()
+    cursor.executemany("INSERT INTO Autori (id,nome,titolo) VALUES (?,?,?)", autori)
+    cursor.executemany("INSERT INTO Libri (id,titolo,anno,autore_id,genere) VALUES (?,?,?,?,?)", libri)
+    cursor.executemany("INSERT INTO Prestiti (id,libro_id,Utente,Data_prestito,data_restituzione) VALUES (?,?,?,?,?)", prestiti)
     
+    conn.commit()
+
+def query_libri_per_autore(autore_id):
+    pass
+
+def query_prestiti_per_utente(utente):
+    pass
+
+def query_libri_per_genere():
+    pass
+
+def query_autori_con_piu_libri():
+    pass
+
+def query_prestiti_non_restituiti():
+    pass
+
+insert_data()
