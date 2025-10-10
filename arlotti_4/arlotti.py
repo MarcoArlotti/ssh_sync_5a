@@ -76,7 +76,10 @@ def insert_data():
     conn.commit()
 
 def query_libri_per_autore(autore_id):
-    pass
+    cursor.execute("""
+        SELECT Libri.id, Libri.titolo, 
+    """
+    )
 
 def query_prestiti_per_utente(utente):
     pass
