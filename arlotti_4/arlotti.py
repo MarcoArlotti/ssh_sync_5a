@@ -69,17 +69,31 @@ def insert_data():
     conn = sqlite3.connect('fabio.db')
     # 3. Creazione Cursore
     cursor = conn.cursor()
-    cursor.executemany("INSERT INTO Autori (id,nome,titolo) VALUES (?,?,?)", autori)
-    cursor.executemany("INSERT INTO Libri (id,titolo,anno,autore_id,genere) VALUES (?,?,?,?,?)", libri)
-    cursor.executemany("INSERT INTO Prestiti (id,libro_id,Utente,Data_prestito,data_restituzione) VALUES (?,?,?,?,?)", prestiti)
+
+    cursor.executemany("INSERT OR REPLACE INTO Autori (id,nome,titolo) VALUES (?,?,?)", autori)
+    cursor.executemany("INSERT OR REPLACE INTO Libri (id,titolo,anno,autore_id,genere) VALUES (?,?,?,?,?)", libri)
+    cursor.executemany("INSERT OR REPLACE INTO Prestiti (id,libro_id,Utente,Data_prestito,data_restituzione) VALUES (?,?,?,?,?)", prestiti)
     
     conn.commit()
-
+#Restituisce tutti i libri di un autore specifico (usa JOIN).
 def query_libri_per_autore(autore_id):
+    # 2. Connessione: crea il file 'scuola.db' se non esiste
+    conn = sqlite3.connect('fabio.db')
+    # 3. Creazione Cursore
+    cursor = conn.cursor()
+
     cursor.execute("""
-        SELECT Libri.id, Libri.titolo, 
-    """
+        SELECT Autori.id, Libri.id, Libri.titolo
+        FROM Libri
+        JOIN Autori ON Libri.autore_id = Autori.id
+        where Autori.id = ?
+    """,
+    (autore_id,)
     )
+    autore_ris = cursor.fetchall()
+    for i in autore_ris:
+        print(f"Autore: {i[0]}, Libro ID: {i[1]}, Titolo: {i[2]}")
+    conn.close
 
 def query_prestiti_per_utente(utente):
     pass
@@ -93,4 +107,6 @@ def query_autori_con_piu_libri():
 def query_prestiti_non_restituiti():
     pass
 
+create_tables()
 insert_data()
+query_libri_per_autore(2)
