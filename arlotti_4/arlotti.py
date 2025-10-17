@@ -157,8 +157,9 @@ def query_autori_con_piu_libri():
 
     cursor.execute("""
         SELECT Libri.autore_id, count(*) AS TOT
+        FROM Libri
         GROUP BY Libri.autore_id
-        ORDER BY TOT
+        ORDER BY TOT DESC;
     """,
     )
     autore_ris = cursor.fetchall()
@@ -167,11 +168,32 @@ def query_autori_con_piu_libri():
     conn.close()
 
 def query_prestiti_non_restituiti():
-    pass
+    # Restituisce i prestiti non ancora
+    # restituiti (data_restituzione IS NULL).
+
+    # 2. Connessione: crea il file 'scuola.db' se non esiste
+    conn = sqlite3.connect('fabio.db')
+    # 3. Creazione Cursore
+    cursor = conn.cursor()
+
+
+    cursor.execute("""
+        SELECT Prestiti.data_prestito, Prestiti.utente
+        FROM Prestiti
+        WHERE Prestiti.data_restituzione IS NULL
+    """
+    )
+    autore_ris = cursor.fetchall()
+    for i in autore_ris:
+        print(f"data prestito: {i[0]}, utente: {i[1]}")
+
+    conn.close()
 
 create_tables()
 insert_data()
-# query_libri_per_autore(autore_id=3)
-# query_prestiti_per_utente(utente='Alessandro Verdi')
-# query_libri_per_genere()
+
+query_libri_per_autore(autore_id=3)
+query_prestiti_per_utente(utente='Alessandro Verdi')
+query_libri_per_genere()
 query_autori_con_piu_libri()
+query_prestiti_non_restituiti()
