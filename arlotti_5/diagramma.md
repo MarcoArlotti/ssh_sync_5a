@@ -4,7 +4,7 @@ erDiagram
     Autori {
         int id PK
         varchar(50) nome
-        varchar(50) titolo
+        varchar(50) cognome
     }
     Libri {
         int id PK
