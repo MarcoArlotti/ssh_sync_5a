@@ -111,14 +111,121 @@ def due():
     cursor.execute("""
         SELECT Libri.titolo, Prestiti.utente, Prestiti.data_prestito
         FROM Prestiti
-        JOIN Libri ON Libri.libri_id = Libri.id
-        JOIN Autori ON Libri.autori_id = Autori.id;
+        JOIN Libri ON Prestiti.libro_id = Libri.id
+        JOIN Autori ON Libri.autore_id = Autori.id;
     """
     )
     autore_ris = cursor.fetchall()
     for i in autore_ris:
-        print(f"")
+        print(f"Titolo: {i[0]}, Utente: {i[1]}, Data prestito: {i[2]}")
     conn.close()
 
-# uno()
+def tre():
+    # Libri pubblicati dopo il 2020.
+    # titolo,anno,genere
+    # 2. Connessione: crea il file 'scuola.db' se non esiste
+
+    conn = sqlite3.connect('fabio.db')
+    # 3. Creazione Cursore
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT Libri.titolo, Libri.anno, Libri.genere
+        FROM Libri
+        WHERE Libri.anno > 2020
+    """
+    )
+    autore_ris = cursor.fetchall()
+    for i in autore_ris:
+        print(f"Titolo: {i[0]}, Anno: {i[1]}, Genere: {i[2]}")
+    conn.close()
+
+def quattro():
+    # Numero di prestiti per ciascun utente (usa GROUP BY).
+    # 2. Connessione: crea il file 'scuola.db' se non esiste
+
+    conn = sqlite3.connect('fabio.db')
+    # 3. Creazione Cursore
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT Prestiti.utente, count(*) as NUMERO_PRESTITI
+        FROM Prestiti
+        GROUP BY Prestiti.utente
+    """
+    )
+    autore_ris = cursor.fetchall()
+    for i in autore_ris:
+        print(f"Utente: {i[0]}, numero prestiti: {i[1]}")
+    conn.close()
+
+def cinque():
+    # Libri ordinati per genere.
+    # 2. Connessione: crea il file 'scuola.db' se non esiste
+
+    conn = sqlite3.connect('fabio.db')
+    # 3. Creazione Cursore
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT Libri.genere, Libri.titolo, Libri.anno
+        FROM Libri
+        ORDER BY Libri.genere
+    """
+    )
+    autore_ris = cursor.fetchall()
+    for i in autore_ris:
+        print(f"Genere: {i[0]}, Titolo: {i[1]}, Anno: {i[2]}")
+    conn.close()
+
+def sei():
+    # Prestiti restituiti (dove data_restituzione non è NULL).
+    # titolo, utente, data restituzione
+    # 2. Connessione: crea il file 'scuola.db' se non esiste
+
+    conn = sqlite3.connect('fabio.db')
+    # 3. Creazione Cursore
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT Libri.titolo, Prestiti.utente, Prestiti.data_restituzione
+        FROM Prestiti
+        JOIN Libri ON Prestiti.libro_id = Libri.id
+        WHERE Prestiti.data_restituzione is not NULL
+    """
+    )
+    autore_ris = cursor.fetchall()
+    for i in autore_ris:
+        print(f"Titolo: {i[0]}, Utente: {i[1]}, data restituzione: {i[2]}")
+    conn.close()
+
+def sette():
+    # Autori e numero di libri,
+    # inclusi quelli senza libri (usa LEFT JOIN e GROUP BY).
+    # 2. Connessione: crea il file 'scuola.db' se non esiste
+
+    conn = sqlite3.connect('fabio.db')
+    # 3. Creazione Cursore
+    cursor = conn.cursor()
+
+    # lo so che "Autori.cognome è segnato come Autori.titolo", ma nonn ho volgia di modificare il database
+    cursor.execute("""
+        SELECT Autori.nome, Autori.titolo, count(*) as NUMERO_LIBRI
+        FROM Libri
+        JOIN Autori ON Libri.autore_id = Autori.id
+        GROUP BY Autori.id
+        
+    """
+    )
+    autore_ris = cursor.fetchall()
+    for i in autore_ris:
+        print(f"Nome: {i[0]}, Cognome: {i[1]}, numero libri: {i[2]}")
+    conn.close()
+
+uno()
 due()
+tre()
+quattro()
+cinque()
+sei()
+sette()
