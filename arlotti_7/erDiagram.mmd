@@ -1,0 +1,39 @@
+erDiagram
+    negozio ||--|{ dipendente : "lavorano"
+    artista ||--|{ album : "produce"
+    negozio ||--o{ scontrino : "crea"
+    scontrino ||--|{ riga_scontrino : "ha all'interno"
+    negozio ||--o{ album : "contiene"
+    negozio {
+        INTEGER codice_numerico PK
+        str indirizzo_citta
+    }
+    dipendente {
+        int id PK
+        str nome
+        int id_negozio FK
+    }
+    artista{
+        int id PK
+        str nickname
+
+    }
+    album{
+        int id PK
+        str titolo
+        float prezzo
+
+    }
+    scontrino{
+        DATE data
+        float importo_totale
+
+    }
+    riga_scontrino {
+        int id PK
+        int album_venduto FK
+        int quantita
+
+
+    }
+%% in SQL NON ESISTONO LE LISTE
