@@ -1,4 +1,4 @@
--- database: g:\BECKUP_PC\desktop\PROGRAMMI\repository\repository_school\2425_5M-main\exams\v2\music-store.db
+-- database: /home/arlotti/repositories/ssh_sync_5a/v2_ex_5M/music-store.db
 
 -- ### SQL Queries
 -- Instructions: rename the file cognome.sql
@@ -24,11 +24,23 @@ JOIN media_types ON tracks.media_type_id = media_types.id;
 SELECT playlists.id , playlists.name, count(playlist_tracks.track_id) AS number_of_tracks
 FROM playlist_tracks
 JOIN playlists ON playlist_tracks.playlist_id = playlists.id
-GROUP BY playlist_tracks.playlist_id
+GROUP BY playlist_tracks.playlist_id;
 
 -- 5. List all customers along with their support representative's name
+SELECT customers.id, customers.first_name AS customers, customers.last_name, employees.first_name AS employees, employees.last_name
+FROM customers
+JOIN employees ON customers.support_rep_id = employees.id;
+
 -- 6. Find the total amount spent by each customer
+SELECT customers.id AS customers_id, customers.first_name AS customers,  customers.last_name AS last_name, SUM(invoices.total) AS total_spend
+FROM invoices
+JOIN customers ON invoices.customer_id = customers.id
+GROUP BY customers.id;
+
 -- 7. List all invoices along with the customer's name and the total amount
+SELECT invoices.id, customers.first_name AS customers_name, customers.last_name AS customers_last_name, invoices.total
+FROM invoices
+JOIN customers ON invoices.customer_id = customers.id;
 -- 8. Find the most expensive track
 -- 9. List all employees and their managers
 -- 10. Find the total number of tracks in each genre

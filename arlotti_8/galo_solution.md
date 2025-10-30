@@ -1,6 +1,5 @@
 ```mermaid
-
-    erDiagram
+erDiagram
     Negozi ||--o{ Dipendenti : "lavora"
     Negozi ||--o{ Scontrino : "effettua"
     Artisti ||--o{ AlbumVirtuale : "produce"
