@@ -3,29 +3,46 @@ import json
 
 # Definiamo l'URL dell'endpoint a cui vogliamo fare la richiesta
 user_id = 1
-url = f"https://jsonplaceholder.typicode.com/users/{user_id}"
-
+post_id = 1
+user = f"https://jsonplaceholder.typicode.com/users/{user_id}"
+post = "https://jsonplaceholder.typicode.com/posts"
+post_post_id_comments = f"https://jsonplaceholder.typicode.com/posts/{post_id}/comments"
 try:
     # 1. Eseguiamo la richiesta GET
-    response = requests.get(url)
-
+    response = requests.get(user)
+    response3 = requests.get(post_post_id_comments)
+    response4 = requests.get(post)
     # 2. Controlliamo se la richiesta è andata a buon fine (status code 200 OK)
-    response.raise_for_status()  # Solleva un'eccezione per status code 4xx o 5xx
-
+    response.raise_for_status()  # Solleva un'eccezione per status code 4xx o 5x
+    response3.raise_for_status()
+    response4.raise_for_status()
     # 3. Estraiamo i dati JSON dalla risposta
     # Il metodo .json() converte automaticamente il corpo della risposta da stringa JSON a dizionario Python
     dati_utente = response.json()
+    commenti_per_post_id = response3.json()
+    tutti_post = response4.json()
 
-    # 4. Usiamo i dati
-    print("--- Dati Utente Ricevuti ---")
-    # Usiamo json.dumps per una stampa "bella" (pretty-print) del dizionario
-    print(json.dumps(dati_utente, indent=4))
+    id_propietario_post = dati_post['userId']
+    print("1 --")
+    for i in tutti_post:
+        if i['userId'] == id_propietario_post:
+            print(f"propietario: {i['userId']}")
+            print(f"id post: {i['id']}")
+            print(f"titolo: {i['title']}")
+            print(f"corpo: {i['body']}")
+            print()
 
-    print("\n--- Informazioni Specifiche ---")
-    print(f"Nome: {dati_utente['name']}")
-    print(f"Email: {dati_utente['email']}")
-    print(f"Città: {dati_utente['address']['city']}")
+    # print(f"ID utente: {dati_post['userId']}")
+    print("2 --")
 
+    for i in commenti_per_post_id:
+        if i['postId'] == post_id:
+            print(f"post: {i['postId']}")
+            print(f"id: {i['id']}")
+            print(f"name: {i['name']}")
+            print(f"email: {i['email']}")
+            print(f"body:{i["body"]}")
+            print()
 except requests.exceptions.HTTPError as err:
     print(f"Errore HTTP: {err}")
 except requests.exceptions.RequestException as err:
