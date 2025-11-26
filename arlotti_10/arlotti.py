@@ -46,3 +46,5 @@ completati = totali - non_completati
 print(f"totali: {totali}")
 print(f"non completati: {non_completati}")
 print(f"completati: {completati}")
+if non_completati == 0:
+    print("Nessun todo incompleto trovato.")
