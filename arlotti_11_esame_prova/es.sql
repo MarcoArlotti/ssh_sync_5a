@@ -74,10 +74,15 @@ INSERT INTO Production (id, year, quantity, apiary_code, honey_id) VALUES
 (5, 2024, 150.0, 100, 3),
 (6, 2024, 78.3, 101, 4);
 
+-- 4. le interrogazioni espresse in linguaggio SQL che restituiscono:
+-- a) l’elenco degli apicoltori che producono miele DOP in una determinata regione;
+-- b) il numero complessivo di apiari per ciascuna regione;
+-- c) le quantità di miele prodotto in Italia lo scorso anno per ciascuna delle quattro tipologie
 
 SELECT Honey.denomination, Apiary.region, beekeeper.id, beekeeper.name
 FROM Production
 JOIN Apiary ON Production.apiary_code = Apiary.code
 JOIN Beekeeper ON Apiary.beekeeper_id = beekeeper.id
 JOIN Honey ON Production.honey_id = Honey.id
-WHERE Apiary.region = 'Toscana' AND ;
+WHERE Apiary.region = 'Toscana' AND Honey.denomination LIKE '%DOP%';
+
