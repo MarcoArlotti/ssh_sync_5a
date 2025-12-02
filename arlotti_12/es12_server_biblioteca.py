@@ -3,9 +3,9 @@ import socketserver
 import json
 from urllib.parse import urlparse, parse_qs
 
-PORT = 3006
+PORT = 4070
 
-DB_FILE = 'es12_db_biblioteca.json'
+DB_FILE = r'arlotti_12\es12_db_biblioteca.json'
 
 class BibliotecaHandler(http.server.SimpleHTTPRequestHandler):
     def _set_headers(self, code=200):
@@ -16,6 +16,10 @@ class BibliotecaHandler(http.server.SimpleHTTPRequestHandler):
     def load_db(self):
         with open(DB_FILE, 'r') as f:
             return json.load(f)
+
+    def save_db(self, db):
+        with open(DB_FILE, 'w') as f:
+            json.dump(db, f, indent=4)
 
     def do_GET(self):
         parsed = urlparse(self.path)
@@ -63,6 +67,26 @@ class BibliotecaHandler(http.server.SimpleHTTPRequestHandler):
 
         self._set_headers()
         self.wfile.write(json.dumps(filtered_data).encode())
+
+    def do_POST(self):
+            # Leggi il body della richiesta
+            content_length = int(self.headers['Content-Length'])
+            post_data = self.rfile.read(content_length)
+            nuovo_item = json.loads(post_data)
+
+            # Carica il DB
+            db = self.load_db()
+
+            # Esempio: aggiungere un libro
+            if self.path.startswith("/books"):
+                db["books"].append(nuovo_item)
+                self.save_db(db)
+                self._set_headers(201)  # Created
+                self.wfile.write(json.dumps({"message": "Book added"}).encode())
+            else:
+                self._set_headers(404)
+                self.wfile.write(json.dumps({"error": "Resource not found"}).encode())
+
 
 print(f"--- SERVER BIBLIOTECA ATTIVO SU PORTA {PORT} ---")
 print("Risorse disponibili: authors, genres, books")
