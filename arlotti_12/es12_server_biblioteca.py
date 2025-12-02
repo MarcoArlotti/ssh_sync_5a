@@ -3,7 +3,8 @@ import socketserver
 import json
 from urllib.parse import urlparse, parse_qs
 
-PORT = 3001
+PORT = 3006
+
 DB_FILE = 'es12_db_biblioteca.json'
 
 class BibliotecaHandler(http.server.SimpleHTTPRequestHandler):
