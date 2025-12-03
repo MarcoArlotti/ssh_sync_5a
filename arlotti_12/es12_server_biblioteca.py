@@ -3,8 +3,12 @@ import socketserver
 import json
 from urllib.parse import urlparse, parse_qs
 
-PORT = 4070
+PORT = 5001
 
+# linux
+DB_FILE = r'arlotti_12/es12_db_biblioteca.json'
+
+# windows
 DB_FILE = r'arlotti_12\es12_db_biblioteca.json'
 
 class BibliotecaHandler(http.server.SimpleHTTPRequestHandler):

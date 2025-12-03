@@ -9,17 +9,13 @@ import requests
 
 # omarchy
 
+PORT = 5002
+
 id = 1
-# il cazzo di link
-link_author_id = f"http://localhost:4070/books/?author_id={id}"
-
-# quel che devi fare aka prendere dati
+link_author_id = f"http://localhost:{PORT}/books/?author_id={id}"
+print(link_author_id)
 response_author_id = requests.get(link_author_id)
-
-# controllo degli errori
 response_author_id.raise_for_status()
-
-# conversione in un linguaggio leggibile
 lista_response_author_id = response_author_id.json()
 
 # metodo che ti da 2
@@ -35,7 +31,7 @@ for autori in lista_response_author_id:
 # metodo post
 # id = 23
 # il cazzo di link
-# link_author_id = "http://localhost:4070/books/authors/id=23"
+# link_author_id = "http://localhost:{PORT}/books/authors/id=23"
 # 
 # dizionario_nuovo = {
     # "id": 23,
@@ -53,7 +49,9 @@ for autori in lista_response_author_id:
 # print(response.text)    
 
 # il cazzo di link
-link_authors = "http://localhost:4070/books/authors"
+
+
+link_authors = f"http://localhost:{PORT}/books/authors"
 
 # quel che devi fare aka prendere dati
 response_authors = requests.get(link_authors)
@@ -77,7 +75,7 @@ print(f"pagine totali: {contatore}")
 
 id = 101
 # il cazzo di link
-link_books = "http://localhost:4070/books"
+link_books = f"http://localhost:{PORT}/books"
 
 # quel che devi fare aka prendere dati
 response_books = requests.get(link_books)
