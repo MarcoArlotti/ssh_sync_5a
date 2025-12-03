@@ -9,7 +9,7 @@ PORT = 5001
 DB_FILE = r'arlotti_12/es12_db_biblioteca.json'
 
 # windows
-DB_FILE = r'arlotti_12\es12_db_biblioteca.json'
+# DB_FILE = r'arlotti_12\es12_db_biblioteca.json'
 
 class BibliotecaHandler(http.server.SimpleHTTPRequestHandler):
     def _set_headers(self, code=200):
