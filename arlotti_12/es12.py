@@ -1,7 +1,11 @@
 import requests
 
+<<<<<<< HEAD
 
 # Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+=======
+# Set-ExecutionPolicy -ExecutionPolicy unrestricted -Scope CurrentUser
+>>>>>>> 36be28d (fix)
 # python -m venv .venv  
 # .venv\Scripts\Activate.ps1
 # python.exe -m pip install --upgrade pip
