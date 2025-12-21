@@ -2,7 +2,7 @@
 # Questo è possibile perché 'app' ha un file __init__.py!
 from app import create_app
 
-PORT = 5001
+PORT = 5002
 
 # Chiamiamo la fabbrica per ottenere l'applicazione
 app = create_app()

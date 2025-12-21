@@ -32,3 +32,11 @@ def create_app():
         name = "FABIO"
         return render_template('home.html', title=title, message=message, name=name)
     return app
+
+    @app.route('/todo')
+    def todo():
+        title = "todo"
+        message = "benvenuto nei todo"
+        name = "FABIO"
+        return render_template('todo.html', title=title, message=message, name=name)
+    return app
