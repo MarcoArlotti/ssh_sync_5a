@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head style="background-color:rgb(0, 0, 0);">
-        <title style="color:rgb(255, 255, 255);">nome_scheda</title>
-        <h1 style="color:rgb(255, 255, 255);">titolo_todo</h1>
-        <h2 style="color:rgb(255, 255, 255);">obbiettivo</h2>
+        <title style="color:rgb(255, 255, 255);">{{nome_scheda}}</title>
+        <h1 style="color:rgb(255, 255, 255);">{{titolo_todo}}</h1>
+        <h2 style="color:rgb(255, 255, 255);">{{obbiettivo}}</h2>
         
         <hr>
         <!--
@@ -11,15 +11,8 @@
         testo sotto sia un file 
         template separato
         -->
-        <p style="color:rgb(255, 255, 255);">testo<br>testo</p>
+        <p style="color:rgb(255, 255, 255);">{{testo}}<br>testo</p>
         <pre style="color:rgb(255, 255, 255);"></prestyle>>
-            d
-            i
-
-            l
-            u
-            c
-            a
         </pre>
     </head>
 
@@ -27,7 +20,7 @@
 
         <hr>
         <address style="color:rgb(255, 255, 255);">
-            Written by: USER<br>
+            Written by: {{user}}<br>
 
         </address>
     </body>
