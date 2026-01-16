@@ -1,4 +1,0 @@
-Query con GROUP BY e funzioni aggregate
-
-
-

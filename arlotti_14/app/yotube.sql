@@ -1,4 +1,4 @@
--- database: instance\database.db
+-- database: video.sqlite
 DROP TABLE IF EXISTS video;
 DROP TABLE IF EXISTS canali;
 

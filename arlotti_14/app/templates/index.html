@@ -1,0 +1,31 @@
+<!-- app/templates/index.html -->
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>benvenuto in youtube</title>
+</head>
+<body>
+    we
+    {% block content %}
+
+    {% for channel in channels_html %}
+
+        <hr>
+        <h1>
+            <a href="/channel/{{ channel.id }}">{{ channel.nome }}</a>
+        </h1>
+        <p>click to sea the channel</p>
+        <h3>categoria: {{ channel['categoria'] }}</h3>
+        <h4>numero iscritti: {{ channel['numero_iscritti'] }}</h4>
+        
+    {% endfor %}
+
+    {% endblock %}
+    <hr>
+    
+    <footer>
+        <small>2026 - Classe 5^M Informatica</small>
+    </footer>
+</body>
+</html>
