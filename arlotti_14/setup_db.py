@@ -11,7 +11,7 @@ db_path = os.path.join('arlotti_14\instance', 'video.db')
 connection = sqlite3.connect(db_path)
 
 # Leggiamo lo schema SQL
-with open('arlotti_14\\app\\yotube.sql') as f:
+with open('arlotti_14\\app\\youtube.sql') as f:
     connection.executescript(f.read())
 
 print("Database creato con successo in:", db_path)

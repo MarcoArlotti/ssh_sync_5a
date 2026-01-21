@@ -1,4 +1,4 @@
-from app.db import get_db
+from .. import get_db
 def get_channel():
     db = get_db()
     query = """
@@ -8,4 +8,5 @@ def get_channel():
     """
     channels = db.execute(query).fetchall()
     print("Channels fetched from database:", channels)
+    print(channels)
     return [dict(channel) for channel in channels]
