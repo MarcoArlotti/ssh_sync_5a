@@ -1,6 +1,8 @@
 import os
 from flask import Flask, render_template
 
+# from arlotti_14.app.main import *
+
 from app.repository.canali_repositories import get_channel
 from app.repository.video_repositories import get_videos
 def create_app():

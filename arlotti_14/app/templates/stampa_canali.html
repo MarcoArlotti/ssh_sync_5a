@@ -1,0 +1,15 @@
+{% extend 'index.html' %}
+
+{% block content %}
+<h1>Canali disponibili</h1>
+{% for channel in channels_html %}
+    <hr>
+    <h1>
+        <a href="/channel/{{ channel.id }}">{{ channel.nome }}</a>
+    </h1>
+    <p>click to see the channel</p>
+    <h3>categoria: {{ channel['categoria'] }}</h3>
+    <h4>numero iscritti: {{ channel['numero_iscritti'] }}</h4>
+    
+{% endfor %}
+{% endblock %}

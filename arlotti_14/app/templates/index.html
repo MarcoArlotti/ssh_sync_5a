@@ -6,22 +6,16 @@
     <title>benvenuto in youtube</title>
 </head>
 <body>
-    we
-    {% block content %}
+    <!-- no block content nel file main -->
 
-    {% for channel in channels_html %}
-
-        <hr>
-        <h1>
-            <a href="/channel/{{ channel.id }}">{{ channel.nome }}</a>
-        </h1>
-        <p>click to sea the channel</p>
-        <h3>categoria: {{ channel['categoria'] }}</h3>
-        <h4>numero iscritti: {{ channel['numero_iscritti'] }}</h4>
-        
-    {% endfor %}
-
-    {% endblock %}
+    <!-- qui è per i blueprint, che evita di
+     scrivere la struttura base
+     20 volte 
+     -->
+    <main>
+        {% block content %}
+        {% endblock%}
+    </main>
     <hr>
     
     <footer>
