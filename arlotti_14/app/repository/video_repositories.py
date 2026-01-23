@@ -1,4 +1,4 @@
-from app.db import get_db
+from ..db import get_db
 def get_videos(canale_id):
     db = get_db()
     query = """

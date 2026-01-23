@@ -1,27 +1,12 @@
-<!-- app/templates/index.html -->
-<!doctype html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <title>canale</title>
-</head>
-<body>
-    {% block content %}
+{% extends 'base.html' %}
 
-    {% for video in videos_html %}
+{% block content %}
+{% for video in videos_html %}
 
-        <hr>
-        <h1>{{ video['titolo'] }}</h1>
-        <p>{{ video['immagine'] }}</p>
-        <h2>{{ video['durata'] }}</h2>
-        
-    {% endfor %}
-
-    {% endblock %}
     <hr>
+    <h1>{{ video['titolo'] }}</h1>
+    <p>{{ video['immagine'] }}</p>
+    <h2>{{ video['durata'] }}</h2>
     
-    <footer>
-        <small>2026 - Classe 5^M Informatica</small>
-    </footer>
-</body>
-</html>
+{% endfor %}
+{% endblock %}

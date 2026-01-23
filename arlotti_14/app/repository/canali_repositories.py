@@ -1,4 +1,4 @@
-from .. import get_db
+from ..db import get_db
 def get_channel():
     db = get_db()
     query = """
