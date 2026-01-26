@@ -17,7 +17,8 @@ def index():
 def channel(canale_id):
     video_py = get_videos(canale_id)
     return render_template("channel.html",videos_html=video_py)
-bp.route('/create_channel')
+
+@bp.route('/create_channel')
 def create_channel():
-    # TODO
+    categorie = get_categorie()
     return render_template('create_channel.html',)
