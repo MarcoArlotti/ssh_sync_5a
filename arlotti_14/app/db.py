@@ -14,6 +14,13 @@ def get_db():
 
     return g.db
 
+def post_db(query, params=()):
+    """Esegue una query di modifica (INSERT, UPDATE, DELETE) sul database."""
+    db = get_db()
+    cursor = db.cursor()
+    cursor.execute(query, params)
+    db.commit()
+
 def close_db(e=None):
     """Chiude la connessione alla fine della richiesta."""
     db = g.pop('db', None)

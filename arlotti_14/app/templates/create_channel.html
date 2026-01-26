@@ -1,7 +1,18 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<select name="canale" id="bho">
-    <option value=""></option>
-</select>
+<p>seleziona categoria</p>
+
+<form action="/create_channel" method="POST">
+    <select name="categoria_id" id="non_cio_un_idea">
+        {% for categoria in categorie %}
+        <option value="{{ categoria }}">{{ categoria }}</option>
+        {% endfor %}
+    </select>
+    <input name="nome" placeholder="inserisci il nome"></input>
+
+    <input name="numero_iscritti" placeholder="inserisci il numero iscritti, kekw ez"></input>
+    <button type="submit">Invia</button>
+</form>
+
 {% endblock %}

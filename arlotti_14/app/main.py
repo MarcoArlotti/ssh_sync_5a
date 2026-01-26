@@ -3,8 +3,10 @@ from flask import (
     Blueprint, flash, g, redirect, render_template, request, url_for
 )
 
+from app.db import post_db
 from app.repository.canali_repositories import get_channel
 from app.repository.video_repositories import get_videos
+from app.repository.categorie import get_categorie
 
 bp = Blueprint('main', __name__)
 
@@ -18,7 +20,21 @@ def channel(canale_id):
     video_py = get_videos(canale_id)
     return render_template("channel.html",videos_html=video_py)
 
-@bp.route('/create_channel')
+@bp.route('/create_channel', methods=['GET','POST'])
 def create_channel():
-    categorie = get_categorie()
-    return render_template('create_channel.html',)
+    if request.method == 'GET':
+        categorie_py = get_categorie()
+        return render_template('create_channel.html', categorie=categorie_py)
+    
+    if request.method == 'POST':
+        categoria_id = request.form.get('categoria_id')
+        nome = request.form.get('nome')
+        numero_iscritti = request.form.get('numero_iscritti')
+
+        categorie_py = get_categorie()
+
+        query = """ INSERT INTO canali (nome, numero_iscritti, categoria_id) VALUES (?, ?, ?) """
+        post_db(query, (nome,numero_iscritti,categoria_id))
+        categorie_py = get_categorie()
+
+        return render_template('create_channel.html', categorie=categorie_py)
