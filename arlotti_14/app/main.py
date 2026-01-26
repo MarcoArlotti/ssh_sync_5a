@@ -23,18 +23,18 @@ def channel(canale_id):
 @bp.route('/create_channel', methods=['GET','POST'])
 def create_channel():
     if request.method == 'GET':
-        categorie_py = get_categorie()
-        return render_template('create_channel.html', categorie=categorie_py)
+        categorie_py:list = get_categorie()
+        return render_template('create_channel.html', lista_categorie=categorie_py)
     
     if request.method == 'POST':
         categoria_id = request.form.get('categoria_id')
         nome = request.form.get('nome')
         numero_iscritti = request.form.get('numero_iscritti')
 
-        categorie_py = get_categorie()
-
         query = """ INSERT INTO canali (nome, numero_iscritti, categoria_id) VALUES (?, ?, ?) """
         post_db(query, (nome,numero_iscritti,categoria_id))
         categorie_py = get_categorie()
 
-        return render_template('create_channel.html', categorie=categorie_py)
+
+
+        return render_template('create_channel.html', lista_categorie=categorie_py)
