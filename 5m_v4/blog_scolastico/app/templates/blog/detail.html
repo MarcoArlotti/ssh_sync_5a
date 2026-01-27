@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+  {% block content %}
+    {% if post %}
+      <h1>{{ post.title }}</h1>
+      <p>di <strong>{{ post.username }}</strong> il {{ post.created }}</p>
+      <p>{{ post.body }}</p>
+      <a href="{{ url_for('main.index') }}">Torna alla home</a>
+      <hr>
+      <h2>Commenti ({{ comments | length }})</h2>
+
+      {% for comment in comments %}
+        <br>
+        <p><strong>{{ comment.username }}:</strong> il {{ comment.created }}</p>
+        <p>{{ comment.testo }}</p>
+        <br>
+      {% endfor %}
+    {% else %}
+      <h1>Errore 404</h1>
+      <p>la pagina non esiste</p>
+    {% endif %}
+{% endblock %}

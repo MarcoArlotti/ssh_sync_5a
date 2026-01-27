@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+  {% block content %}
+    <form method="POST">
+        <input name="parola_cercata" placeholder="cerca titolo">
+        <button type="submit">Cerca</button>
+    </form>
+    {% if posts %}
+        <br>
+        Risultati per: <strong>"{{ search }}"</strong> {{ posts | length }} post trovato/i
+        <br>
+        {% for post in posts %}
+            <fieldset>
+                <legend></legend>
+                <h1>{{ post.title }}</h1>
+                    <p>di <strong>{{ post.username }}</strong> il {{ post.created }}</p>
+                    <p>{{ post.body }}</p>
+                    <p>leggi tutto</p>
+            </fieldset>
+        {% endfor %}
+    {% else %}
+        <p><strong>Nessun post trovato</strong></p>
+    {% endif %}
+    <hr>
+    <a href="{{ url_for('main.index') }}">Torna alla home</a>
+  {% endblock %}
