@@ -19,8 +19,11 @@ Di velocità è simile a C ma è più semplice da leggere,
 è stato usato per riscrivere alcune parti del codice di linux.
 
 # il Workflow
-
 è un flusso di lavoro.
+Un esempio è N8N (quello di Uva)
+
+# Il ruolo del SEO (search engine optimization)
+ha l'obbiettivo di aumentare i click del propio sito.
 
 ## LE ARCHITETTURE DEI PROXCESSORI
 x64 architettura a 64 bit,
