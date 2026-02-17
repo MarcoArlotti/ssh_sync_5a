@@ -25,7 +25,7 @@ Un esempio è N8N (quello di Uva)
 # Il ruolo del SEO (search engine optimization)
 ha l'obbiettivo di aumentare i click del propio sito.
 
-## LE ARCHITETTURE DEI PROXCESSORI
+## LE ARCHITETTURE DEI PROCESSORI
 x64 architettura a 64 bit,
 x86 corrisponde aa 32 bit.
 
