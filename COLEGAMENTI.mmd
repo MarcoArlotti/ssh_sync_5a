@@ -9,13 +9,67 @@ flowchart TD
         2[NON COMPILATO]
     end
 
-    subgraph ALTRO ARGOMENTO
-        4[ARGOMENTO COLLEGABILE]
+    subgraph Python tipizzazione e Type Hinting
+        4[tipizzazione dinamica]
         
     end
 
-    subgraph ALTRA MATERIA
+    subgraph .gitignore e Ambiente Virtuale
+        5[requirements.txt]
+        6[.gitignore]
+        7[venv]
+        8[GitHub]
+    end
+    
+    subgraph Modello ER e Database
+        9[diagramma ER]
+        10[cardinalità 1:1 1:N N:N]
+        11[Come si traduce una relazione]
+        12[dal modello ER al codice SQL]
+        13[la Normalizzazione e quali problemi risolve: anomalie]
+        14[la differenza tra Prima Seconda e Terza Forma Normale]
+        15[ruolo della Chiave Primaria e della Chiave Esterna]
+    end
+
+    subgraph SQL e Interazione con Python
+        16[DDL]
+        17[CREATE]
+        18[DROP]
+        19[DML]
+        20[INSERT]
+        21[SELECT]
+        22[clausole]
+        23[GROUP BY]
+        24[HAVING]
+        25[JOIN]
+        26[LEFT JOIN]
+        27[SQL Injection]
+        28[i file .sqlite]
+        
+    
+    end
+    16 --> 17
+    16 --> 18
+
+    19 --> 20
+    19 --> 21
+
+    22 --> 23
+    22 --> 24
+
+    28 --> 16
+    28 --> 19
+    28 --> 22
+    28 --> 25
+    28 --> 26
+    28 --> 27
+
+    subgraph Architettura Web e Flask
+        29[cartella instance in Flask]
+        
+    end
+
+    subgraph HTTP API e Sicurezza
         3[COLLEGARSI CON ALTRE MATERIE]
         
     end
-    
