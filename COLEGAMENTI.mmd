@@ -4,6 +4,26 @@ flowchart TD
         2[IDE]
     end
 
+    subgraph AMBIENTI DI SVILUPPO
+        38[Installazione e configurazione di WSL:Windows Subsystem for Linux]
+        39[IDE: Visual Studio Code]
+        40[Installazione e configurazione delle estensioni essenziali di VS Code Python, Ruff, GitLens, Markdown All in One]
+        41[Creazione di un account GitHub]
+        42[Configurazione di Git con le proprie credenziali]
+        43[Markdown per il README.md]
+        44[Creazione di un repository]
+        45[Git integrato nell'interfaccia di VS Code]
+
+        39 --> 38
+        39 --> 40
+        42 --> 39
+        44 --> 43
+        39 --> 45
+        45 --> 44
+        44 --> 41
+
+    end
+
     subgraph LINGUAGGI DI PROGRAMMAZZIONE
         1[COMPILATO]
         2[NON COMPILATO]
@@ -70,6 +90,20 @@ flowchart TD
     end
 
     subgraph HTTP API e Sicurezza
-        3[COLLEGARSI CON ALTRE MATERIE]
-        
+        37[come è organizzata la struttura di un progetto flask]
+        30[a cosa serve il file __init__.py]
+        31[interno della cartella app?]
+        32[Cosa sono i Blueprint]
+        33[Cos'è il Repository Pattern]
+        34[perché separiamo le query SQL dalle route di Flask?]
+        35[il motore di template Jinja2]
+        36[il concetto di ereditarietà extends]
+
+        37 --> 30
+        37 --> 31
+        37 --> 33
+        37 --> 34
+        37 --> 35
+        32 --> 36
+        35 --> 32
     end
