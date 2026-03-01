@@ -57,4 +57,31 @@ Pascoli usa termini aulici mischiate al linguaggio colloquiale e dal dialetto co
 Le frasi di Pascoli sono brevi con un ritmo spezzato .
 
 ### LA PRODUZIONE POETICA
-La sua produzione non e' lineare
+La sua produzione non e' lineare.
+
+Lui scrisse le raccolte:
+>#### MYRIACAE
+> Rilascio 9 edizioni diverse, comprende molti poemetti corti dedicati al
+> padre e una PREFAZIONE costituita da 15 sezioni.
+>
+> Il titolo prende ispirazione dalla IV Egloga del poeta Virgilio,
+> il tema principale e':
+> - la natura.
+> - La morte (cari defunti).
+> - Il nido familiare distrutto.
+>
+> Usa un linguaggio ANALOGICO che risalta il suono delle parole,
+> tramite l'uso di ONOMATOPEE, ALLITERAZIONI e il FONOSIMBOLISMO.
+>
+> Di questa raccolta ne fa parte X Agosto, L'assiulo.
+
+>#### IL FANCIULLINO
+> Non ha schemi razionali,
+>
+>nell'eta' adulta una persona perde la sua innocenza e solo il poeta riesce a dare ascolto e a sentire il suo "fanciullino" interiore.
+
+>#### CANTI DI CASTELVECCHIO
+> E' dove si trasferi' Pascoli con la sorella nel 1895,
+> tratta i temi della vita di campagna, c'e' un linguaggio PREGRAMMATICALE.
+>
+> Appartiene a questa raccolta La mia sera.
