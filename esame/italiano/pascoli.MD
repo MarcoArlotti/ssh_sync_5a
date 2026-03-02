@@ -60,7 +60,7 @@ Le frasi di Pascoli sono brevi con un ritmo spezzato .
 La sua produzione non e' lineare.
 
 Lui scrisse le raccolte:
->#### MYRIACAE
+>##### MYRIACAE
 > Rilascio 9 edizioni diverse, comprende molti poemetti corti dedicati al
 > padre e una PREFAZIONE costituita da 15 sezioni.
 >
@@ -75,13 +75,28 @@ Lui scrisse le raccolte:
 >
 > Di questa raccolta ne fa parte X Agosto, L'assiulo.
 
->#### IL FANCIULLINO
+>##### IL FANCIULLINO
 > Non ha schemi razionali,
 >
 >nell'eta' adulta una persona perde la sua innocenza e solo il poeta riesce a dare ascolto e a sentire il suo "fanciullino" interiore.
 
->#### CANTI DI CASTELVECCHIO
+>##### CANTI DI CASTELVECCHIO
 > E' dove si trasferi' Pascoli con la sorella nel 1895,
-> tratta i temi della vita di campagna, c'e' un linguaggio PREGRAMMATICALE.
+> tratta i temi della vita di campagna, delle stagioni, la raccolta contiene un linguaggio PREGRAMMATICALE.
 >
 > Appartiene a questa raccolta La mia sera.
+
+>##### PRIMI POEMETTI
+>E' una raccolta di 12 poesie dal 1897 fino al 1900,
+>E' divisa in Primi (1904) e Nuovi poemetti (1909).
+>A livello metrico Pascoli sostituisce i versi brevi con delle terzine dantesce,
+>i racconti sonoscritti in versi,
+>
+>Il racconto parla della storia delle sorelle contadine Rosa e Viola,
+>
+>Ne fa parte di questa raccolta Italy che e' una poesia che usa di tanto in tanto parole in inglese visto che la protagonista Molly e' una americana dell'Ohio emigrata in italia, lei non comprende la lingua Italiana e detesta il posto.
+Lei poi tornera' successivamente in America.
+
+## LA GRANDE PROLETARIA SI E' MOSSA
+Nel 1911 Pascoli si ritrova a sostenere l'impresa coloniale in libia, giustificandola dalla situazione povera in Italia che avrebbe potuto sfruttare il posto per coltivare quella nuovqa terra.
+
