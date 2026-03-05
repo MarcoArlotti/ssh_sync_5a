@@ -15,9 +15,9 @@ ricercando il bello a tutti i costi.
 - Odiava la vita comune.
 - Era ossessionato da gli oggetti raffinati e preziosi
 
-## GIOVANNI PASCOLI
+## *GIOVANNI PASCOLI*
 Nasce nel 1855 a San Mauro di Romagna, a Forli',
-Lui aveva 12 annu quando il 10 Agosto 1867 suo padre nel ritorno a casa da Cesena venne fucilato, in piu' il colpevole non fu mai scoperto.
+Lui aveva 12 anni quando il 10 Agosto 1867 suo padre nel ritorno a casa da Cesena venne fucilato, in piu' il colpevole non fu mai scoperto.
 
 Successivamente mori' la sorella, la madre.
 
@@ -32,7 +32,7 @@ Pascoli era morbosamente attaccato alle sorelle perche' era ossessionato da vole
 Pascoli era un profondo UMANITARISMO per le differenti classi sociali,
 Poi prese piede un ideale NAZIONALISTICO di cui secondo il poeta l'italia doveva conquistare la Libia per permettere ai meno abbienti di usare la Libia per terre e lavoro (inerente al "nido")
 
-### IL FANCIULLINO
+### *IL FANCIULLINO*
 Secondo Pascoli dentro di noi c'e' nascosto un fanciullino, ma solo il poeta riesce a farlo parlare, vedendo cosi' il mondo secondo i suoi occhi ingenui, detta POESIA DELLO STUPORE, Pascoli paragona il poeta ad Adamo.
 
 Questa visione edl fanciullino si perde nell'eta' adulta,
@@ -75,18 +75,18 @@ Lui scrisse le raccolte:
 >
 > Di questa raccolta ne fa parte X Agosto, L'assiulo.
 
->##### IL FANCIULLINO
+>##### *IL FANCIULLINO*
 > Non ha schemi razionali,
 >
 >nell'eta' adulta una persona perde la sua innocenza e solo il poeta riesce a dare ascolto e a sentire il suo "fanciullino" interiore.
 
->##### CANTI DI CASTELVECCHIO
+>##### *CANTI DI CASTELVECCHIO*
 > E' dove si trasferi' Pascoli con la sorella nel 1895,
 > tratta i temi della vita di campagna, delle stagioni, la raccolta contiene un linguaggio PREGRAMMATICALE.
 >
-> Appartiene a questa raccolta La mia sera.
+> Appartiene a questa raccolta *La mia sera*.
 
->##### PRIMI POEMETTI
+>##### *PRIMI POEMETTI*
 >E' una raccolta di 12 poesie dal 1897 fino al 1900,
 >E' divisa in Primi (1904) e Nuovi poemetti (1909).
 >A livello metrico Pascoli sostituisce i versi brevi con delle terzine dantesce,
