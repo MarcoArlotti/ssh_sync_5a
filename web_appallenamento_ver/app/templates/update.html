@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>U</h1>
+{% if dato_vecchio %}
+
+<form method="post">
+    <label for="dato1">dato1</label>
+    <input type="text" name="dato1" id="dato1" value="{{ dato_vecchio.dato1 }}" required>
+    <button type="submit">Aggiorna</button>
+</form>
+{% else %}
+<h1>IL DATO NON ESISTE</h1>
+{% endif %}
+{% endblock %}

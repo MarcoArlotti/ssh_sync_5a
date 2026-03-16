@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>R</h1>
+
+    {% for dato in dati %}
+    <hr>
+    <h2>titolo:{{ dato.dato1 }}</h2>
+    <h3>id:{{ dato.id }}</h3>
+    <hr>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS tabella;
+
+CREATE TABLE tabella (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  dato1 TEXT NOT NULL
+);
+
+INSERT INTO tabella (dato1) VALUES ('we');

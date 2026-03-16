@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>D</h1>
+
+<form method="post">
+    <label for="id">metti id</label>
+    <select name="id" id="id" required>
+        <option value="">SELEZIONA UN ID</option>
+        {% for dato in dati %}
+            <option value="{{ dato['id'] }}">{{ dato['dato1'] }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="CANCELLA">
+</form>
+
+{% endblock %}
