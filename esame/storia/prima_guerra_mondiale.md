@@ -2,70 +2,93 @@
 45 - 46 - 47 - 48 - 57 - 58 - 73 - 74 + partito don luigi + 75 + 76 - 77 - 78
 
 ## Dalla Prussia al Reich Tedesco
-Nasce nel 1871 il **Partito di centro** dell'impero Tedesco, fu' malvisto da Bismark perche' era legato al **Cattolicesimo**.
+Nasce nel 1871 nasce il Zentrum (**Partito di centro**) nell'impero Tedesco, fu malvisto da Bismarck perché espressione del Cattolicesimo (Bismarck lanciò contro di loro la Kulturkampf o "battaglia culturale").
 
-Nel 1879 il Partito e Bismark si accordano per affrontare il partito **Socialdemocratico**  ma senza successo.
+Nel 1879 il Partito e Bismark si accordano per affrontare il comune "pericolo rosso" ovvero il partito **Socialdemocratico** (SPD) ma le leggi eccezionali contro i socialisti non ebbero successo nel fermare la crescita.
 
-La Germania era sviluppata Economicamente, nel 1873 Bismarck stipula il **Patto dei tre imperatori** con la Russia e Austria-Ungheria, poi nel 1882 la **Triplice Alleanza** con anche l'Italia. 
+La Germania uno sviluppo economico travolgente.
+In politica estera, Bismarck cercò l'equilibrio, quindi
+nel 1873 stipulo' il **Patto dei tre imperatori** con (Germania, Russia e Austria-Ungheria), poi nel 1882 la **Triplice Alleanza** con (con Austria e Italia). 
 
-Guglielmo II, licenzia Bismarck per la sua aggressivita'.
-
-Nel 1875 viene rilasciata una **Costituzione** perche'si voleva compensare per i **nazionalisti** che volevano una rivincita' per riprendersi Alsazia e Lorena.
+Guglielmo II, spinge Bismarck alle dimissioni.
+Guglielmo aveva una politica estera violenta a differenza di Bismarck, quindi nel 1890 Bismarck decise di dare le dimissioni in Francia.
 
 ## In Francia
-Dopo la settimana di Sangue del 1871,
-la Francia punta sulle colonie in Africa e Asia,
-nello stesso periodo Alfred Dreyfus fu accusato di spionaggio a favore della Germania,
-alcuni Francesi non credono a questa accusa, di cui ne fa parte Zola, difendendolo.
+Dopo la "Settimana di Sangue" del 1871 (la fine della Comune di Parigi),
+nasce la Terza Repubblica.
+La Francia puntò sulle colonie in Africa e Asia per recuperare prestigio.
 
-Nasce nel 1901 il partito **Repubblicano, radical-socialista**.
+In questo periodo scoppiò l'Affare Dreyfus: l'ufficiale Alfred Dreyfus fu accusato ingiustamente di spionaggio a favore della Germania.
+Il caso divise il Paese tra colpevolisti (nazionalisti e antisemiti) e innocentisti (democratici),
+tra cui lo scrittore Émile Zola che era contro alle accuse dette.
+
+Nel 1901 nasce il Partito Radicale,
+che dominò promuovendo riforme laiche.
 
 ## Impero Austro-Ungarico
-Nel 1867 L'imperatore Francesco Giuseppe concede la Indipendenza all'Ungheria, facendo nascere l'impero Autro-Ungarico,
-L'ungheria segue il sovrano per la politica estera, finanziaria e militare dell'austria ma rimanendo indipendente.
+Nel 1867 L'imperatore Francesco Giuseppe firmo' un compromesso che concedeva una indipendenza all'Ungheria, facendo nascere l'impero Austro-Ungarico,
+Le due parti dell'Impero avevano governi e parlamenti separati, ma restavano unite sotto lo stesso sovrano per la politica estera, finanziaria e militare.
 
-L'Austria avvia un moderno sviluppo industriale, mentre l'Ungherie ha una economia rurale, Francesco Giuseppe governera' sul trono Ungaro fino al 1916.
+L'Austria avvia un moderno sviluppo industriale, mentre l'Ungheria si trovava in una economia rurale, Francesco Giuseppe regnò fino al 1916.
 
-Dopo il 1867 L'impero Austro-ungarico inizia riottiene stabilita' con una alleanza con la Germania di Bismarck, potendo cosi' espandersi verso i Balcani.
+Dopo il 1867 L'impero Austro-ungarico inizia riottiene stabilita' con una alleanza con la Germania di Bismarck, e puntando all'espansione nei Balcani 
+entrando in conflitto con gli interessi russi.
 
 ## Le riforme di Alesssandro II in Russia
-la Russia durante la **Guerra di Crimea** mostra quanto il suo esercito sia arretrato, la sua agricoltura si basava ancora su servitu' della gleba.
+La Russia, fu sconfitta nella Guerra di Crimea per la loro arretratezza, la loro agricoltura si basava ancora sulla servitu' della gleba.
 
-Per sistemare questo problema Alessandro II applica delle riforme per rimodernizzare il paese seguendo il modello occidentale, difatti nel 1861 viene abolita la servitu' della Gleba e subito dopo le riforme inizia un suo duro regime.
+Per modernizzare il paese, lo zar Alessandro II applica delle riforme per rimodernizzare il paese,abolì la servitù nel 1861 ma la riforma non migliorò le condizioni dei contadini.
+Ci fu il suo successore Alessandro III che mantenne un regime autocratico e durissimo.
 
-## I Balcani
-L'Europa e' piena di tensioni, l'Inpero Ottomano stava andando indeclino, Russia e Austria si facevano concorrenza per espandersi sui Balcani, nel 1876 la Bosnia, Erzegovina e Bulgaria si ribellano venendo appoggiate dalla Russia invasero i Balcani,detta **guerra Russo-Turca**, vinsero e Alessandro III avvio' una **Russificazione** dei Balcani e della Finalandia creando un antisemitismo in una serie di ***pogrom***.
+## I Balcani e l'antisemitismo
+L'Impero Ottomano era in declino.
+Russia e Austria si facevano concorrenza per espandersi sui Balcani,
+nel 1876 la Bosnia, Erzegovina e Bulgaria si ribellano venendo appoggiate dalla Russia invasero i Balcani, detta **guerra Russo-Turca**,
 
-Poi venne rilasciato il Trattato di pace della guerra Russo-Turca ma prevedevano condizioni molto favorevoli per i Russi che provoco' rabbia agli Austriaci, venne quindi poi fatto nel 1878 il **Congresso di Berlino**.
+vinsero e in questo clima di nazionalismo esasperato, sotto Alessandro III, si intensificò la Russificazione forzata e l'antisemitismo, che sfociò nei ***pogrom*** (spedizioni punitive contro le comunità ebraiche).
 
-## La bulgaria
-Nasce dal congresso la Bulgaria, uno stato poco omogeneo con dei confini fatti a tavolino, in oltre venne sancita l'indipendenza Romana, Serba, Montenegro, Bosnia e l'Erzegovina finiscono per essere affidate all'Impero Austriaco.
+Per evitare che la Russia diventasse troppo potente, nel 1878 Bismarck convocò il **Congresso di Berlino**, dove ridimensionò le vittorie russe a favore dell'Austria e dell'Inghilterra.
+
+## La Bulgaria e i nuovi stati
+Nasce dal congresso di Berlino la Bulgaria, uno stato poco omogeneo con dei confini fatti a tavolino, in oltre venne confermata l'indipendenza di Romania, Serba e Montenegro.
+Invece la Bosnia e l'Erzegovina finiscono per essere affidate all'Impero Austriaco momentaneamente.
 
 ## In Inghilterra
-Fu sotto lo **Splendido Isolamento** inglese, i governi Inglesi cercano di far crescere la nazione economicamente che inizialmente fece la Rivoluzione Industriale.
+Fu sotto lo **Splendido Isolamento** inglese, i governi Inglesi cercano di far crescere la nazione economicamente concentrandosi sul proprio impero e sull'economia:
 
-William Gladstone riconosce le ***Trade Unions***,
-Benjamin Disraeli introdusse l'ugualianza giuridica tra imprenditori e salariati, ammettendo anche il diritto di sciopero nel 1875.
+- **William Gladstone** (liberale) legalizzò le Trade Unions.
+- Benjamin Disraeli (conservatore) promosse riforme sociali e ammesse il diritto di sciopero (1875).
 
 Nascono le prime associazioni Socialiste come la Societa' Fabiana e dopo il Partito Laburista.
 
-Ci fu' anche una politica protezionistica che peggioro' la vita dei lavoratori ma miglioro determino' la vittoria dei Liberali alle elezioni.
+Alla fine del secolo, la questione del protezionismo (tariffe doganali) divise i conservatori e favorì la vittoria dei Liberali nel 1906.
 
 ## Il colonianismo in Africa e Asia
-Dopo la Seconda Rivoluzione industriale fece dominare gli stati euro-americani.
 
-Nel 1870 e nel 1900 conquistarono immensi territori in Asia e Africa,
+Nel 1870 e nel 1914 le potenze europee e americane conquistarono gran parte del mondo.
+conquistarono immensi territori in Asia e Africa,
 queste guerre presero il nome di **Guerre Asimmetriche** viste le differenze tra i due eserciti.
 
-Nel 1877 la regina Vittoria si dichiara la regina delle Indie, i popoli vennero sfruttati e l'economia diventa globale.
+Nel 1877 la regina Vittoria si proclama la regina delle Indie, i popoli divennero sfruttati e nasce una economia globale.
 
-In Etiopia durante il governo Depretis, l'Italia prova a espandersi puntando all'Africa Orientale, sulle coste del Mar Rosso verso l'Etiopia.
+## Il caso Italiano
+In Etiopia durante il governo Depretis, L'Italia acquistò la Baia di Assab (1882) e occupò Massaua (1885). Il tentativo di penetrare nell'entroterra etiope finì con la sconfitta di Dogali (1887).
 
 Nel 1882 la baia di Assab venne conquistata e diventa il primo nucleo coloniale Italiano.
 
-Poi nel 1885 viene occupata la zona di Massaua, crecando poi nel 1887 di raggiungere l'Etiopia l'avanzata venne massacrata a Dugali dalle truppe del Negus, come conseguenza gli Italiani rafforzarono la loro presenza in Africa.
+Crispi Firmò il Trattato di Uccialli (1889) con Menelik, che portò alla nascita della Colonia Eritrea.
+Tuttavia, l'ambiguità del trattato portò a una nuova guerra: nel 1896 l'Italia fu sconfitta duramente ad Adua.
+Fu un disastro nazionale che portò alle dimissioni di Crispi.
 
-Nel 1889 fu firmato il trattato di Uccialli con il Negus Menelik, che fece riconoscere le conquiste fatte in Africa, diventando Colonia Eritrea,
-e ci si preparo' a penetrare la Somalia, ma nel 1896 ritentarono a conquistare gli Etiopi ma fallirono miseramente a Adua, facendo finire la carriera di Crispi.
+Nel 1911-1912, Giolitti dichiarò guerra all'Impero Ottomano per ottenere la Libia.
+Grazie alla Pace di Losanna, l'Italia ottenne la Libia, Rodi e il Dodecaneso.
+La vittoria diede forza alle correnti nazionaliste, nonostante i costi economici altissimi.
 
-In Libia durante fine governo di Giolitti (1911 - 1914), Giolitti tento' di fare una spedizione militare contro gli Ottomani per eliminare i sui oppositori e conquistare la Libia che si concluse con la Pace di Losanna che gli fece ottenere la Libia, le isole Rodi e il Dodecaneso, la guerra miglioro' al opinione pubblica creando grandi sostenitori della guerra e delle espansioni coloniali.
+## La salita al trono di Vittorio Emanuele III
+Dopo che mori' Umberto I ci furono conflitti sociali e politici, poi sali' al trono Vittorio Emanuele III, che governo' fino al 1946, lui non segui come suo padre una politica Reazionaria, ma fece ritornare la legalita' costituzionale.
+
+## Zanardelli
+Nel 1901 affido' il governo a Giuseppe Zanardelli, era un giurista di Sinistra Liberale.
+Lui era lo stesso che approvo' il codice penale dell'Italia unita detto Codice Zanardelli che rimase fino al 1930, in piu' aveva abolito la pena di morte e ammise il diritto di sciopero.
+
+Come nuovo presidente del Consiglio, lui abbandona il sistema repressivo
