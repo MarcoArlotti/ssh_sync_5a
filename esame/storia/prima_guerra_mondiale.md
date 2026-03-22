@@ -177,4 +177,69 @@ Guglielmo II difese il marocco opponendosi alla **Triplice Intesa**, dove per 2 
 nel 1905 e 1911,
 successivamnete si cedde il Congo Francese alla Germania si evito' il conflitto.
 
-Verso gli stessi anni
+## Gli ottomani
+Verso gli stessi anni ci fu una grossa crisi in europa,
+gli Ottomani avevano un grosso problema interno con Giovanni Turchi, che si stava modernizzando e europaizzandosi.
+Loro tentarono di espandersi verso l'Austria prendendo la penisola balcanica.
+
+>nel 1908 l'Austria annette' la Bosnia-Erzegovina violando nel processo il **Congresso di Berlino**(1878),
+>di cui diceva che Vienna apparteneva all'impero Turco e che essa avevesse una amministrazione temporanea.
+
+La Serbia ebbe una rezione, loro volevano riunire gli slavi del sud (Iugoslavi),
+ebbero un forte appoggio dalla Russia.
+
+La serbia divento' un naturale centro di raccolta per i patrioti oppressi per andare contro l'Austria.
+## Le guerre Balcaniche
+Nel 1912 approfittarono che i Turchi erano in guerra con l'Italia in Libia per coalizzarsi e sottrarre agli Ottomani la Macedonia, che poi grazie al Trattato di Londra del 1913 di cui rinunciarono tutti i loro possedimenti Europei tranne Costantinopoli e gli Stretti.
+
+La pace duro' molto poco visto che la Bulgaria attacco' la Grecia e la Serbia facendo scoppiare la Seconda Guerra Balcana nel 1913 di cui entrarono anche la Romania e gli Ottomani (che volevano recuperare i territori persi).
+
+## Le conseguenze delle guerre
+A fine estate si raggiunse la Pace di Bucarest dove venne assegnata alla serbia il Kosovo e parte della macedonia, mentre l'impero ottomano recupero' la Tracia.
+
+In Albania nacque un regno indipendentedove rimase Grecia, Serbia e Montenegro.
+
+Sia russia che Austia per colpa delle guerre si trovarono in negativo,
+per colpa dei fallimenti sul dominio degli stretti.
+
+l'Italia si trovava sempre piu' in contrasto con l'Austria per l'Albania.
+
+## WWI
+A Sarajevo scatto' la scintilla nel 28 Giugno 1914, dove fu' assassinato il futuro erede al trono dell'Austria-Ungheria l'Arciduca Francesco Ferdinando d'Asburgo e fu uccisa anche sua moglie Sofia.
+
+Gli uccise uno studente Serbo Gavrilo Princip, per la nascita della **Grande Serbia**,
+
+L'Austria approfitto' per attacare la serbia ma prima inviando un ULTIMATUM durissimo che respinsero, quindi il 28 Luglio dichiararono guerra alla Serbia.
+
+Subito si formarono alleanze militari:
+- La Russia aiuto' la Serbia,
+- La Germania aiuto' l'Austria.
+
+La Germania dichiaro' guerra alla Russia alleata con la Francia,
+era diffusa l'idea che il conflitto sarebbe durato poco, ma successe il contrario.
+
+La Germania mirava a fare una guerra lampo vincendo velocemente per poi andare sul fronte orientale prima della mobilitazione Russa, quindi provarono a prendere alle spalle i Francesi,
+che si era schierato sulla frontiera e difeso dal sistema Maginot.
+
+Il capo dello stato Tedesco il 4 agosto 1914 invase il belgio violando la neutralita', che fu un grosso errore politico,
+
+che causo la ascesa in campo anche dell'Inghilterra preoccupata per le coste della Manica che scese al fianco della Francia.
+
+la guerra lampo falli' perche' il belgio oppose una grande resistenza facendo esplodere strade e ponti,
+che diede la possibilita' ai Francesi di avere l'appoggio anche degli Inglesi il quale cambio' da una guerra di movimento a una di posizione, che duro' anni vicino a Parigi.
+
+Anche se non erano preparati i Russi invasero la Prussia.
+
+Il generale ludwig Hidenburg affronto' due grandi battaglie di Tannenberg e Laghi Masuri.
+Allo stesso tempo la pressione Russa constrinse gli Austici a ritirarsi dalla Galizia.
+
+Da quel momento in poi la guerra in oriente divento' una guerra di Trincea.
+
+Nell'Autunno del 1914 il conflitto ci fu' anche in mare tra Germania e Inghilterra che creo' una guerra navale sull'Atlantico e il Pacifico, con lo scopo di bloccare il traffico al nemico, fatte con navi corsare cammuffate da navi mercantili.
+
+Nel frattempo il Giappone dichiaro' guerra alla Germania nel 23 agosto,
+occupando il porto di Kiachow che causo l'arrivo della guerra anche dai coloni.
+
+Anche l'Africa ne fu coinvolta che subi' una occupazione a sud occidente poi scoppio anche la guerra con l'Impero Ottomano ch inizialmente era neutrale, che poi si alleo' con la Germania.
+
+La guerra raggiunse dimensioni mondiali.
