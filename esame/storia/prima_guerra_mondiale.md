@@ -91,4 +91,90 @@ Dopo che mori' Umberto I ci furono conflitti sociali e politici, poi sali' al tr
 Nel 1901 affido' il governo a Giuseppe Zanardelli, era un giurista di Sinistra Liberale.
 Lui era lo stesso che approvo' il codice penale dell'Italia unita detto Codice Zanardelli che rimase fino al 1930, in piu' aveva abolito la pena di morte e ammise il diritto di sciopero.
 
-Come nuovo presidente del Consiglio, lui abbandona il sistema repressivo
+Come nuovo presidente del Consiglio, lui abbandona il sistema repressivo dei suoi predecessori.
+Concesse una liberta' di associazione e di propaganda.
+
+## Giolitti a capo del governo
+Nel 1903 si ritiro' Zanardelli per malattia, a suo posto fu messo il ministro degli interni Giovanni Giolitti.
+Questa fase fu chiamata eta' Giolittiana, che aveva un orientamento liberale e appartenente alla "Sinistra Costituzionale",
+lui trovo' un equilibrio promuovendo una avanzata legislazione sociale e favorendo l'industria Italiana.
+
+Secondo lui lo stato doveva rimanere neutrale limitandosi a mantenere l'ordine pubblico.
+
+Rilascio delle riforme per evitare agitazioni dal popolo e migliorando le condizioni dei lavoratori.
+Venne ampliata la legislazione a favore dei lavoratori:
+- Anziani,
+- Infortunati,
+- Invalidi,
+- e anche tutelati i bambini e le donne.
+
+Fu instaurato anche il diritto a un giorno a settimana libero,
+migliorando anche la retribuzione dei salari.
+
+Nel 1912 nacque l'obbligo di assicurazione dagli infortuni sul lavoro.
+Lato scolastico, impose fino al 12^ anno di obbligo scolastico,
+per combattere l'analfabetismo.
+
+Cio' causa un grande aumento demografico,
+le rimesse degli emigranti migliorano l'economia mantenendo il bilancio in pareggio.
+
+L'appoggio dell'industrializzazione dei governi si manifesto' tramite il **Protezionismo doganale**,
+e grazie alle **commesse pubbliche**.
+
+Raddoppio' la produzione agricola grazie a bonifiche,
+si sviluppo anche la industria:
+- tessile,
+- chimica,
+- meccanica,
+- alimentare.
+
+Si affermo in particolare la:
+- Industria Automobilistica della Fiat fondata a Torino da Giovanni Agnelli nel 1899,
+- L'industria della gomma nata a Milano nel 1872,
+- L'industria Idroelettrica.
+
+Venne anche espansa la linea ferroviaria nel 1905.
+
+Questi sviluppi non erano distribuiti in tutta Italia, ma solamente nella parte nord e centro,
+lasciando arretrato il sud.
+
+## La chiesa nella politica
+
+Luigi Sturzo si rese contro che serviva un partito laico-cristiano a carattere democratico.
+Sturzo criticava i moderati.
+
+Entrando cosi' nella politica nel 1912 andando contro le idee di Giolitti e rilasciando un *NON EXPEDICT*,
+che consisteva nel vietare ai cattolici di partecipare alle elezioni.
+
+Durante il 1912 ci fu' un suffragio universale maschile (30 anni in su / 21 se in grado di leggere e scrivere) su una nuova legge elettorale,
+in piu' durante la propria candidatura si veniva mantenuti dalle spese.
+
+## Il crollo di Giolitti
+Per rafforzare la quantita' di liberali Giolitti fece un accordo segreto nel 1913 con il politico cattolico Vincenzo Gentilioni, noto come **Patto Gentilioni**.
+Grazie al patto i cattolici potevano votare anche i liberali ma a condizione di abbandonare le politiche anticlericali risolvendo questo problema nato nel 1870.
+
+Il patto fu un fallimento visto che il numero di socialisti diminui',
+in piu' sin dall'inizio Giolitti fu' **corrotto** e **intimidatorio**.
+
+## La rottura degli equilibri tra gli stati
+L'europa si trovava divisa e piena di rivalita' economiche:
+- La Germania di Guglielmo II era molto aggressiva, e aveva poco interesse nell'equilibrio degli stati.
+- La Francia sin dalla guerra franco-prussiana era ancora arrabbiata con la Germania.
+- L'Inghilterra si sentiva minacciata nel perdere il suo dominio navale lungo.
+- La Russia aveva deteriorato i rapporti con Guglielmo II.
+
+Si formarono 2 coalizioni:
++ Russia, Francia e Inghilterra nella **Triplice Intesa**,
++ Germania, Austria e Italia si allearono nella **Triplice alleanza**.
+
+## Le 2 crisi Marocchine
+Durante la corsa alle colonie, che aveva causato la spartizione dell'Africa e India tra i paesi europei.
+
+Il Marocco era uno stato indipendente che subi' la pressione della Francia,
+con il consenso dell'Italia e Inghilterra, i Francesi si impadronirono del marocco.
+
+Guglielmo II difese il marocco opponendosi alla **Triplice Intesa**, dove per 2 volte si e' rischiato il conflitto armato prendendo il nome di **Crisi Marocchine**,
+nel 1905 e 1911,
+successivamnete si cedde il Congo Francese alla Germania si evito' il conflitto.
+
+Verso gli stessi anni
