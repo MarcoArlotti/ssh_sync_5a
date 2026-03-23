@@ -11,7 +11,7 @@ In politica estera, Bismarck cercò l'equilibrio, quindi
 nel 1873 stipulo' il **Patto dei tre imperatori** con (Germania, Russia e Austria-Ungheria), poi nel 1882 la **Triplice Alleanza** con (con Austria e Italia). 
 
 Guglielmo II, spinge Bismarck alle dimissioni.
-Guglielmo aveva una politica estera violenta a differenza di Bismarck, quindi nel 1890 Bismarck decise di dare le dimissioni in Francia.
+Guglielmo voleva cacciare Bismarck perche' aveva una politica estera violenta, quindi nel 1890 Bismarck decise di dare le dimissioni in Francia.
 
 ## In Francia
 Dopo la "Settimana di Sangue" del 1871 (la fine della Comune di Parigi),
