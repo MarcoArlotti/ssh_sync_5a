@@ -1,0 +1,1 @@
+# tipi di WIFI
