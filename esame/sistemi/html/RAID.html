@@ -25,82 +25,101 @@
       <div class="crossnote markdown-preview  ">
       
 <h1 id="raid">RAID </h1>
-<p>Ecco un'argomentazione tecnica strutturata sui server proxy, le loro tipologie e le best practice per l'implementazione in un'infrastruttura aziendale.</p>
+<p>Il termine <strong>RAID</strong> sta per <em>Redundant Array of Independent Disks</em>. In parole povere, è una tecnologia che permette di raggruppare più hard disk o SSD in un'unica unità logica.</p>
+<p>Perché lo si fa? Principalmente per due motivi: <strong>sicurezza dei dati</strong> (ridondanza) e <strong>velocità</strong> (performance). A seconda di come "incastriamo" questi dischi, otteniamo diversi "livelli" di RAID.</p>
+<p>Ecco una panoramica dei tipi più comuni utilizzati nelle reti aziendali e domestiche (NAS).</p>
 <hr>
-<h1 id="guida-allimplementazione-dei-proxy-in-rete-aziendale">Guida all'Implementazione dei Proxy in Rete Aziendale </h1>
-<p>In un ecosistema aziendale moderno, il <strong>Proxy</strong> funge da intermediario cruciale tra i client interni (endpoint) e le risorse esterne (Internet) o viceversa. Non è solo uno strumento di instradamento, ma un pilastro per la <strong>sicurezza</strong>, il <strong>monitoraggio</strong> e l'<strong>ottimizzazione delle prestazioni</strong>.</p>
-<h2 id="1-tipologie-di-proxy">1. Tipologie di Proxy </h2>
-<p>Esistono diverse configurazioni a seconda della direzione del traffico e dello scopo desiderato:</p>
-<h3 id="forward-proxy-proxy-diretto">Forward Proxy (Proxy Diretto) </h3>
-<p>È il tipo più comune nelle reti LAN. Il client sa di utilizzare un proxy e invia ad esso tutte le richieste destinate a Internet.</p>
+<h2 id="1-raid-0-lo-scattista-striping">1. RAID 0: Lo scattista (Striping) </h2>
+<p>Nel RAID 0, i dati vengono frazionati e scritti contemporaneamente su due o più dischi. È il massimo per la velocità, ma il peggiore per la sicurezza.</p>
 <ul>
-<li><strong>Scopo:</strong> Controllo degli accessi, filtraggio contenuti e anonimizzazione dell'IP interno.</li>
-<li><strong>Utilizzo:</strong> Impedire ai dipendenti di accedere a siti malevoli o non produttivi.</li>
-</ul>
-<h3 id="transparent-proxy-proxy-trasparente">Transparent Proxy (Proxy Trasparente) </h3>
-<p>Intercetta il traffico a livello di rete (solitamente sul gateway/router) senza che il client debba essere configurato specificamente.</p>
-<ul>
-<li><strong>Vantaggi:</strong> Facilità di gestione (nessuna configurazione sugli endpoint).</li>
-<li><strong>Svantaggi:</strong> Difficoltà nel gestire il traffico HTTPS senza tecniche di "SSL Inspection".</li>
-</ul>
-<h3 id="reverse-proxy-proxy-inverso">Reverse Proxy (Proxy Inverso) </h3>
-<p>Posizionato davanti ai server web aziendali, riceve le richieste dai client esterni e le smista ai server interni.</p>
-<ul>
-<li><strong>Scopo:</strong> Load balancing, terminazione SSL, protezione da attacchi DDoS e caching dei contenuti.</li>
-<li></li>
+<li><strong>Vantaggio:</strong> Velocità di lettura e scrittura elevatissima.</li>
+<li><strong>Svantaggio:</strong> <strong>Nessuna tolleranza ai guasti.</strong> Se un solo disco si rompe, perdi tutto il contenuto dell'intero array.</li>
+<li><strong>Uso tipico:</strong> Editing video temporaneo o file di swap dove la perdita dati non è critica.</li>
 </ul>
 <hr>
-<h2 id="2-funzionalità-chiave-in-ambito-business">2. Funzionalità Chiave in Ambito Business </h2>
-<p>L'adozione di un proxy in azienda risponde a tre esigenze fondamentali:</p>
-<ol>
-<li><strong>Sicurezza (Filtering &amp; Inspection):</strong> Analisi del traffico alla ricerca di malware e applicazione di policy tramite URL Filtering. Molti proxy moderni effettuano la <strong>SSL/TLS Decryption</strong> per ispezionare il traffico criptato (previo consenso legale/aziendale).</li>
-<li><strong>Caching e Bandwidth Management:</strong> Memorizzando copie dei siti web visitati frequentemente, il proxy riduce il consumo di banda verso l'esterno e velocizza la navigazione.</li>
-<li><strong>Logging e Compliance:</strong> Tracciamento dettagliato di chi ha visitato cosa e quando. Questo è essenziale per audit di sicurezza e per adempiere a normative sulla protezione dei dati.</li>
-</ol>
-<hr>
-<h2 id="3-strategie-di-implementazione">3. Strategie di Implementazione </h2>
-<p>Per implementare correttamente un proxy in una rete aziendale, occorre seguire questi passaggi tecnici:</p>
-<h3 id="a-metodi-di-distribuzione-deployment">A. Metodi di Distribuzione (Deployment) </h3>
+<h2 id="2-raid-1-il-prudente-mirroring">2. RAID 1: Il prudente (Mirroring) </h2>
+<p>Qui i dati vengono duplicati esattamente su due dischi. Tutto quello che scrivi sul disco A viene scritto identico sul disco B.</p>
 <ul>
-<li><strong>WPAD (Web Proxy Auto-Discovery):</strong> Utilizza DNS o DHCP per permettere ai browser di trovare automaticamente il file di configurazione (<code>proxy.pac</code>). È il metodo più scalabile per reti medie e grandi.</li>
-<li><strong>GPO (Group Policy Object):</strong> In ambienti Active Directory, si forzano le impostazioni del proxy direttamente nel registro di sistema dei client Windows.</li>
-<li><strong>Inline/Transparent:</strong> Il traffico viene reindirizzato forzatamente al proxy tramite policy di routing (PBR) sugli switch core o sui firewall.</li>
-</ul>
-<h3 id="b-architettura-di-rete">B. Architettura di Rete </h3>
-<p>Il proxy non dovrebbe mai trovarsi nella stessa subnet dei client senza una protezione adeguata.</p>
-<ul>
-<li><strong>Collocazione in DMZ:</strong> Il proxy (specialmente se Reverse) va isolato in una "Demilitarized Zone" per evitare che un eventuale compromissione del servizio esponga l'intera LAN.</li>
-<li><strong>Autenticazione:</strong> Integrare il proxy con <strong>LDAP/Active Directory</strong>. Questo permette di creare policy basate sui gruppi (es. il dipartimento IT ha accesso a strumenti che il dipartimento Marketing non può usare).</li>
+<li><strong>Vantaggio:</strong> Massima sicurezza. Se un disco muore, l'altro continua a funzionare senza interruzioni.</li>
+<li><strong>Svantaggio:</strong> Costoso. Paghi per due dischi ma hai lo spazio di uno solo (efficienza del 50%).</li>
+<li><strong>Uso tipico:</strong> Server critici, database di piccole dimensioni, sistemi operativi.</li>
 </ul>
 <hr>
-<h2 id="4-considerazioni-critiche">4. Considerazioni Critiche </h2>
+<h2 id="3-raid-5-lequilibrato-parity">3. RAID 5: L'equilibrato (Parity) </h2>
+<p>È il re dei sistemi NAS e dei server di rete. Richiede almeno <strong>3 dischi</strong>. I dati vengono distribuiti su tutti i dischi insieme a delle informazioni di "parità".</p>
+<ul>
+<li><strong>Vantaggio:</strong> Ottimo compromesso tra velocità, capacità e sicurezza. Può "sopravvivere" alla rottura di <strong>un disco</strong> senza perdere dati.</li>
+<li><strong>Svantaggio:</strong> Se si rompe un secondo disco prima di aver sostituito il primo, i dati sono persi. La ricostruzione di un disco rotto può essere lenta.</li>
+<li><strong>Uso tipico:</strong> File server aziendali, storage condiviso.</li>
+</ul>
+<hr>
+<h2 id="4-raid-6-il-corazzato-double-parity">4. RAID 6: Il corazzato (Double Parity) </h2>
+<p>Evoluzione del RAID 5, richiede almeno <strong>4 dischi</strong>. Utilizza una doppia parità distribuita.</p>
+<ul>
+<li><strong>Vantaggio:</strong> Può sopportare il guasto simultaneo di <strong>due dischi</strong>. Estremamente affidabile per array molto grandi.</li>
+<li><strong>Svantaggio:</strong> Più lento in scrittura rispetto al RAID 5 a causa del calcolo della doppia parità.</li>
+<li><strong>Uso tipico:</strong> Grandi archivi dati (Big Data) e sistemi dove l'affidabilità è l'unica priorità.</li>
+</ul>
+<hr>
+<h2 id="5-raid-10-10-latleta-délite">5. RAID 10 (1+0): L'atleta d'élite </h2>
+<p>È una combinazione (annidata): unisce il Mirroring (RAID 1) e lo Striping (RAID 0). Richiede almeno <strong>4 dischi</strong>.</p>
+<ul>
+<li><strong>Vantaggio:</strong> Il meglio dei due mondi. Velocità del RAID 0 e sicurezza del RAID 1. Molto performante con i database pesanti.</li>
+<li><strong>Svantaggio:</strong> Molto costoso (perdi il 50% della capacità totale per la ridondanza).</li>
+<li><strong>Uso tipico:</strong> Server ad alte prestazioni, database SQL, ambienti virtualizzati intensivi.</li>
+</ul>
+<hr>
+<h3 id="tabella-comparativa-rapida">Tabella Comparativa Rapida </h3>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Sfida</th>
-<th style="text-align:left">Soluzione</th>
+<th style="text-align:left">Livello RAID</th>
+<th style="text-align:left">Min. Dischi</th>
+<th style="text-align:left">Tolleranza Guasti</th>
+<th style="text-align:left">Velocità</th>
+<th style="text-align:left">Efficienza Spazio</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Traffico HTTPS</strong></td>
-<td style="text-align:left">Implementazione di una CA (Certificate Authority) interna per l'ispezione dei pacchetti senza errori di certificato.</td>
+<td style="text-align:left"><strong>RAID 0</strong></td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">0 dischi</td>
+<td style="text-align:left">Eccellente</td>
+<td style="text-align:left">100%</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Single Point of Failure</strong></td>
-<td style="text-align:left">Configurazione in <strong>High Availability (HA)</strong> con bilanciatori di carico o protocolli come VRRP.</td>
+<td style="text-align:left"><strong>RAID 1</strong></td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">1 disco</td>
+<td style="text-align:left">Buona (lettura)</td>
+<td style="text-align:left">50%</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Privacy</strong></td>
-<td style="text-align:left">Configurazione di "White-list" per escludere dall'ispezione siti sensibili (Home Banking, Sanità) per rispettare il GDPR.</td>
+<td style="text-align:left"><strong>RAID 5</strong></td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">1 disco</td>
+<td style="text-align:left">Molto buona</td>
+<td style="text-align:left"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> dischi</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>RAID 6</strong></td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">2 dischi</td>
+<td style="text-align:left">Buona</td>
+<td style="text-align:left"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n-2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span> dischi</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>RAID 10</strong></td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">Almeno 1 per mirror</td>
+<td style="text-align:left">Eccellente</td>
+<td style="text-align:left">50%</td>
 </tr>
 </tbody>
 </table>
-<hr>
-<blockquote>
-<p><strong>Nota Tecnica:</strong> Con l'avvento dello smart working e delle architetture <strong>Zero Trust</strong>, il proxy tradizionale si sta evolvendo verso il modello <strong>SASE (Secure Access Service Edge)</strong>, dove il proxy risiede nel cloud e protegge l'utente ovunque si trovi.</p>
-</blockquote>
-<p>Saresti interessato a vedere un esempio di configurazione per un proxy specifico, come Squid o un file PAC per la distribuzione automatica?</p>
+<p><strong>Nota bene:</strong> Il RAID <strong>non è un backup</strong>. Protegge dalla rottura hardware del disco, ma non da virus, cancellazioni accidentali o incendi. Un backup esterno rimane sempre necessario!</p>
+<p>Vorresti che ti aiutassi a calcolare lo spazio effettivo disponibile per una specifica configurazione di dischi che hai in mente?</p>
 
       </div>
       
