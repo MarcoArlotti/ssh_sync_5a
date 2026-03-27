@@ -1,0 +1,55 @@
+che cosa e' l'informatica
+Linguaggi di Programmazione:
+TODO
+Liste
+Variabili
+Tuple
+Funzioni
+Classi, Oggetti ed Attributi
+Sottoclassi / Ereditarieta' / Aggregazioni o classi Composte
+Polimorfismo
+Tipi di Associazioni tra classi distinte
+Approccio TOP DOWN e BOTTOM UP
+cosa e' un file
+il random nei computer
+If, Elif ed Else
+For e While
+Linguaggio tipizzato e non tipizzato, il type Hinting di python
+moduli, librerie
+ambiente virtuale
+Linguaggio Compilato e Interpretato
+esecuzione del codice
+come programmare (IDE)
+Programmazione orientata ad oggetti OOP (Object-Oriented Programming)
+costruttore
+l'incapsulamento
+metodi
+attributi
+l'UML (Unified Modelling Language)
+diagramma ER 
+DBSM (DataBase Managment System) e NoSQL
+La Chiave Univoca, Foreing key e Primary key
+cosa fa una query
+che tabelle va a intaccare
+Form html
+javascript
+Client e Server
+Il Web Server cosa fa
+Il DB cosa fa
+Interfaccia utente
+CLI
+la peculiarita' della programmazione, Input e Output in python
+tempo di esecuzione, prestazioni
+la sicurezza informatica
+github
+git
+SQL
+Flask
+HTTP, API e Sicurezza
+ACID
+Analisi dei Requisiti
+Vincoli di Integrità
+Sicurezza (Autenticazione, Autorizzazione, Audit)
+API e REST
+Endpoint (HTML)
+Deployment (rilascio di un codice)

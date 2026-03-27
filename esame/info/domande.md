@@ -1,5 +1,4 @@
 **Python, tipizzazione e Type Hinting**
-TODO AMPLIARE
 - Python è un linguaggio a "tipizzazione dinamica": cosa significa questo concetto rispetto a linguaggi a tipizzazione statica?
 - Cosa sono i "Type Hints" e qual è il loro scopo principale, dato che l'interprete Python non li rende obbligatori per l'esecuzione del codice?
 
