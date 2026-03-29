@@ -1,0 +1,54 @@
+tcp-ip e iso osi
+cosa e' un ip
+cosa e' una subnet mask
+cosa e' il subnetting
+cosa e' la WLSM
+wireshark
+netsat
+ipconfig
+UDP
+UDP lite
+L'hanshacke TCP
+il segmento TCP
+il THREE WAY HANDSHACKE
+dove viene usato TCP e dove viene usato UDP
+accesso alle porte TCP
+le socket
+la connessione end-to-end
+congestion avoidance
+il DHCP
+le 4 fasi del DHCP
+gli stati del DHCP client
+il DNS
+il formato dei pacchetti DNS
+APPLICATION LAYER
+P2P
+TELNET
+SSH
+FTP
+SFTP
+HTTP
+i COOCKIEs 
+i codici di risposta dell'HTTP
+HTTPS
+SMTP
+POP3
+IMAP
+RTSP
+VOIP
+il documento x800 che cosa dichiara
+cosa si rischia non crittografando
+crittografia simmetrica
+crittografia assimmmetrica
+firma digitale
+hashing
+STP e la rindondanza
+le VLAN 802.1q
+il TRUNK LINK
+RSTP
+IL firewall
+ACL
+il PROXY
+NAT e PAT
+DMZ
+VPN
