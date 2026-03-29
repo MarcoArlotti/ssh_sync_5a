@@ -1,0 +1,244 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.6">
+  <diagram name="Page-1" id="QzDAiqaZmlR18KXLlDCa">
+    <mxGraphModel dx="1699" dy="1131" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="INFORMATICA" vertex="1">
+          <mxGeometry height="860" width="1300" x="10" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-11" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="che cosa e&#39; l&#39;informatica" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-18" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Linguaggi di Programmazione" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-13" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Liste" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-15" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Variabili" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-17" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Tuple" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-16" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Funzioni" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-19" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Classi, Oggetti ed Attributi" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-20" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Sottoclassi / Ereditarieta&#39; / Aggregazioni o classi Composte" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-21" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Polimorfismo" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-22" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Tipi di Associazioni tra classi distinte" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-23" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Approccio TOP DOWN e BOTTOM UP" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-24" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="cosa e&#39; un file" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-25" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="il random nei computer" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-26" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="If, Elif ed Else" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-27" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="For e While" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-28" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Linguaggio tipizzato e non tipizzato, il type Hinting di python" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-29" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="moduli, librerie" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-30" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="ambiente virtuale" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-31" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="che cosa e&#39; l&#39;informatica" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-32" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="che cosa e&#39; l&#39;informatica" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-33" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="che cosa e&#39; l&#39;informatica" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-34" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="che cosa e&#39; l&#39;informatica" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-35" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="che cosa e&#39; l&#39;informatica" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-36" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="che cosa e&#39; l&#39;informatica" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-37" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Linguaggio Compilato e Interpretato" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-38" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="CISC e RISC" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-39" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="esecuzione del codice" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-40" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="come programmare (IDE)" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-41" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Programmazione orientata ad oggetti OOP (Object-Oriented Programming)" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-42" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="costruttore" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-43" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="l&#39;incapsulamento" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-44" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="metodi" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-45" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="attributi" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-46" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="l&#39;UML (Unified Modelling Language)" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-47" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="diagramma ER&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-48" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="DBSM (DataBase Managment System) e NoSQL" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-49" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="La Chiave Univoca, Foreing key e Primary key" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-50" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="tipi di query" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-51" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="JOIN" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-52" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Form html" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-53" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="javascript" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-54" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Il Web Server cosa fa" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-55" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Il DB cosa fa" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-56" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Interfaccia utente" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-57" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="CLI" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-58" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="la peculiarita&#39; della programmazione, Input e Output in python" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-59" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="tempo di esecuzione, prestazioni" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-60" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="la sicurezza informatica" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-61" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="github" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-62" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="git" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-63" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="SQL" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-64" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Flask" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-65" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="HTTP, API e Sicurezza" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-66" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Client e Server" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-67" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="ACID" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-68" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Analisi dei Requisiti" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-69" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Vincoli di Integrità" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-70" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Sicurezza (Autenticazione, Autorizzazione, Audit)" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-71" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="API e REST" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-72" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;background-color: rgb(29, 23, 39); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #b36ae2;&quot;&gt;IL DEPLOY&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-73" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;background-color: rgb(29, 23, 39); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #b36ae2;&quot;&gt;SUPER SET&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-74" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;background-color: rgb(29, 23, 39); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #b36ae2;&quot;&gt;LE JAVA VIRTUAL MACHINE&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-75" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;background-color: rgb(29, 23, 39); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #b36ae2;&quot;&gt;PYchache&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-76" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;background-color: rgb(29, 23, 39); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #b36ae2;&quot;&gt;RUST&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-77" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;background-color: rgb(29, 23, 39); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #b36ae2;&quot;&gt;il Workflow&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-78" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;background-color: rgb(29, 23, 39); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #b36ae2;&quot;&gt;Il ruolo del SEO (search engine optimization)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-79" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;background-color: rgb(29, 23, 39); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #b36ae2;&quot;&gt;LE ARCHITETTURE DEI PROCESSORI&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-80" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;background-color: rgb(29, 23, 39); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #b36ae2;&quot;&gt;PYTHON&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-81" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;background-color: rgb(29, 23, 39); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #b36ae2;&quot;&gt;Il PHP&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-82" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;background-color: rgb(29, 23, 39); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #b36ae2;&quot;&gt;TS TYPESCRIPT&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-83" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;background-color: rgb(29, 23, 39); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(179, 106, 226);&quot;&gt;NODE JS&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-84" parent="8UNISqdEEOZpc3m_Al8u-1" style="rounded=0;whiteSpace=wrap;html=1;" value="Endpoint (HTML)" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-2" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="SISTEMI E RETI" vertex="1">
+          <mxGeometry height="200" width="200" x="1550" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-3" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="TPSIT" vertex="1">
+          <mxGeometry height="200" width="200" x="1750" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-4" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="INGLESE" vertex="1">
+          <mxGeometry height="200" width="200" x="1350" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-5" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="ITALIANO" vertex="1">
+          <mxGeometry height="200" width="200" x="1550" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="8UNISqdEEOZpc3m_Al8u-6" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="STORIA" vertex="1">
+          <mxGeometry height="200" width="200" x="1750" y="480" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

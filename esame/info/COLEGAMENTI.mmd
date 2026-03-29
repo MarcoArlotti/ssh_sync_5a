@@ -1,109 +1,68 @@
 flowchart TD
-    subgraph CHE COSA è L'INFORMATICA
-        1[LINGUAGGI DI PROGRAMMAZIONE]
-        2[IDE]
-    end
+    A[INFORMATICA] --> B[che cosa e' l'informatica]
 
-    subgraph AMBIENTI DI SVILUPPO
-        38[Installazione e configurazione di WSL:Windows Subsystem for Linux]
-        39[IDE: Visual Studio Code]
-        40[Installazione e configurazione delle estensioni essenziali di VS Code Python, Ruff, GitLens, Markdown All in One]
-        41[Creazione di un account GitHub]
-        42[Configurazione di Git con le proprie credenziali]
-        43[Markdown per il README.md]
-        44[Creazione di un repository]
-        45[Git integrato nell'interfaccia di VS Code]
+    A --> C[Linguaggi di Programmazione]
+    C --> C1[Linguaggio Compilato e Interpretato]
+    C --> C2[Linguaggio tipizzato e non tipizzato, il type Hinting di python]
+    C --> C3[esecuzione del codice]
+    C --> C4[come programmare IDE]
+    C --> C5[moduli, librerie]
+    C --> C6[ambiente virtuale]
+    C --> C7[github]
+    C --> C8[git]
 
-        39 --> 38
-        39 --> 40
-        42 --> 39
-        44 --> 43
-        39 --> 45
-        45 --> 44
-        44 --> 41
+    C --> P[python]
+    P --> P1[Liste]
+    P --> P2[Variabili]
+    P --> P3[Tuple]
+    P --> P4[Funzioni]
+    P --> P5[If, Elif ed Else]
+    P --> P6[For e While]
+    P --> P7[il random nei computer]
+    P --> P8[la peculiarita' della programmazione, Input e Output in python]
+    P --> P9[tempo di esecuzione, prestazioni]
 
-    end
+    A --> OOP[Programmazione orientata ad oggetti OOP Object-Oriented Programming]
+    OOP --> O1[Classi, Oggetti ed Attributi]
+    OOP --> O2[costruttore]
+    OOP --> O3[metodi]
+    OOP --> O4[attributi]
+    OOP --> O5[l'incapsulamento]
+    OOP --> O6[Sottoclassi / Ereditarieta' / Aggregazioni o classi Composte]
+    OOP --> O7[Polimorfismo]
+    OOP --> O8[Tipi di Associazioni tra classi distinte]
+    OOP --> O9[l'UML Unified Modelling Language]
 
-    subgraph LINGUAGGI DI PROGRAMMAZZIONE
-        1[COMPILATO]
-        2[NON COMPILATO]
-    end
+    A --> D[DATABASE]
+    D --> D1[DBSM DataBase Managment System e NoSQL]
+    D --> D2[SQL]
+    D --> D3[diagramma ER]
+    D --> D4[La Chiave Univoca, Foreing key e Primary key]
+    D --> D5[Vincoli di Integrità]
+    D --> D6[ACID]
+    D --> D7[cosa fa una query]
+    D --> D8[che tabelle va a intaccare]
 
-    subgraph Python tipizzazione e Type Hinting
-        4[tipizzazione dinamica]
-        
-    end
+    A --> W[Web]
+    W --> W1[Client e Server]
+    W --> W2[HTTP, API e Sicurezza]
+    W --> W3[API e REST]
+    W --> W4[Endpoint HTML]
+    W --> W5[Form html]
+    W --> W6[javascript]
+    W --> W7[Il Web Server cosa fa]
+    W --> W8[Il DB cosa fa]
+    W --> W9[Interfaccia utente]
+    W --> W10[CLI]
+    W --> W11[Flask]
+    W --> W12[Deployment rilascio di un codice]
 
-    subgraph .gitignore e Ambiente Virtuale
-        5[requirements.txt]
-        6[.gitignore]
-        7[venv]
-        8[GitHub]
-    end
-    
-    subgraph Modello ER e Database
-        9[diagramma ER]
-        10[cardinalità 1:1 1:N N:N]
-        11[Come si traduce una relazione]
-        12[dal modello ER al codice SQL]
-        13[la Normalizzazione e quali problemi risolve: anomalie]
-        14[la differenza tra Prima Seconda e Terza Forma Normale]
-        15[ruolo della Chiave Primaria e della Chiave Esterna]
-    end
+    A --> S[Sicurezza]
+    S --> S1[la sicurezza informatica]
+    S --> S2[Sicurezza Autenticazione, Autorizzazione, Audit]
 
-    subgraph SQL e Interazione con Python
-        16[DDL]
-        17[CREATE]
-        18[DROP]
-        19[DML]
-        20[INSERT]
-        21[SELECT]
-        22[clausole]
-        23[GROUP BY]
-        24[HAVING]
-        25[JOIN]
-        26[LEFT JOIN]
-        27[SQL Injection]
-        28[i file .sqlite]
-        
-    
-    end
-    16 --> 17
-    16 --> 18
+    A --> F[File e dati]
+    F --> F1[cosa e' un file]
 
-    19 --> 20
-    19 --> 21
-
-    22 --> 23
-    22 --> 24
-
-    28 --> 16
-    28 --> 19
-    28 --> 22
-    28 --> 25
-    28 --> 26
-    28 --> 27
-
-    subgraph Architettura Web e Flask
-        29[cartella instance in Flask]
-        
-    end
-
-    subgraph HTTP API e Sicurezza
-        37[come è organizzata la struttura di un progetto flask]
-        30[a cosa serve il file __init__.py]
-        31[interno della cartella app?]
-        32[Cosa sono i Blueprint]
-        33[Cos'è il Repository Pattern]
-        34[perché separiamo le query SQL dalle route di Flask?]
-        35[il motore di template Jinja2]
-        36[il concetto di ereditarietà extends]
-
-        37 --> 30
-        37 --> 31
-        37 --> 33
-        37 --> 34
-        37 --> 35
-        32 --> 36
-        35 --> 32
-    end
+    A --> M[Approccio TOP DOWN e BOTTOM UP]
+    A --> R[Analisi dei Requisiti]

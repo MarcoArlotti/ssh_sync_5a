@@ -1,6 +1,5 @@
 che cosa e' l'informatica
-Linguaggi di Programmazione:
-TODO
+Linguaggi di Programmazione
 Liste
 Variabili
 Tuple
