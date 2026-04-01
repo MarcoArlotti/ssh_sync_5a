@@ -1,14 +1,13 @@
 #  I LINGUAGGI DI PROGRAMMAZIONE
 ## SUPER SET
-il super set è un sovra insieme ad esempio in c++ c'è la sintassi di c.
+il super set è un sovra insieme ad esempio in c++ c'è la sintassi di c
+dove C e' uno standard aperto, mentre c# e c++ appartengono a Microsoft.
 
-C appartiene a Microsoft.
-
-## PRIMA DELLE JAVA VIRTUAL MACHINE
+## PRIMA DELLE JAVA VIRTUAL MACHINE (JVM)
 con c si ha il codice sorgente,
 quindi si ha la necessita di avere un compilatore così che lo si compila per poterlo far girare su ogni pc.
 
-Java appartiene a Oracle, e si usa netbeans cme IDE.
+Java appartiene a Oracle, oggi sono molto usati IntelliJ IDEA ed Eclipse come IDE per java.
 
 # PYchache
 I file PYchache servono a velocizzare l'esecuzione del file python,
