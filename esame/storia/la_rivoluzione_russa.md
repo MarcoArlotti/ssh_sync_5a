@@ -34,3 +34,5 @@ Ma Kerenskij vuole continuarla, dopo altri tentativi di rivolta, si svolge una a
 
 i bolscevichi non ottengono la maggioranza, ma la ottengono i socialisti rivoluzionari.
 
+...
+
