@@ -1,4 +1,4 @@
-che cosa e' l'informatica
++che cosa e' l'informatica
 Linguaggi di Programmazione
 Liste
 Variabili
