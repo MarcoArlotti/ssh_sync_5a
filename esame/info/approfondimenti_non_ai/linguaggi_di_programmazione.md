@@ -54,4 +54,23 @@ E in piu' il codice compilato non puo' essere usato da macchine diverse,
 visto che ogni lignuaggio macchina verra' scritto diversamente per ogni
 computer diverso.
 
-## Linguggi di BACKEND e FRONTEND
+## Linguggi di tipo FRONTEND
+Nello sviluppo di una WEB APP
+esistono linguaggi dedicati al Frontend (Client-Side), cioe' il codice dell'interfaccia utente (UI) che gira sul browser di un eventuale host che si connette ad un WEB SERVER,
+
+>Linguaggi di MARKUP:
+>- HTML: Definisce la struttura semantica della pagina.
+>- CSS: Gestisce lo stile e grafica dell'interfaccia.
+>- React.
+
+>Linguaggi per la logica:
+>- JavaScript: Rende interattive le pagine statiche, permettendo di modificare il contenuto della pagina in modo dinamico senza ricaricarla.
+
+
+## Linguggi di tipo BACKEND
+Il BACKEND invece e' il codice che viene eseguito dal server:
+- Prendere i dati di un eventuale DATABASE collegato alla WEB APP, per inviarli all'utente, mostrando le informazioni ricevute dal DB attraverso la interfaccia grafica.
+- Verifica l'autenticazione degli utenti e blocca l'invio di dati sensibili ai non autorizzati.
+- Si occupa di fare calcoli matematico logici.
+- Si occupa anche di collegarsi ad API che permette alla WEB app di collegarsi a delle altre web app esterne scambiandosi inforazioni.
+- Archiviano dati e inforazioni all'interno di un DATABASE
