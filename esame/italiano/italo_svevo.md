@@ -68,3 +68,19 @@ Quando Zeno prova a fare associazioni, lui si addormenta.
 
 Paradossalmente Zeno, stando male mentalmente riesce a arrichirsi ha un amante, ma secondo gli altri lui e' un inetto (un fallito).
 
+Paradossalmente Zeno, stando male mentalmente riesce a arrichirsi ha un amante, ma secondo gli altri lui e' un inetto (si fa trascinare dagli altri ed e' privo di ogni volonta').
+
+l'inetto e' consapevole che si sente che e' inutile agire,
+si sente sovrastato dalla complessita' della societa'.
+
+Libere associazioni = Zeno cercarsi di ricordare i sui veccchi ricordi
+
+Nel racconto c'e' forte critica alla spicoanalisi.
+
+La psicoanalisi nasce in un contesto borghese per risolvere un problema...
+
+## GLI inpulsi di ZENO
+Zeno si rivolge all'incosco,
+di cui i suoi impulsi sono divisi in:
+- MORTE: THANATOS
+- PIACERE: EROS
