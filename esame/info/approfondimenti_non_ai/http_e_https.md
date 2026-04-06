@@ -76,7 +76,7 @@ I principi chiave di REST:
     - ***Messaggi Auto-Descrittivi:*** Ogni messaggio (richiesta/risposta) contiene abbastanza informazioni per descrivere come essere processato (es. l'header Content-Type: application/json dice al server di interpretare il body come JSON).
     - ***HATEOAS (Hypermedia as the Engine of Application State):*** Le risposte del server dovrebbero includere link (hypermedia) che guidano il client sulle prossime azioni possibili (es. una risposta su un utente potrebbe contenere il link per visualizzare i suoi ordini).
 
-
+---
 ## endpoint
 Nel contesto di una Web API, un endpoint è un URL specifico dove un'API può essere raggiunta da un'applicazione client.
 È dove l'indirizzo permette di inviare una richiesta per interagire con una specifica risorsa o un insieme di risorse.
@@ -128,8 +128,54 @@ response.raise_for_status()
 # con l'ID assegnato dal server
 post_creato = response.json()
 ```
+---
 ## WSGI e ASGI
+Una app python per comunicare con un web server;
+
+Ogni richiesta HTTP, passa per il web server, un software specializzato nel gestire connessioni di rete in modo efficiente.
+
+Il Web Server, però, non sa come eseguire codice Python. La nostra applicazione Flask, d'altra parte, sa come gestire le route e generare risposte, ma non è ottimizzata per gestire migliaia di connessioni di rete contemporaneamente.
+
+Serve quindi uno standard di comunicazione, un "traduttore" che faccia da ponte tra i due.
+
+### WSGI: Web Server Gateway Interface
+WSGI (Web Server Gateway Interface) è lo standard storico e più diffuso nel mondo Python per la comunicazione tra un web server e un'applicazione web sincrona (un compito alla volta, in ordine sequenziale).
+
+Definisce un'interfaccia semplice: il web server invoca un "callable" (una funzione o un oggetto) fornito dall'applicazione, passandole i dettagli della richiesta.
+L'applicazione processa la richiesta e restituisce la risposta.
+
+Gunicorn (per il deployment), è un esempio di Server WSGI,
+Gunicorn rende le richieste dal web server e le passa alla nostra applicazione Flask.
+
+### ASGI: Asynchronous Server Gateway Interface
+Con la crescente popolarità della programmazione asincrona, WSGI ha mostrato i suoi limiti: era stato progettato per un modello sincrono "una richiesta, una risposta".
+
+ASGI (Asynchronous Server Gateway Interface) è il successore spirituale di WSGI. È uno standard progettato per gestire applicazioni Python asincrone.
+
+I principali vantaggi di ASGI sono:
+
+- *Supporto Nativ*o per `async/await`: Permette di gestire un gran numero di connessioni I/O in modo molto efficiente, ideale per applicazioni che fanno molte chiamate a database o API esterne.
+- *Supporto per Protocolli a Lunga Durata*: Oltre a HTTP, può gestire protocolli come i WebSockets, usati per comunicazioni bidirezionali in tempo reale (es. chat, notifiche live).
+
+Framework moderni come `FastAPI` e `Starlette` sono basati su ASGI, Uvicorn è il server ASGI più comune.
+---
+
 ## FLASK
+lask è un micro-framework per il web scritto in Python. È progettato per essere leggero, flessibile e molto rapido da configurare.
+
+Flask mantiene il suo core (nucleo) semplice ma estensibile,
+Flask non obbliga l'uso di un database specifico o una struttura di cartelle rigida.
+
+Fornisce l'essenziale (routing, gestione delle richieste HTTP, templating),
+lasciando al programmatore la scelta di quali librerie esterne aggiungere per funzioni come l'autenticazione o l'accesso ai dati.
+
+Flask si appoggia a due componenti storiche e solidissime del mondo Python:
+1. **Werkzeug:** Una libreria che gestisce il protocollo ***WSGI*** (Web Server Gateway Interface).
+
+2. **Jinja2:** Un potente motore di template che permette di generare un *HTML dinamico* all'interno del codice html.
+
+Flask e' Ideale per i Microservizi: Essendo leggero, è la scelta numero uno per creare piccole API o servizi specifici.
+### Micro-framework
 
 ## DBSM e NoSQL, la importanza delle query
 
