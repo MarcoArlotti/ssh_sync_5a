@@ -4,6 +4,7 @@
 ## L'organizzazione dei progetti
 ---
 ### La struttura organizzativa:
+
 I progetti possono essere organizzati in 3 diverse strutture:
 
 1. la struttura funzionale
@@ -12,6 +13,7 @@ I progetti possono essere organizzati in 3 diverse strutture:
 
 ---
 ### La struttura funzionale
+
 Nella struttura funzionale il progetto viene scomposto in **sottoprogetti**.
 
 >nella struttura funzionale, si dividono i lavoratori in specializzazioni:
@@ -26,5 +28,114 @@ Sotto la direzione ci sono i responsabili funzinali (RF).
 
 All'inizio del progetto gli RF trovano insieme i sottoprogetti e decidono a chi assegnarli.
 
-Gli RF organizzano anche riunioni.
+Gli RF organizzano anche riunioni peridiche per verificare che si stia procedendo bene nel progetto.
 
+La stuttura funzionale e' semplice da gestire,
+ma puo' creare problemi di cordinamento e orientamento.
+
+---
+### La Task force
+
+Nella Task force il progetto viene gestito come una unita' organizzativa autonoma.
+
+Tutte le risorse vengono riunite in un gruppo di lavoro che lavora a tempo pieno con a capo il Project Manager (PM).
+
+La Task force continua a esistere per tutta ladurata del progetto.
+
+Come vantaggio si hanno tutte le risorse che vengono focalizzate sul progetto, in questo modo facilitandone il cordinamento.
+
+Pero' essendo tutti dedicati al progetto, si hanno forti tempi di attesa durante i tempi morti del progetto (aspettare una risposta dal cliente).
+
+---
+### La struttura a matrice
+
+la **struttura a matrice** cerca di unire i lati positivi delle 2 precedenti,
+mirando a ottenere sia l'*efficenza* della ***funzionale*** sia la *efficacia* della ***task force***.
+
+Come nella **task force** viene nominato un PM, pero' i membri del team **non** lavorano a tempo pieno e non vengono stacati dalle loro funzioni di apartenenza.
+
+Si formano gruppi di lavoro parziali multidisciplinari che seguono il PM.
+
+Il progetto viene gestito dal PM e le attivita' vengono gestite dal RF.
+
+Cio' puo' generare conflitti tra i 2 e rende difficile il lavoro del PM visto che non e' in pieno controllo.
+
+---
+### Il ruolo del project manager
+Il project manager e'il responsabile del progetto,
+organizza le risorse per avere successo negli obbiettivi rispettando i costi e tempi del progetto.
+
+Dentro al progetto il PM puo' assumere un diverso peso nella gestione e nella responsabilita'.
+
+Il PM deve avere elevate capacita' gestionali e relazionali.
+
+La sua conoscenza deve essere ampia e completa, ma non nello specifico su qualcosa.
+
+Il PM cerca soluzioni fattibili rispettando i vincoli di tempo, budget e le risorse.
+
+
+Il PM fa da flusso di informazione:
+- *la direzione aziendale*,
+- *il cliente*,
+- *i manager funzionali*,
+- *il personale*.
+
+Le capacita' di un PM devono essere:
+- di impostare un progetto,
+- avere un buon intuito,
+- cordinare le risorse,
+- esercitare una leadership,
+- adattamento a situazioni di stress,
+- abilita' di negoziazione nel risolvere conflitti.
+
+Il PM:
+- fa da interfaccia tra persone interne e esterne all'azienda,
+- fa da intermediario,
+- fa cambiamenti.
+---
+## Risorse umanee comunicazine nel progetto
+
+Le risorse umane vanno gestite nelle prime fasi di un progetto dal PM.
+
+Nella gestione delle risorse umane e' importante assegnare la responsabilita' con cura tra i gruppi di lavoro.
+
+### la gestione dei conflitti
+Il conflitto all'interno di un progetto e' inevitabile e necessario.
+
+>Da un conflitto si puo' generare:
+>- **un compromesso**: dare qualcosa per ottenerne un altra,
+>- **una pressione**: cercare di far valere la propria opinione,
+>- **un confronto**: cercare un punto di incontro dentro ad un conflitto.
+
+Durante un conflitto il gruppo si divide in chi e' pro e chi contro.
+
+Il conflitto viene alimentato dallo stato d'animo del personale.
+
+Come metodo per evitare conflitti si puo' craere una matrice delle responsabilita' e dei rapporti.
+
+Una matrice comporta ad un alta leggibilita' e sintesi delle responsabilita'.
+
+### la gestione dei gruppi di lavoro
+
+Il teamworking e' fondamentale perche' i risultati fatti da un gruppo di persone e' maggiore rispetto a una persona singola.
+
+La creazione di un gruppo di lavoro e' detto **Team building**,
+e puo' richiedere tante riunioni.
+
+Un gruppo di successo e' detto target success,
+ed lo si forma seguendo:
+- chiarezza nei compiti,
+- impegno e precisione,
+- motivazione e atteggiamenti positivi,
+- problem solving e trasparenza.
+...
+
+I gruppi di lavoro sono caratterizzati da un ciclo di sviluppo:
+1. **FORMING**: fase di orientamento, dove si ha un gruppo di persone insicure.
+2. **STORMING**: fase di conflitti.
+3. **NORMING**: si forma una coesione, con un elevato confronto.
+4. **PERFORMING**: si ha creato il gruppo, gli individui si senton un team.
+
+### La gestione della comunicazione
+
+Il PM deve essere chiaro nella comunicazione, cercando feedback.
