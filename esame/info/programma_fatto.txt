@@ -1,5 +1,5 @@
 +che cosa e' l'informatica
-Linguaggi di Programmazione
++Linguaggi di Programmazione
 Liste
 Variabili
 Tuple
@@ -16,8 +16,8 @@ For e While
 Linguaggio tipizzato e non tipizzato, il type Hinting di python
 moduli, librerie
 ambiente virtuale
-Linguaggio Compilato e Interpretato
-esecuzione del codice
++Linguaggio Compilato e Interpretato
++esecuzione del codice
 come programmare (IDE)
 Programmazione orientata ad oggetti OOP (Object-Oriented Programming)
 costruttore
@@ -25,30 +25,28 @@ l'incapsulamento
 metodi
 attributi
 l'UML (Unified Modelling Language)
-diagramma ER 
-DBSM (DataBase Managment System) e NoSQL
-La Chiave Univoca, Foreing key e Primary key
-cosa fa una query
-che tabelle va a intaccare
-Form html
-javascript
-Client e Server
-Il Web Server cosa fa
-Il DB cosa fa
++diagramma ER 
++DBSM (DataBase Managment System) e NoSQL
++La Chiave Univoca, Foreing key e Primary key
++cosa fa una query
++che tabelle va a intaccare
++Form html
++javascript
++Client e Server
 Interfaccia utente
 CLI
 la peculiarita' della programmazione, Input e Output in python
-tempo di esecuzione, prestazioni
-la sicurezza informatica
++tempo di esecuzione, prestazioni
++la sicurezza informatica
 github
 git
-SQL
-Flask
-HTTP, API e Sicurezza
++SQL
++Flask
++HTTP, API e Sicurezza
 ACID
 Analisi dei Requisiti
 Vincoli di Integrità
-Sicurezza (Autenticazione, Autorizzazione, Audit)
-API e REST
-Endpoint (HTML)
++Sicurezza (Autenticazione, Autorizzazione, Audit)
++API e REST
++Endpoint (HTML)
 Deployment (rilascio di un codice)
