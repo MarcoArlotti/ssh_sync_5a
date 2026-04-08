@@ -142,9 +142,62 @@ Il PM deve essere chiaro nella comunicazione, cercando feedback.
 
 Il PM segue 2 fondamentali attivita':
 1. l'attivita' di reporting
-    e' l'attivita' di diffusione delle informazioni,
-    la generazione di reporting sul progetto in corso.
-    I report sono relazini scritte contenenti rappresentazioni grafiche o presentazioni.
+    >e' l'attivita' di diffusione delle informazioni,
+    >la generazione di reporting sul progetto in corso.
+    >I report sono relazini scritte contenenti rappresentazioni grafiche o presentazioni.
+    >
+    >Contenenti informazioni sullo sviluppo di progetto e va deciso:
+    >- ogni quanto emettere report,
+    >- quali informazioni mettere,
+    >- chi saranno i destinatari del report.
+    >
+    >deve contenere anche:
+    >- diagrammi di avanzamento,
+    >- andamento dei costi,
+    >- la efficenza ottenuta.
 
-    Contenenti informazioni sullo sviluppo di progetto
 2. le riunioni formalizzate
+    >le riunioni sono fondamentali, soprattutto nelle fasi iniziali
+    >si deve condividere informazioni sull'avanzamento del progetto e nell'accordarsi sulle decisioni intermedie.
+    >
+    >Il PM e' chiave a decidere come organizzare i meeting e gli obbiettivi del meeting.
+
+### Soggetti coinvolti nella comunicazione del progetto
+I soggetti coinvolti nella comunicazione sono:
+1. il project manager:
+    e' responsabile nel decidere l'obbiettivo da seguire.
+2. il programme board:
+    Nelle organizzazioni grandi che lavorano per progetti e fa da cordinamento e appare periodicamente per far esercitare tutti i progetti in corso.
+
+    Lui deve revisionare le priorita' dei vari progetti.
+
+3. il project manager office (PMO):
+    In situazioni di multiprogetto,
+    si usa il PMO composto da un gruppo di specialisti in tecniche di project managment, per supportare il PM.
+
+4. i membri del team:
+    Sono specialisti che portano a termine un compito, e devono informare i PM sulla situazione nel progetto.
+
+5. i consulenti:
+    Sono specialisti interni o esterni e servono per competenze specifiche che non ci sono all'interno della azienda.
+
+6. gli stackeholder:
+    Sono un gruppo di persone detto stearing committee che regolamentano il progetto e sono interessate al successo del progetto, gli stackeholder sono interessati all'output finale.
+
+7. gli sponsor:
+    Sono le persone che hanno voluto il progetto e lo supporta finanziandolo e vengono informati anche loro sulla situazine del progetto.
+
+8. gli utilizzatori finali:
+    e' un impresa o individuo che tranno benefici dall'output del progetto e decidono sul progetto.
+
+---
+### la comunicazione tra persone
+La comunicazione avviene tramite strumenti software o hardware per lo scambio delle informazioni tra persone che puo' basarsi su posta elettronica o sul web.
+
+I membri del gruppo possono vedere:
+- diagrammi delle loro attivita'
+- vedere le informazioni ul progetto,
+- creare nuove attivita' e inviarle al PM per essere sincronizzate con tutti i sistemi,
+- accettare automaticamente gli aggiornamenti del progetto.
+
+## la stima dei costi
