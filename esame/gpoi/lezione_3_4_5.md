@@ -201,3 +201,4 @@ I membri del gruppo possono vedere:
 - accettare automaticamente gli aggiornamenti del progetto.
 
 ## la stima dei costi
+
