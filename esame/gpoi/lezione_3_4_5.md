@@ -202,3 +202,106 @@ I membri del gruppo possono vedere:
 
 ## la stima dei costi
 
+Il PM in olte e' responsabile anche per i costi e delle risorse impiegate nel progetto.
+
+I costi vanno guardati per tutto il proseguimento del progetto,
+la stima dei costi puo' essere analogica o parametrica.
+
+Una stima parametrica e' piu' precisa se si basa su:
+- informazioni storiche accurate,
+- modelli matematici quantificabili,
+- se il modello e' scalabile.
+
+La analogica segue due stime per i costi:
+- BOTTOM-UP:
+    La valutazione dei costi di ogni livello della WBS e' effettuata da ogni livello gerartico del progetto
+- TOP-DOWN:
+    Viene data al progetto una somma di denaro, poi viene divisa nei vari sottoprogetti.
+---
+Ogni stima dei costi va documentata in un documento che contiene:
+
+- a che attivita' appartiene,
+- come si ha ottenuto la stima dei costi,
+- i vincoli delle attivita',
+- la stima in un determinato intervallo.
+
+La fase di stima e' detta **cost estimating** che arrriva a generare un budget totale di spesa.
+
+il budget e' poi diviso in una baseline e il margine di sicurezza (in caso di imprevisti).
+
+Questa baseline forma una curva a forma di S.
+di cui viene impostata mettendo il ***costo*** nella Y e il ***tempo (in settimane)*** nella X.
+
+La baseline e' anche chiamata BCWS (Budgeted Cost of work Scheduled) cioe' rappresenta il valore economico del lavoro che si aveva pianificato di completare entro una data specifica.
+Senza la BCWS non si saprebbe se si e' in ritardo o no.
+
+Se si mette in confronto lo stato di avanzamento del progetto e' detto tecnica di tempificazione del budget (Actual Erned Value).
+
+In piu' esiste anche il cost control che aggiunge 2 curve:
+1. La ACWP (Actual Cost of Work Performed):
+    e' noto anche come Actual Cost (AC), rappresenta il costo totale realmente sostenuto (e registrato) per completare il lavoro svolto fino a quel momento.
+    
+2. BCWP (Budgeted Cost of Work Performed):
+    Il BCWP, noto anche come Earned Value (EV), rappresenta il valore monetario del lavoro effettivamente completato fino a una certa data, calcolato in base al budget originario(no soldi spesi davvero).
+
+ACWP e BCWP misura quanto si sta sforando nei costi detto CV (Cost Variance).
+BCWS e BCWP indica il ritardo temporale detto SV (Scheduled Variance).
+
+---
+
+Per avviare un progetto, ci vorranno dei costi di costruzione che si dividono in:
+#### costi di costruzione INTERNI:
+1. ***costi di costruzione INTERNI diretti:*** sono i costi delle attivita' del personale
+    e crescono linearmente con la complessita' del sistema.
+
+2. ***costi di costruzione INTERNI indotti:*** i costi delle varie riunioni del personale   
+    per il nuovo sistema da implementare e sono collegati al tempo.
+
+#### costi di costruzione ESTERNI:
+derivano dall'acquisizione di prodotti e servizi terzi.
+
+#### costi di avviamento:
+si dividono in:
+1. **costi di avviamento INTERNI diretti:** che sono quelli del gruppo di lavoro.
+2. **costi di avviamento INTERNI indotti:** sono sostenuti dalla struttura.
+3. **costi di avviamento ESTERNI:** il costo dell'hardware per avviare il sistema.
+---
+
+## Il risk managment
+Ogni cambaimento comporta ad un rischio per l'azienda.
+
+Per gestire i rischi si deve (modo reattivo, non hanno una prevenzione):
+- gestire le crisi,
+- correggere gli errori fatti,
+- si compensa aggiungendo risorse in piu'.
+
+e' preferibile che:
+- si prevedono i rischi futuri mettendo in atto misure,
+- eliminando le cause di rischio.
+
+Per prevedere i rischi si segue:
+1. fase di identificazione: si elencano le fasi di rischio
+2. fase di analisi: valutare l'impatto che possono causare
+3. fase di definizione delle priorita': dargli una priorita' in base alla pericolosita'
+
+Una volta trovati i fattori di rischio, 
+e' consigliabile:
+- rivolgersi a partner piu' affidabili,
+- pianificare azioni di intervento nel progetto,
+- monitorare i rischi.
+
+## Analisi del rischio dei progetti informatici
+E' importante per un progetto informatico di verificare la fattibilita' del progetto.
+
+I piu' grandi fattori di incertezza sono:
+- Indeterminatezza:
+    cioe' di definire a priori come fare il progetto lato infrastrutturale di sistema.
+- Innovazione tecnica:
+    cioe' l'innovazione di un progetto fa creascere l'incertezza degli spercialisti.
+- Dimensione:
+    va valutata in base al numero del gruppo di lavoro, il budget e le funzionalita'
+
+Per ridurre il rischio si puo':
+- Diluire la complessita' del progetto aggiungendo piu' tempo.
+- Fare un progetto che se fallito avra' un danno su scala ridotta,
+- Aumentando il grado di innvazione.
