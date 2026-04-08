@@ -139,3 +139,12 @@ I gruppi di lavoro sono caratterizzati da un ciclo di sviluppo:
 ### La gestione della comunicazione
 
 Il PM deve essere chiaro nella comunicazione, cercando feedback.
+
+Il PM segue 2 fondamentali attivita':
+1. l'attivita' di reporting
+    e' l'attivita' di diffusione delle informazioni,
+    la generazione di reporting sul progetto in corso.
+    I report sono relazini scritte contenenti rappresentazioni grafiche o presentazioni.
+
+    Contenenti informazioni sullo sviluppo di progetto
+2. le riunioni formalizzate
