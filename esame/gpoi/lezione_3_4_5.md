@@ -20,31 +20,32 @@ Nella struttura funzionale il progetto viene scomposto in **sottoprogetti**.
 >- Marketing, 
 >- produzione...
 
-I **sottoprogetti** vengono assegnati alle specializzazzioni.
+I **sottoprogetti** vengono assegnati alle specializzazzioni cioe' le diverse aree aziendali.
 
-Il personale che viene coinvolto lavora a tempo parziale e viene gestito dai **manager funzionali**.
+Il personale lavora a tempo parziale e viene gestito dai **manager funzionali**.
 
 Sotto la direzione ci sono i responsabili funzinali (RF).
 
 All'inizio del progetto gli RF trovano insieme i sottoprogetti e decidono a chi assegnarli.
 
-Gli RF organizzano anche riunioni peridiche per verificare che si stia procedendo bene nel progetto.
+Gli RF decidono le assegnazioni e verificano l'avanzamento con riunioni periodiche.
 
-La stuttura funzionale e' semplice da gestire,
-ma puo' creare problemi di cordinamento e orientamento.
+***Pro/Contro: Semplice da gestire a livello gerarchico, ma può soffrire di scarso coordinamento tra le funzioni e perdita della visione d'insieme.***
 
 ---
 ### La Task force
 
-Nella Task force il progetto viene gestito come una unita' organizzativa autonoma.
+Il progetto è un’unità organizzativa autonoma.
 
 Tutte le risorse vengono riunite in un gruppo di lavoro che lavora a tempo pieno con a capo il Project Manager (PM).
 
-La Task force continua a esistere per tutta ladurata del progetto.
+La Task force continua a esistere per tutta la durata del progetto.
 
-Come vantaggio si hanno tutte le risorse che vengono focalizzate sul progetto, in questo modo facilitandone il cordinamento.
+Tutto il team è dedicato al progetto a tempo pieno sotto la direzione di un Project Manager (PM).
 
-Pero' essendo tutti dedicati al progetto, si hanno forti tempi di attesa durante i tempi morti del progetto (aspettare una risposta dal cliente).
+Pro/Contro: Massima focalizzazione e facilità di coordinamento. 
+
+Tuttavia, è costosa: si generano sprechi durante i "tempi morti" (es. attesa feedback cliente) perché le risorse non possono essere usate altrove.
 
 ---
 ### La struttura a matrice
@@ -52,9 +53,7 @@ Pero' essendo tutti dedicati al progetto, si hanno forti tempi di attesa durante
 la **struttura a matrice** cerca di unire i lati positivi delle 2 precedenti,
 mirando a ottenere sia l'*efficenza* della ***funzionale*** sia la *efficacia* della ***task force***.
 
-Come nella **task force** viene nominato un PM, pero' i membri del team **non** lavorano a tempo pieno e non vengono stacati dalle loro funzioni di apartenenza.
-
-Si formano gruppi di lavoro parziali multidisciplinari che seguono il PM.
+Esiste un PM, ma i membri del team non vengono staccati dalle loro funzioni di appartenenza (lavorano a tempo parziale o su più progetti).
 
 Il progetto viene gestito dal PM e le attivita' vengono gestite dal RF.
 
@@ -104,8 +103,8 @@ Il conflitto all'interno di un progetto e' inevitabile e necessario.
 
 >Da un conflitto si puo' generare:
 >- **un compromesso**: dare qualcosa per ottenerne un altra,
->- **una pressione**: cercare di far valere la propria opinione,
->- **un confronto**: cercare un punto di incontro dentro ad un conflitto.
+>- **una pressione**: cercare di far valere la propria autorita',
+>- **un confronto**: cercare un punto di incontro dentro ad un conflitto per trovare una soluzione condivisa (approccio migliore).
 
 Durante un conflitto il gruppo si divide in chi e' pro e chi contro.
 
@@ -130,11 +129,11 @@ ed lo si forma seguendo:
 - problem solving e trasparenza.
 ...
 
-I gruppi di lavoro sono caratterizzati da un ciclo di sviluppo:
+Sviluppo del gruppo (Modello di Tuckman):
 1. **FORMING**: fase di orientamento, dove si ha un gruppo di persone insicure.
-2. **STORMING**: fase di conflitti.
+2. **STORMING**: Emergono conflitti e lotte di potere.
 3. **NORMING**: si forma una coesione, con un elevato confronto.
-4. **PERFORMING**: si ha creato il gruppo, gli individui si senton un team.
+4. **PERFORMING**: si ha creato il gruppo, gli individui si sentono un team, e saranno al massimo delle loro performance.
 
 ### La gestione della comunicazione
 
@@ -182,7 +181,7 @@ I soggetti coinvolti nella comunicazione sono:
     Sono specialisti interni o esterni e servono per competenze specifiche che non ci sono all'interno della azienda.
 
 6. gli stackeholder:
-    Sono un gruppo di persone detto stearing committee che regolamentano il progetto e sono interessate al successo del progetto, gli stackeholder sono interessati all'output finale.
+    Sono un gruppo di persone Portatori di interesse nel progetto.
 
 7. gli sponsor:
     Sono le persone che hanno voluto il progetto e lo supporta finanziandolo e vengono informati anche loro sulla situazine del progetto.
@@ -214,7 +213,7 @@ Una stima parametrica e' piu' precisa se si basa su:
 
 La analogica segue due stime per i costi:
 - BOTTOM-UP:
-    La valutazione dei costi di ogni livello della WBS e' effettuata da ogni livello gerartico del progetto
+    Si stimano i costi delle singole attività (WBS) e si sommano verso l'alto
 - TOP-DOWN:
     Viene data al progetto una somma di denaro, poi viene divisa nei vari sottoprogetti.
 ---
@@ -232,20 +231,21 @@ il budget e' poi diviso in una baseline e il margine di sicurezza (in caso di im
 Questa baseline forma una curva a forma di S.
 di cui viene impostata mettendo il ***costo*** nella Y e il ***tempo (in settimane)*** nella X.
 
-La baseline e' anche chiamata BCWS (Budgeted Cost of work Scheduled) cioe' rappresenta il valore economico del lavoro che si aveva pianificato di completare entro una data specifica.
-Senza la BCWS non si saprebbe se si e' in ritardo o no.
+La baseline e' anche chiamata BCWS (Budgeted Cost of work Scheduled) Valore del lavoro che si pianificava di fare.
 
 Se si mette in confronto lo stato di avanzamento del progetto e' detto tecnica di tempificazione del budget (Actual Erned Value).
 
 In piu' esiste anche il cost control che aggiunge 2 curve:
 1. La ACWP (Actual Cost of Work Performed):
-    e' noto anche come Actual Cost (AC), rappresenta il costo totale realmente sostenuto (e registrato) per completare il lavoro svolto fino a quel momento.
+    e' noto anche come Actual Cost (AC),
+    costo realmente sostenuto per il lavoro fatto
     
 2. BCWP (Budgeted Cost of Work Performed):
-    Il BCWP, noto anche come Earned Value (EV), rappresenta il valore monetario del lavoro effettivamente completato fino a una certa data, calcolato in base al budget originario(no soldi spesi davvero).
+    Il BCWP, noto anche come Earned Value (EV),
+    Valore del lavoro effettivamente completato.
 
-ACWP e BCWP misura quanto si sta sforando nei costi detto CV (Cost Variance).
-BCWS e BCWP indica il ritardo temporale detto SV (Scheduled Variance).
+CV (Cost Variance) = BCWP−ACWP: Se negativo, siamo fuori budget (stiamo spendendo troppo).
+SV (Schedule Variance) = BCWP−BCWS: Se negativo, siamo in ritardo rispetto ai tempi.
 
 ---
 
@@ -268,7 +268,7 @@ si dividono in:
 ---
 
 ## Il risk managment
-Ogni cambaimento comporta ad un rischio per l'azienda.
+Il rischio va gestito in modo proattivo, non solo reattivo.
 
 Per gestire i rischi si deve (modo reattivo, non hanno una prevenzione):
 - gestire le crisi,
