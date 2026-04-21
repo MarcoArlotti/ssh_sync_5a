@@ -50,3 +50,4 @@ Vincoli di Integrità
 +API e REST
 +Endpoint (HTML)
 Deployment (rilascio di un codice)
+documento dei Requisiti
