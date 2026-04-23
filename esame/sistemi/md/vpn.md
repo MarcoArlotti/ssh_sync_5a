@@ -52,6 +52,8 @@ La SITE-TO-SITE VPN si divide principalmente in:
 ## La sicurezza delle VPN
 Come mezzo le VPN usano la rete pubblica e' neccessario che il traffico venga crittografato.
 
+Passando per una rete pubblica, i pacchetti devono mantenere la propria integrita' e autenticita'.
+
 Il passi che una VPN deve seguire sono:
 
 ### 1. Autenticazione degli utenti (autenticazione)
@@ -65,5 +67,24 @@ che aggiunge un livello in piu' di sicurezza,
 
 >In passato si usava che l'utente scriva un codice generato tramite una chiave elettronica (KEY FOB) che cambiava ogni volta.
 >
->Ma ora si utilizzano applicazioni smart
+>Ma ora si utilizzano applicazioni da smartphone che generano un OTP (One Time Password) che genera una sequenza di caratteri casuali da inserire, o direttamente l'impronta di un dito (Fingerprint), o un QR code.
 
+Solo dopo aver eseguito l'autenticazione, all'utente viene concessa l'autorizzazzione per usare i servizi della rete.
+
+Grazie all'autenticazione si possono apportare misure di accounting per salvarsi i vari accessi e la quantita' di dati in entrata e uscita,
+tempi di utilizzo dei vari utenti (durata di sessione per tariffare l'utilizzo della rete) e quali risorse si hanno usato attraverso dei file di log.
+
+---
+
+## 2. Cifratura dei dati (CRITTOGRAFIA)
+
+Le VPN utilizzano il protocollo IKE (Internet Key Exchange), che ha lo scopo di automatizzare lo scambio delle chiavi.
+
+# TODO ip sec
+
+## 3. TUNNELING o MODALITA' TRASPORTO
+In modalita' trasporto, e' compito del software a collegarsi alla VPN e soprattutto questo approccio rende compatibile la VPN con qualunque ISP della rete,
+in quanto cifratura e decifratura verra' gestita dal software,
+Lasciando in chiaro solamente le informazioni per instradare il pacchetto.
+
+Invece con il TUNNELING si utilizzano gli apparati di rete, in particolare i FIREWALL e ROUTER, questo approccio nasconde all'utente la presenza di una VPN, in questa modalita'
