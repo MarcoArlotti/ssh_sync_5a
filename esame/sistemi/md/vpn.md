@@ -45,4 +45,25 @@ La SITE-TO-SITE VPN si divide principalmente in:
 - INTRANET BASED:
     >Una rete intranet collega 2 sedi in una unica.
 - EXTRANET BASED:
-    >Se l'azienda ha un rapporto stretto con un altra azienda esterna, EXTRANET permette di lavorare insieme in modo sicuro condividendo le risorse, senza dando l'accesso completo a tutto.
+    >Se l'azienda ha un rapporto stretto con un altra azienda esterna, EXTRANET permette di lavorare insieme in modo sicuro condividendo le risorse, senza dando l'accesso  preventivo e completo a tutto.
+
+---
+
+## La sicurezza delle VPN
+Come mezzo le VPN usano la rete pubblica e' neccessario che il traffico venga crittografato.
+
+Il passi che una VPN deve seguire sono:
+
+### 1. Autenticazione degli utenti (autenticazione)
+Le VPN possono essere usati solo da determinati utenti,
+quindi bisogna verificarnr la corretta identita' per l'accesso ad essa con un autenticazione.
+
+Cio lo si fa tramite server NAS con un processo di autenticazione, o uno dedicato come l'AAA.
+
+L'autenticazione ad una VPN sfrutta una MFA (Multy Factor Authentication),
+che aggiunge un livello in piu' di sicurezza,
+
+>In passato si usava che l'utente scriva un codice generato tramite una chiave elettronica (KEY FOB) che cambiava ogni volta.
+>
+>Ma ora si utilizzano applicazioni smart
+
