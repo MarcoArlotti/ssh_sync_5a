@@ -17,7 +17,7 @@ Tramite i THREAD si ha potuto trovare errori nella pianificazione originale del 
 gantt
     title schedule dei tempi stimati per lo sviluppo del progetto - Maggio/Giugno 2026
     dateFormat  YYYY-MM-DD
-    axisFormat  %d-%m
+    axisFormat  %y-%m-%d
     
     section Analisi Applicazioni (Backend)
     Scansione App (Pontellini, Kamil)          :a1, 2026-05-01, 3d
