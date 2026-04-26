@@ -53,7 +53,12 @@ Fu apprezzato da tutto il mondo, tanto che pubblico nel 1922 i primi 4 volumi de
 Nel 1922 abbandono gli insegnamento e viaggio' in europa e america, per mettere in scena le suo opere facendo da ruolo di Regia, viaggiando costantemente si diede il nome di Viaggiatore Senza Bagagli.
 
 Nel 1924 si iscrisse al partito fascista e firmo' il Manifesto degli Intellettuali Fascisti di Gentile,
-e sempre nello stesso anno la compagnia Teatro d'Arte di Roma in cui lavorava suo figlio stefano.
+
+Lo fece per fasi finanziare da mussolini, e mantenere il teatro.
+
+Ma lui ebbe un disguido con Mussolini perche' smise di finanziarlo economicamente.
+
+Nello stesso anno la compagnia Teatro d'Arte di Roma in cui lavorava suo figlio stefano.
 
 Infine nel 1934 ricevette il premio Nobel per la letteratura, ma 2 anni dopo mori'.
 
@@ -91,6 +96,24 @@ e lui decide di uciderlo,
 ma scopre che la moglie si era sposata con un altro, prende un posto in una bibblioteca polverosa da una sua zia,
 lui va per mettere i fiori sulla sua stessa tomba.
 
+#### Premessa
+
+all'inizio pascal si introduce alle persone come "io sono mattia pascal",
+ma ora si rivolge come "fu il mattia pascal".
+
+(parte ambentata nella biblioteca vuota della zia
+dove Pascal fa un monologo dove parla con gli spettatori,
+seguendo lo stile teatrale).
+Si presuppone che Pascal abbia scritto un manoscritto delle sue vicende.
+
+
+>Prima morte = lui che viene dato per morto
+>seconda = quando scappa e va nella biblioteca della zia
+
+#### La "lanterninosofia"
+
+il lanternio sono piccole filosofie perche' si ha smesso di credere nelle certezze
+
 #### struttura
 
 - 2 premesse iniziali,
@@ -116,7 +139,7 @@ Snodo tra la seconda e terza parte:
 - il tema del doppio che va avanti per tutto il romanzo.
 - la vita contro la forma (nella vita ogni persona si crea delle maschere, ogni persona vede in modo diverso la stessa persona.
 Quindi vincoli imposti da altri su come si deve vivere).
-- crisi delle certezze con `maledetto sia copernico` (l'uomo perde fiducia nella scienza, e l'uomo non e' a centro del l'universo [900]) si arriva ad una crisi totale.
+- crisi delle certezze con `maledetto sia copernico` (l'uomo perde fiducia nella scienza, e l'uomo non e' a centro del l'universo (900)) si arriva ad una crisi totale.
 
 ---
 ---
