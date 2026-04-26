@@ -91,7 +91,7 @@ i 3 principali protocolli che la compongono sono:
 
 - AH (Authentication Header):
     >che garantisce solo la AUTENTICAZIONE e la INTEGRITA' ma ***NON*** cifra il transito.
-- ESP (Encapsulating Securitu Payload):
+- ESP (Encapsulating Security Payload):
     > che comprende anche la CIFRATURA dei messaggi
 - IKE (Internet Key Exchange):
     > si occupa di gestire e scambiare le chiavi per la crittografia della comunicazione, e lavora al livello APPLICATION.
@@ -110,6 +110,54 @@ In questo modo il pacchetto da inviare usera' il suo routing, mentre il pacchett
 Le SA sono UNIDIREZIONALI, quindi si dovranno creare 2 SA in caso si voglia comunicare da entrambi i lati.
 
 Tutte le SA sono salvate all'interno di un SAD (Security Association Database), mentre le politiche di sicurezza (quali ip scartare) vengono salvate nel SPD (Security Policy Database).
+
+### 1. Traffico in Uscita (Outbound)
+*Outbound segue le fasi:*
+1. ***Il Controllo SPD***:
+Quando un pacchetto deve uscire, il sistema consulta l'SPD, che puo' causare tre esiti possibili:
+
+    1. Il pacchetto viene scartato (firewall).
+
+    2. Il pacchetto passa senza IPsec (traffico in chiaro).
+
+    3. Il pacchetto deve essere protetto da IPsec.
+
+2. ***Associazione al SAD***:
+Se l'esito è il (3), si cerca nel SAD (Security Association Database) se esiste già una SA (una "connessione sicura") attiva per quel tipo di traffico.
+
+    1. Se esiste: Si usa la chiave e l'algoritmo già pronti.
+
+    2. Se NON esiste: Si avvia il protocollo IKE (Internet Key Exchange) per negoziare le chiavi in tempo reale, creare la SA e registrarla nel SAD.
+
+3. ***Fase di Trasformazione***:
+Solo a questo punto il pacchetto viene processato (Cifratura/Autenticazione) e incapsulato.
+
+### Traffico in ingresso (inbound)
+
+In ingresso il processo è "inverso", ma con un controllo di sicurezza fondamentale alla fine:
+
+1. ***Riassemblaggio***:
+Corretto. Se il pacchetto è frammentato, va ricomposto prima di poter leggere gli header IPsec.
+
+2. ***Identificazione***:
+Il ricevente vede che il protocollo nell'header IP non è TCP o UDP, ma ESP (50) o AH (51).
+
+3. ***Lookup tramite SPI***:
+Qui c'è un dettaglio importante. Per trovare la SA giusta nel SAD, il ricevente usa una "tripletta" di valori:
+
+    1. SPI (Security Parameters Index) – che si trova nell'header ESP/AH.
+
+    2. Indirizzo IP Destinazione.
+
+    3. Protocollo di sicurezza (AH o ESP).
+
+4. ***Decapsulamento***:
+Una volta trovata la SA, il pacchetto viene decifrato e autenticato.
+
+5. ***Il controllo finale dell'SPD (Fondamentale)***:
+Questo è il punto che spesso sfugge. Dopo aver "estratto" il pacchetto originale, il sistema ricontrolla l'SPD. Perché? Per verificare che quel pacchetto sia effettivamente arrivato con la protezione corretta.
+
+
 ## 3. TUNNEL o MODALITA' TRASPORTO
 In modalita' trasporto, e' compito del software a collegarsi alla VPN e soprattutto questo approccio rende compatibile la VPN con qualunque ISP della rete,
 in quanto cifratura e decifratura verra' gestita dal software,
@@ -124,3 +172,4 @@ I dispositivi che fanno questo compito sono detti tunnel interface.
 3. IPV4 fa da CARRIER PROTOCOL.
 
 I due router in entrata delle LAN deve essere di tipo DUAL STACK in modo da poter comprendere sia IPV6 che IPV4.
+
