@@ -293,3 +293,29 @@ La lable di BGP/MPLS e' composta da:
     Indirizza il pacchetto verso il next hop per la rete BGP/MPLS di cui conterra' l'identificativo del prossimo PE che dovra' attraversare.
 - parte interna:
     Viene indicato il nodo di uscita dalla rete BGP/MPLS.
+
+## VPN di fiducia e SECURE VPN
+
+Le VPN son divise in:
+- Trusted VPN:
+    La Trusted si affida al ISP per occuparsi di tutto per gestire la VPN.
+    Non usa tunneling o altro, ma garantisce tunnel dedicati, garantendone la sicurezza.
+
+    Al layer 2 si usano ATM e tecnologia BGP/MPLS.
+    Al layer 3 si usa BGP/MPLS con limitate informazioni.
+
+- Secured VPN:
+    Le Secured utilizzano il TUNNELING e la CIFRATURA.
+    La Secured pu' usare i protocolli:
+    - IPsec
+    - SSL/TLS
+    - PPTP
+    - SOCKS
+    - L2TP
+    - L2TPv3
+    - BGP/MPLS
+
+- Hybrid VPN:
+    Le hybrid uniscono i protocolli della Secured e la applicano alla Trusted:
+    - La secured assicura la protezione, ma non i percorsi.
+    - La Trusted assicura i percorsi, ma non la sicurezza.
