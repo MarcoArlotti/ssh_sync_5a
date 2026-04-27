@@ -21,11 +21,14 @@ Esistono 2 tipi principali di VPN:
 >E' soprattutto usata per collegare piccole sedi o pochi dipendenti alla LAN principale.
 
 I singoli utenti si collegano ad un server di accesso detto NAS
-> NAS (NETWORK ACCESS SERVER)  che puo' essere dell'HARWARE dedicato o una semplice applicazione eseguita in un server condiviso.
+> NAS (NETWORK ACCESS SERVER) che puo' essere dell'HARWARE dedicato o una semplice applicazione eseguita in un server condiviso.
 >
 >Il NAS chiede le credenziali all'utente, che se valide, gli permettera' di usare la VPN.
 
 Il *NAS* per verificare la autenticazione puo' appoggiarsi ad un `RADIUS AAA SERVER` che lo fa al posto suo.
+
+> il RADIUS server oltre all'autenticazione, il RADIUS è fondamentale per l'Accounting. Nelle VPN aziendali, serve a generare log legali: chi si è connesso, da quale IP pubblico, a che ora e per quanto tempo. Questo è vitale per la sicurezza post-incidente.
+
 ***AAA*** sta per:
 - `Authentication` (verifica gli accessi),
 - `Authorization` (verifica cio' che e' permesso),
@@ -39,7 +42,7 @@ In piu' per funzionare, il client dovra' munirsi di un software VPN client.
 ## 2. SITE-TO-SITE VPN
 >Si usa principalmente per collegare 2 sedi grosse insieme permettendogli di condividere le risorse (stampanti, pc, archivio).
 
-Le VPN site to site eliminano la necessita' di avere una applicazione client VPN per ogni CLIENT.
+nelle Site-to-Site, i singoli PC non sanno di essere in una VPN. Il tunnel è "trasparente" e viene gestito interamente dai gateway (Router/Firewall).
 
 La SITE-TO-SITE VPN si divide principalmente in:
 - INTRANET BASED:
@@ -94,22 +97,24 @@ Lasciando in chiaro solamente le informazioni per instradare il pacchetto.
 ### Tunnel
 Invece con il TUNNELING si utilizzano gli apparati di rete, in particolare i FIREWALL e ROUTER, questo approccio nasconde all'utente la presenza di una VPN, in questa modalita' gli apparati di rete apposta modificano il traffico della VPN incapsulandolo in un pacchetto, proteggiendo cosi' il pacchetto originale proteggendolo completamente, mostrando cosi' solo quello esterno.
 
-I dispositivi che fanno questo compito sono detti tunnel interface.
+- Passenger Protocol: È il pacchetto originale (es. il pacchetto del dipendente che vuole stampare).
+- Encapsulating Protocol: È il protocollo che protegge (es. IPsec).
+- Carrier Protocol: È il protocollo che trasporta il tutto sulla rete pubblica (es. IPv4).
 
-1. IPV6 fa da PASSENGER PROTOCOL,
-2. IPsec fa da TUNNELING PROTOCOL,
-3. IPV4 fa da CARRIER PROTOCOL.
-
-I due router in entrata delle LAN deve essere di tipo DUAL STACK in modo da poter comprendere sia IPV6 che IPV4.
+I due router in entrata delle LAN deve essere di tipo DUAL STACK in modo da poter comprendere sia IPV6 che IPV4 e soprattutto il tunneling serve proprio a far passare protocolli che altrimenti non viaggerebbero su Internet (come il multicast o protocolli non instradabili).
 
 ## - IPsec
 IPsec non e' solo un protocollo ma e' una vera e propria architettura di sicurezza del livello NETWORK,
 i 3 principali protocolli che la compongono sono:
 
 - AH (Authentication Header):
-    >che garantisce solo la AUTENTICAZIONE e la INTEGRITA' ma ***NON*** cifra il transito.
+    che garantisce solo la AUTENTICAZIONE e la INTEGRITA' ma ***NON*** cifra il transito.
+    
+    > AH è quasi in disuso. Il motivo è che AH fallisce se attraversa un router che fa NAT (Network Address Translation), perché AH valida anche l'header IP esterno. Se il NAT cambia l'indirizzo IP, il controllo di integrità di AH fallisce.
+
 - ESP (Encapsulating Security Payload):
-    > che comprende anche la CIFRATURA dei messaggi
+    > che comprende anche la CIFRATURA dei messaggi.
+
 - IKE (Internet Key Exchange):
     > si occupa di gestire e scambiare le chiavi per la crittografia della comunicazione, e lavora al livello APPLICATION.
 
@@ -163,6 +168,7 @@ Il ricevente vede che il protocollo nell'header IP non è TCP o UDP, ma ESP (50)
 Qui c'è un dettaglio importante. Per trovare la SA giusta nel SAD, il ricevente usa una "tripletta" di valori:
 
     1. SPI (Security Parameters Index) – che si trova nell'header ESP/AH.
+        > la SPI (Security Parameter Index) è come un "ID della sessione" che permette al ricevente di capire istantaneamente quale chiave usare per decifrare quel pacchetto specifico.
 
     2. Indirizzo IP Destinazione.
 
@@ -218,9 +224,12 @@ IKE realizza un collegamento peer-to-peer in due fasi:
 ## SSL/TLS VPN
 Una valida alternativa a IPsec e' SSL/TLS (Secure Sockets Layer/Trasport Layer Security).
 
->Le differenze sono marginali tra SSL/TLS e IPsec
+>Le differenze sono marginali tra SSL/TLS e IPsec:
+ma uno dei grandi vantaggi di SSL/TLS è che può funzionare senza software installato, usando solo il browser (Portal VPN).
+>
+>IPsec invece richiede quasi sempre un software dedicato.
 
-TLS lavora al livello session dello stack ISO/OSI.
+SSL/TLS opera tecnicamente sopra il livello Transport (TCP).
 
 SSL/TLS e' composto da due livelli:
 - Record Protocol:
@@ -283,9 +292,11 @@ Le reti BGP/MPLS sono PEER to PEER.
 Per trasferire i pacchetti tra 2 siti di una VPN, il PE incapsulera' (TUNNELING)
 i pacchetti in transito dal CE.
 
-Le reti BGP/MPLS devono funzionare anche tra diversi utenti simultaneamente (gestendo piu' VPN alla volta).
-Quando al PE arriva un pacchetto da un CE, lo instrada tramite regole di FORWARDING della VPN (VRF VPN routing and forwarding),
-il PE quindi dovra' gestire tot tabelle in base a quanti utilizzatori diversi (tutte compagnie diverse che non sono della stessa rete) si hanno.
+> VRF (VPN Routing and Forwarding): il router del provider (PE) viene diviso in tanti "router virtuali" indipendenti.
+Ogni azienda ha la sua tabella di routing privata (VRF) dentro il router del provider.
+>
+>Questo evita che il traffico di una azienda si mischi con un altra.
+>il PE quindi dovra' gestire tot tabelle in base a quanti utilizzatori diversi si hanno.
 
 Un PE possiede anche la GFT (Global Forwarding Table) che gli permette di indirizzare i pacchetti verso un altro PE usando un sistema di Lable.
 La lable di BGP/MPLS e' composta da:
