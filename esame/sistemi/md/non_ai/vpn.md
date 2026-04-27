@@ -214,3 +214,82 @@ IKE realizza un collegamento peer-to-peer in due fasi:
         I 2 host creano una nuova SA per IKE stesso (IKE SA), che verra' usata per creare nuove SA in modo sicuro.
     2. fase 2:
         Si usa la IKE SA creata per negoziare le altre SA da usare per gli altri protocolli.
+
+## SSL/TLS VPN
+Una valida alternativa a IPsec e' SSL/TLS (Secure Sockets Layer/Trasport Layer Security).
+
+>Le differenze sono marginali tra SSL/TLS e IPsec
+
+TLS lavora al livello session dello stack ISO/OSI.
+
+SSL/TLS e' composto da due livelli:
+- Record Protocol:
+    Opera sopra un protocollo di livello Trasport ed incapsula i protocolli di livello superiore.
+- Handshake Protocol:
+    Si occupa di negoziare:
+    si autentica con L'interlocutore e si stabilisce una crittografia comune.
+    Al posto che IKE si usa il protocollo di SSL/TLS per creare le chavi per il Tunneling.
+
+SSL/TLS lavora tramite client/server e autentica il server da parte del client da parte del client pero'
+e' opzionale che il client si autentichi al server.
+
+L'Autenticazione si basa su i certificai digitali,
+il server invia il certificato tramite firma digitale.
+
+I passi della connessìone sono:
+1. Client -> Server:
+    Il client invia al server la richiesta per la connessione e la lista  di algoritmi di crittografia supportati,
+    poi si crea un valore random detto PRE-MASTER KEY.
+
+    Che a sua volta servira' a generare la chiave privata comune ad entrambi.
+
+2. SERVER -> CLIENT:
+    Il server invia al client il proprio certificato digitale e la scelta degli algoritmi di crittografia,
+    e infine invia il suo valore casuale per generare la PRE-MASTER KEY,
+    e richiede il certificato del client.
+
+3. CLIENT -> SERVER:
+    Il client verifica il certificato del server, se fallisce stacca la connessione, altrienti invia al server il certificato e la pre-master key cifrata con lachiave pubblica del server.
+    Poi inizia la comunicazione.
+
+4. SERVER -> CLIENT:
+    il server accetta il certificato e inizia la comunicazione cifrata.
+
+dopo il 3° punto il server e il client sono a posto per comunicare.
+
+### Confronto tra IPsec e SSL/TLS.
+Benche IPsec sia il piu' diffuso, rimane critica la fare dello scambio di chiavi durante l'IKE.
+In piu' IPsec deve richiedere un supporto lato sistema operativo, e SSL/TLS e' meno complicato di IPsec,
+IPsec offre diversi meccanismi di autenticazione, mentre ssl/tls offre certificati digitali.
+
+Pero' SSL/TLS offre una autenticazione Assimmentrica (senza aspettare il client).
+IPsec essendo PEER to PEER richiede autenticazione reciproca.
+IPsec e SSL lavorano a livelli differenti dello stack, permettendo a IPsec di proteggere sopra all'IP.
+
+## BGP/MPLS
+In una rete Multiprotocol Lable Switching, la parte della VPN viene gestita dai Service Provider,
+di cui usano:
+- CE (Customer Edge Router):
+    Quando si parla di CE si parla del Router in entrata/uscita delle varie sedi sparse,
+    che tramite il BGP (Border Gateway protocol) comunicano con il PE.
+
+- PE (provider Edge Router):
+    Il PE e' il router in ingresso/uscita del Provider della VPN.
+
+- P (Provider Core Router):
+    Fanno l'azione di instradare i pacchetti verso un PE (scelgono che strada dovranno seguire).
+
+Le reti BGP/MPLS sono PEER to PEER.
+Per trasferire i pacchetti tra 2 siti di una VPN, il PE incapsulera' (TUNNELING)
+i pacchetti in transito dal CE.
+
+Le reti BGP/MPLS devono funzionare anche tra diversi utenti simultaneamente (gestendo piu' VPN alla volta).
+Quando al PE arriva un pacchetto da un CE, lo instrada tramite regole di FORWARDING della VPN (VRF VPN routing and forwarding),
+il PE quindi dovra' gestire tot tabelle in base a quanti utilizzatori diversi (tutte compagnie diverse che non sono della stessa rete) si hanno.
+
+Un PE possiede anche la GFT (Global Forwarding Table) che gli permette di indirizzare i pacchetti verso un altro PE usando un sistema di Lable.
+La lable di BGP/MPLS e' composta da:
+- parte esterna:
+    Indirizza il pacchetto verso il next hop per la rete BGP/MPLS di cui conterra' l'identificativo del prossimo PE che dovra' attraversare.
+- parte interna:
+    Viene indicato il nodo di uscita dalla rete BGP/MPLS.

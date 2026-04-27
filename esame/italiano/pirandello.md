@@ -96,6 +96,17 @@ e lui decide di uciderlo,
 ma scopre che la moglie si era sposata con un altro, prende un posto in una bibblioteca polverosa da una sua zia,
 lui va per mettere i fiori sulla sua stessa tomba.
 
+---
+Ambientazione in parte immaginaria e luoghi reali,
+Roma che ha una ambientazione decadente
+
+La narrazione segue le un tempo fermo (tempo cristallizzato), in uno spazio morto (la bibliteca)
+
+Per pirandello e' impossibile ricavarsi un ruolo valido.
+
+Si hanno 2 premesse filosofiche (2 soglie)
+Il suo manoscritto che scrivera' lo lasciera' alla biblioteca.
+
 #### Premessa
 
 all'inizio pascal si introduce alle persone come "io sono mattia pascal",
@@ -112,7 +123,24 @@ Si presuppone che Pascal abbia scritto un manoscritto delle sue vicende.
 
 #### La "lanterninosofia"
 
-il lanternio sono piccole filosofie perche' si ha smesso di credere nelle certezze
+il lanternio e' il sentimento della coscienza, il "triste privilegio",
+che e' cio che ci differenzia dalle piante.
+
+
+Il laternino e' la prospettiva individuale della realta'.
+Il lanternone e' una ideologia collettiva.
+
+Lui dice che adesso sono in crisi gli ideali (Sono in scompiglio dei signoli lanternini).
+Essendu una visione singola non si riuscira' ad ottenere un orizzonte comune condiviso,
+lui paragona come un formicaio di formiche che si muovono a vanvera,
+
+```
+Oggi ci ritroviamo in un momento di lanternoni spenti,
+con una grande confusione.
+Lui si interroga, a chi bisogna interrogarci?
+Bisogna guardare indietro?
+```
+
 
 #### struttura
 

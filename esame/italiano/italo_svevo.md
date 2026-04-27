@@ -37,6 +37,7 @@ nella finzine scrive una autobiografia per raccontare della sua vita interiore s
     - il lavoro, 
     - ecc.
     in ogni capitolo parla di un tema diverso esi procedeva per associazini mentali.
+    
 ### la narrazione
 Si hanno 2 narratori:
 - il primo che narra per poco e' il dottor S.
