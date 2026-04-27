@@ -85,7 +85,24 @@ I principali protocolli che applicano la crittografia sono:
 - SSL/TLS (Secure Socket layer / Trasport Layer Security),
 - BGP/MPLS (Border Gateway Protocol / Multiprotocol Lable Switching).
 
-### - IPsec
+## 3. TUNNEL o MODALITA' TRASPORTO
+### Trasporto
+In modalita' trasporto, e' compito del software a collegarsi alla VPN e soprattutto questo approccio rende compatibile la VPN con qualunque ISP della rete,
+in quanto cifratura e decifratura verra' gestita dal software,
+Lasciando in chiaro solamente le informazioni per instradare il pacchetto.
+
+### Tunnel
+Invece con il TUNNELING si utilizzano gli apparati di rete, in particolare i FIREWALL e ROUTER, questo approccio nasconde all'utente la presenza di una VPN, in questa modalita' gli apparati di rete apposta modificano il traffico della VPN incapsulandolo in un pacchetto, proteggiendo cosi' il pacchetto originale proteggendolo completamente, mostrando cosi' solo quello esterno.
+
+I dispositivi che fanno questo compito sono detti tunnel interface.
+
+1. IPV6 fa da PASSENGER PROTOCOL,
+2. IPsec fa da TUNNELING PROTOCOL,
+3. IPV4 fa da CARRIER PROTOCOL.
+
+I due router in entrata delle LAN deve essere di tipo DUAL STACK in modo da poter comprendere sia IPV6 che IPV4.
+
+## - IPsec
 IPsec non e' solo un protocollo ma e' una vera e propria architettura di sicurezza del livello NETWORK,
 i 3 principali protocolli che la compongono sono:
 
@@ -157,19 +174,43 @@ Una volta trovata la SA, il pacchetto viene decifrato e autenticato.
 5. ***Il controllo finale dell'SPD (Fondamentale)***:
 Questo è il punto che spesso sfugge. Dopo aver "estratto" il pacchetto originale, il sistema ricontrolla l'SPD. Perché? Per verificare che quel pacchetto sia effettivamente arrivato con la protezione corretta.
 
+## - AH, ESP, IKE nel dettaglio
 
-## 3. TUNNEL o MODALITA' TRASPORTO
-In modalita' trasporto, e' compito del software a collegarsi alla VPN e soprattutto questo approccio rende compatibile la VPN con qualunque ISP della rete,
-in quanto cifratura e decifratura verra' gestita dal software,
-Lasciando in chiaro solamente le informazioni per instradare il pacchetto.
+### 1. AH (Authentication Header)
+AH fornisce:
+- autenticazione,
+- integrita'
 
-Invece con il TUNNELING si utilizzano gli apparati di rete, in particolare i FIREWALL e ROUTER, questo approccio nasconde all'utente la presenza di una VPN, in questa modalita' gli apparati di rete apposta modificano il traffico della VPN incapsulandolo in un pacchetto, proteggiendo cosi' il pacchetto originale proteggendolo completamente, mostrando cosi' solo quello esterno.
+>contro gli attacchi di tipo replay, in cui un malintenzionato mette in rete un pacchetto clonato precedentemente intercettandolo.
 
-I dispositivi che fanno questo compito sono detti tunnel interface.
+AH autentica l'intero pacchetto IP ad eccezzione dei campi variabili dell'header IP originale.
 
-1. IPV6 fa da PASSENGER PROTOCOL,
-2. IPsec fa da TUNNELING PROTOCOL,
-3. IPV4 fa da CARRIER PROTOCOL.
+AH aggiunge il campo SPI (Security Parameters Index) che contiene un valore numerico che insieme con l'IP di destinazione e il protocollo AH identifica la SA usata.
 
-I due router in entrata delle LAN deve essere di tipo DUAL STACK in modo da poter comprendere sia IPV6 che IPV4.
+In modalita' tunnel l'intero pacchetto e' incapsulato in un nuovo pacchetto autenticandolo tutto nel processo.
 
+### 2. ESP (Encapsulating Security Payload)
+
+ESP aggiunge la crittografia che manca ad AH.
+
+A contrario di AH, ESP non authentica tutto il pacchetto, non coprendo l'header IP:
+> 1. in trasporto l'header ip originale e' in chiaro.
+
+> 2. in tunnel l'header originale viene cifrato ma quello esterno no.
+
+ESP all'interno del pacchetto aggiunge:
+- HEADER ESP (per incapsulare)
+- TRAILER ESP (per incapsulare)
+- AUTHENTICATION ESP (per autenticare)
+
+Simile ad AH, nell'header ESP  e' presente il campo SPI che identifica la SA usata per quel pacchetto.
+
+### 3. IKE (Internet Key Exchange)
+Le SA possono essere fatte manualmente, ma non e' fisicamente fattible, come soluzione si usa IKE.
+IKE si occupa di creare delle nuove SA ogni volta che serva.
+
+IKE realizza un collegamento peer-to-peer in due fasi:
+    1. fase 1:
+        I 2 host creano una nuova SA per IKE stesso (IKE SA), che verra' usata per creare nuove SA in modo sicuro.
+    2. fase 2:
+        Si usa la IKE SA creata per negoziare le altre SA da usare per gli altri protocolli.
