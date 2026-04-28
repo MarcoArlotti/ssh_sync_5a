@@ -1,0 +1,404 @@
+<!DOCTYPE html><html><head>
+      <title>vpn</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/arlo/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.24/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-details{margin:0;padding:0;border:none}.markdown-preview .md-toc summary.md-toc-link-wrapper{cursor:pointer;list-style-position:outside}.markdown-preview .md-toc summary.md-toc-link-wrapper::marker{font-size:.85em}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='0']{margin-left:12px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='1']{margin-left:28px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='2']{margin-left:44px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='3']{margin-left:60px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='4']{margin-left:76px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='5']{margin-left:80px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-details{margin:0;padding:0;border:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='0']{padding-left:0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='1']{padding-left:16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='2']{padding-left:32px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='3']{padding-left:48px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='4']{padding-left:64px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='5']{padding-left:80px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="le-vpn">LE VPN </h1>
+<p>Le VPN nascono per collegare piu' aziende o singoli dipendenti alla rete privata di una sede principale di una azienda proprio come se fossero collegati fisicamente alla rete.</p>
+<blockquote>
+<p>aprendo le porte allo SMART WORKING, cioe' un dipendente che lavore da remoto.</p>
+</blockquote>
+<p>La parte piu' importante di una VPN e' la sicurezza,<br>
+per collegare insieme le sedi al posto che piazzare un cavo fisico, molto costoso e che rischia danneggiamenti, si crea un collegamento logico tramite la rete pubblica come mezzo, ma introducono problemi come la ridotta lentezza e costi della banda usata.</p>
+<p>Nel fare passare i pacchetti nella rete pubblica, e' fondamentale:</p>
+<ul>
+<li>applicare una cifratura,</li>
+<li>controllo degli accessi (autenticazione),</li>
+<li>tunneling dei pacchetti.</li>
+</ul>
+<hr>
+<h2 id="le-varie-classificazioni">Le varie classificazioni </h2>
+<p>Esistono 2 tipi principali di VPN:</p>
+<h2 id="1-remote-access-vpn">1. REMOTE-ACCESS VPN </h2>
+<blockquote>
+<p>Ha la funzione principale di desktop remoto per collegarsi alla LAN della sede principale,<br>
+E' soprattutto usata per collegare piccole sedi o pochi dipendenti alla LAN principale.</p>
+</blockquote>
+<p>I singoli utenti si collegano ad un server di accesso detto NAS</p>
+<blockquote>
+<p>NAS (NETWORK ACCESS SERVER) che puo' essere dell'HARWARE dedicato o una semplice applicazione eseguita in un server condiviso.</p>
+<p>Il NAS chiede le credenziali all'utente, che se valide, gli permettera' di usare la VPN.</p>
+</blockquote>
+<p>Il <em>NAS</em> per verificare la autenticazione puo' appoggiarsi ad un <code>RADIUS AAA SERVER</code> che lo fa al posto suo.</p>
+<blockquote>
+<p>il RADIUS server oltre all'autenticazione, il RADIUS è fondamentale per l'Accounting. Nelle VPN aziendali, serve a generare log legali: chi si è connesso, da quale IP pubblico, a che ora e per quanto tempo. Questo è vitale per la sicurezza post-incidente.</p>
+</blockquote>
+<p><em><strong>AAA</strong></em> sta per:</p>
+<ul>
+<li><code>Authentication</code> (verifica gli accessi),</li>
+<li><code>Authorization</code> (verifica cio' che e' permesso),</li>
+<li><code>Accounting</code> (tiene tracci adi chi fa che cosa {non ripiudabilita'}).</li>
+</ul>
+<p>In piu' per funzionare, il client dovra' munirsi di un software VPN client.</p>
+<blockquote>
+<p>l'affitto di un NAS e' detto ESP,<br>
+L'ESP configura il NAS e lo mantiene funzionante a chi lo affittera'.</p>
+</blockquote>
+<h2 id="2-site-to-site-vpn">2. SITE-TO-SITE VPN </h2>
+<blockquote>
+<p>Si usa principalmente per collegare 2 sedi grosse insieme permettendogli di condividere le risorse (stampanti, pc, archivio).</p>
+</blockquote>
+<p>nelle Site-to-Site, i singoli PC non sanno di essere in una VPN. Il tunnel è "trasparente" e viene gestito interamente dai gateway (Router/Firewall).</p>
+<p>La SITE-TO-SITE VPN si divide principalmente in:</p>
+<ul>
+<li>INTRANET BASED:<blockquote>
+<p>Una rete intranet collega 2 sedi in una unica.</p>
+</blockquote>
+</li>
+<li>EXTRANET BASED:<blockquote>
+<p>Se l'azienda ha un rapporto stretto con un altra azienda esterna, EXTRANET permette di lavorare insieme in modo sicuro condividendo le risorse, senza dando l'accesso  preventivo e completo a tutto.</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h2 id="la-sicurezza-delle-vpn">La sicurezza delle VPN </h2>
+<p>Come mezzo le VPN usano la rete pubblica e' neccessario che il traffico venga crittografato.</p>
+<p>Passando per una rete pubblica, i pacchetti devono mantenere la propria integrita' e autenticita'.</p>
+<p>Il passi che una VPN deve seguire sono:</p>
+<h3 id="1-autenticazione-degli-utenti-autenticazione">1. Autenticazione degli utenti (autenticazione) </h3>
+<p>Le VPN possono essere usati solo da determinati utenti,<br>
+quindi bisogna verificarnr la corretta identita' per l'accesso ad essa con un autenticazione.</p>
+<p>Cio lo si fa tramite server NAS con un processo di autenticazione, o uno dedicato come l'AAA.</p>
+<p>L'autenticazione ad una VPN sfrutta una MFA (Multy Factor Authentication),<br>
+che aggiunge un livello in piu' di sicurezza,</p>
+<blockquote>
+<p>In passato si usava che l'utente scriva un codice generato tramite una chiave elettronica (KEY FOB) che cambiava ogni volta.</p>
+<p>Ma ora si utilizzano applicazioni da smartphone che generano un OTP (One Time Password) che genera una sequenza di caratteri casuali da inserire, o direttamente l'impronta di un dito (Fingerprint), o un QR code.</p>
+</blockquote>
+<p>Solo dopo aver eseguito l'autenticazione, all'utente viene concessa l'autorizzazzione per usare i servizi della rete.</p>
+<p>Grazie all'autenticazione si possono apportare misure di accounting per salvarsi i vari accessi e la quantita' di dati in entrata e uscita,<br>
+tempi di utilizzo dei vari utenti (durata di sessione per tariffare l'utilizzo della rete) e quali risorse si hanno usato attraverso dei file di log.</p>
+<hr>
+<h2 id="2-cifratura-dei-dati-crittografia">2. Cifratura dei dati (CRITTOGRAFIA) </h2>
+<p>Le VPN utilizzano il protocollo IKE (Internet Key Exchange), che ha lo scopo di automatizzare lo scambio delle chiavi.</p>
+<p>I principali protocolli che applicano la crittografia sono:</p>
+<ul>
+<li>IPsec (IP security),</li>
+<li>SSL/TLS (Secure Socket layer / Trasport Layer Security),</li>
+<li>BGP/MPLS (Border Gateway Protocol / Multiprotocol Lable Switching).</li>
+</ul>
+<h2 id="3-tunnel-o-modalita-trasporto">3. TUNNEL o MODALITA' TRASPORTO </h2>
+<h3 id="trasporto">Trasporto </h3>
+<p>In modalita' trasporto, e' compito del software a collegarsi alla VPN e soprattutto questo approccio rende compatibile la VPN con qualunque ISP della rete,<br>
+in quanto cifratura e decifratura verra' gestita dal software,<br>
+Lasciando in chiaro solamente le informazioni per instradare il pacchetto.</p>
+<h3 id="tunnel">Tunnel </h3>
+<p>Invece con il TUNNELING si utilizzano gli apparati di rete, in particolare i FIREWALL e ROUTER, questo approccio nasconde all'utente la presenza di una VPN, in questa modalita' gli apparati di rete apposta modificano il traffico della VPN incapsulandolo in un pacchetto, proteggiendo cosi' il pacchetto originale proteggendolo completamente, mostrando cosi' solo quello esterno.</p>
+<ul>
+<li>Passenger Protocol: È il pacchetto originale (es. il pacchetto del dipendente che vuole stampare).</li>
+<li>Encapsulating Protocol: È il protocollo che protegge (es. IPsec).</li>
+<li>Carrier Protocol: È il protocollo che trasporta il tutto sulla rete pubblica (es. IPv4).</li>
+</ul>
+<p>I due router in entrata delle LAN deve essere di tipo DUAL STACK in modo da poter comprendere sia IPV6 che IPV4 e soprattutto il tunneling serve proprio a far passare protocolli che altrimenti non viaggerebbero su Internet (come il multicast o protocolli non instradabili).</p>
+<h2 id="--ipsec">- IPsec </h2>
+<p>IPsec non e' solo un protocollo ma e' una vera e propria architettura di sicurezza del livello NETWORK,<br>
+i 3 principali protocolli che la compongono sono:</p>
+<ul>
+<li>
+<p>AH (Authentication Header):<br>
+che garantisce solo la AUTENTICAZIONE e la INTEGRITA' ma <em><strong>NON</strong></em> cifra il transito.</p>
+<blockquote>
+<p>AH è quasi in disuso. Il motivo è che AH fallisce se attraversa un router che fa NAT (Network Address Translation), perché AH valida anche l'header IP esterno. Se il NAT cambia l'indirizzo IP, il controllo di integrità di AH fallisce.</p>
+</blockquote>
+</li>
+<li>
+<p>ESP (Encapsulating Security Payload):</p>
+<blockquote>
+<p>che comprende anche la CIFRATURA dei messaggi.</p>
+</blockquote>
+</li>
+<li>
+<p>IKE (Internet Key Exchange):</p>
+<blockquote>
+<p>si occupa di gestire e scambiare le chiavi per la crittografia della comunicazione, e lavora al livello APPLICATION.</p>
+</blockquote>
+</li>
+</ul>
+<p>Sia AH che ESP possono essere usati o in modalita' TRASPORTO o in TUNNEL, di cui per essere usati hanno bisogno di creare una connessione LOGICA detta SA (Security association) lavora al livello NETWORK e viene fatta grazie all'IKE.</p>
+<p>IKE usa UDP per comunicare pero' usa un servizio affidabile, in caso la richiesta di connessione non arriva IKE ritrasmettera' la richiesta.</p>
+<p>Una connessione con SA dura poco e fa trasmettere pochi dati, in caso che serva inviare piu' dati,<br>
+si instaura una nuova SA.</p>
+<p>IPsec usa due SECURITY GATEWAY alle entrate delle LAN per incapsulare o leggere il pacchetto, che sara' in arrivo o in uscita.</p>
+<p>In questo modo il pacchetto da inviare usera' il suo routing, mentre il pacchetto che lo INCAPSULA usa il routing per spedirlo alla LAN.</p>
+<p>Le SA sono UNIDIREZIONALI, quindi si dovranno creare 2 SA in caso si voglia comunicare da entrambi i lati.</p>
+<p>Tutte le SA sono salvate all'interno di un SAD (Security Association Database), mentre le politiche di sicurezza (quali ip scartare) vengono salvate nel SPD (Security Policy Database).</p>
+<h3 id="1-traffico-in-uscita-outbound">1. Traffico in Uscita (Outbound) </h3>
+<p><em>Outbound segue le fasi:</em></p>
+<ol>
+<li>
+<p><em><strong>Il Controllo SPD</strong></em>:<br>
+Quando un pacchetto deve uscire, il sistema consulta l'SPD, che puo' causare tre esiti possibili:</p>
+<ol>
+<li>
+<p>Il pacchetto viene scartato (firewall).</p>
+</li>
+<li>
+<p>Il pacchetto passa senza IPsec (traffico in chiaro).</p>
+</li>
+<li>
+<p>Il pacchetto deve essere protetto da IPsec.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><em><strong>Associazione al SAD</strong></em>:<br>
+Se l'esito è il (3), si cerca nel SAD (Security Association Database) se esiste già una SA (una "connessione sicura") attiva per quel tipo di traffico.</p>
+<ol>
+<li>
+<p>Se esiste: Si usa la chiave e l'algoritmo già pronti.</p>
+</li>
+<li>
+<p>Se NON esiste: Si avvia il protocollo IKE (Internet Key Exchange) per negoziare le chiavi in tempo reale, creare la SA e registrarla nel SAD.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><em><strong>Fase di Trasformazione</strong></em>:<br>
+Solo a questo punto il pacchetto viene processato (Cifratura/Autenticazione) e incapsulato.</p>
+</li>
+</ol>
+<h3 id="traffico-in-ingresso-inbound">Traffico in ingresso (inbound) </h3>
+<p>In ingresso il processo è "inverso", ma con un controllo di sicurezza fondamentale alla fine:</p>
+<ol>
+<li>
+<p><em><strong>Riassemblaggio</strong></em>:<br>
+Corretto. Se il pacchetto è frammentato, va ricomposto prima di poter leggere gli header IPsec.</p>
+</li>
+<li>
+<p><em><strong>Identificazione</strong></em>:<br>
+Il ricevente vede che il protocollo nell'header IP non è TCP o UDP, ma ESP (50) o AH (51).</p>
+</li>
+<li>
+<p><em><strong>Lookup tramite SPI</strong></em>:<br>
+Qui c'è un dettaglio importante. Per trovare la SA giusta nel SAD, il ricevente usa una "tripletta" di valori:</p>
+<ol>
+<li>
+<p>SPI (Security Parameters Index) – che si trova nell'header ESP/AH.</p>
+<blockquote>
+<p>la SPI (Security Parameter Index) è come un "ID della sessione" che permette al ricevente di capire istantaneamente quale chiave usare per decifrare quel pacchetto specifico.</p>
+</blockquote>
+</li>
+<li>
+<p>Indirizzo IP Destinazione.</p>
+</li>
+<li>
+<p>Protocollo di sicurezza (AH o ESP).</p>
+</li>
+</ol>
+</li>
+<li>
+<p><em><strong>Decapsulamento</strong></em>:<br>
+Una volta trovata la SA, il pacchetto viene decifrato e autenticato.</p>
+</li>
+<li>
+<p><em><strong>Il controllo finale dell'SPD (Fondamentale)</strong></em>:<br>
+Questo è il punto che spesso sfugge. Dopo aver "estratto" il pacchetto originale, il sistema ricontrolla l'SPD. Perché? Per verificare che quel pacchetto sia effettivamente arrivato con la protezione corretta.</p>
+</li>
+</ol>
+<h2 id="--ah-esp-ike-nel-dettaglio">- AH, ESP, IKE nel dettaglio </h2>
+<h3 id="1-ah-authentication-header">1. AH (Authentication Header) </h3>
+<p>AH fornisce:</p>
+<ul>
+<li>autenticazione,</li>
+<li>integrita'</li>
+</ul>
+<blockquote>
+<p>contro gli attacchi di tipo replay, in cui un malintenzionato mette in rete un pacchetto clonato precedentemente intercettandolo.</p>
+</blockquote>
+<p>AH autentica l'intero pacchetto IP ad eccezzione dei campi variabili dell'header IP originale.</p>
+<p>AH aggiunge il campo SPI (Security Parameters Index) che contiene un valore numerico che insieme con l'IP di destinazione e il protocollo AH identifica la SA usata.</p>
+<p>In modalita' tunnel l'intero pacchetto e' incapsulato in un nuovo pacchetto autenticandolo tutto nel processo.</p>
+<h3 id="2-esp-encapsulating-security-payload">2. ESP (Encapsulating Security Payload) </h3>
+<p>ESP aggiunge la crittografia che manca ad AH.</p>
+<p>A contrario di AH, ESP non authentica tutto il pacchetto, non coprendo l'header IP:</p>
+<blockquote>
+<ol>
+<li>in trasporto l'header ip originale e' in chiaro.</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>in tunnel l'header originale viene cifrato ma quello esterno no.</li>
+</ol>
+</blockquote>
+<p>ESP all'interno del pacchetto aggiunge:</p>
+<ul>
+<li>HEADER ESP (per incapsulare)</li>
+<li>TRAILER ESP (per incapsulare)</li>
+<li>AUTHENTICATION ESP (per autenticare)</li>
+</ul>
+<p>Simile ad AH, nell'header ESP  e' presente il campo SPI che identifica la SA usata per quel pacchetto.</p>
+<h3 id="3-ike-internet-key-exchange">3. IKE (Internet Key Exchange) </h3>
+<p>Le SA possono essere fatte manualmente, ma non e' fisicamente fattible, come soluzione si usa IKE.<br>
+IKE si occupa di creare delle nuove SA ogni volta che serva.</p>
+<p>IKE realizza un collegamento peer-to-peer in due fasi:<br>
+1. fase 1:<br>
+I 2 host creano una nuova SA per IKE stesso (IKE SA), che verra' usata per creare nuove SA in modo sicuro.<br>
+2. fase 2:<br>
+Si usa la IKE SA creata per negoziare le altre SA da usare per gli altri protocolli.</p>
+<h2 id="ssltls-vpn">SSL/TLS VPN </h2>
+<p>Una valida alternativa a IPsec e' SSL/TLS (Secure Sockets Layer/Trasport Layer Security).</p>
+<blockquote>
+<p>Le differenze sono marginali tra SSL/TLS e IPsec:<br>
+ma uno dei grandi vantaggi di SSL/TLS è che può funzionare senza software installato, usando solo il browser (Portal VPN).</p>
+<p>IPsec invece richiede quasi sempre un software dedicato.</p>
+</blockquote>
+<p>SSL/TLS opera tecnicamente sopra il livello Transport (TCP).</p>
+<p>SSL/TLS e' composto da due livelli:</p>
+<ul>
+<li>Record Protocol:<br>
+Opera sopra un protocollo di livello Trasport ed incapsula i protocolli di livello superiore.</li>
+<li>Handshake Protocol:<br>
+Si occupa di negoziare:<br>
+si autentica con L'interlocutore e si stabilisce una crittografia comune.<br>
+Al posto che IKE si usa il protocollo di SSL/TLS per creare le chavi per il Tunneling.</li>
+</ul>
+<p>SSL/TLS lavora tramite client/server e autentica il server da parte del client da parte del client pero'<br>
+e' opzionale che il client si autentichi al server.</p>
+<p>L'Autenticazione si basa su i certificai digitali,<br>
+il server invia il certificato tramite firma digitale.</p>
+<p>I passi della connessìone sono:</p>
+<ol>
+<li>
+<p>Client -&gt; Server:<br>
+Il client invia al server la richiesta per la connessione e la lista  di algoritmi di crittografia supportati,<br>
+poi si crea un valore random detto PRE-MASTER KEY.</p>
+<p>Che a sua volta servira' a generare la chiave privata comune ad entrambi.</p>
+</li>
+<li>
+<p>SERVER -&gt; CLIENT:<br>
+Il server invia al client il proprio certificato digitale e la scelta degli algoritmi di crittografia,<br>
+e infine invia il suo valore casuale per generare la PRE-MASTER KEY,<br>
+e richiede il certificato del client.</p>
+</li>
+<li>
+<p>CLIENT -&gt; SERVER:<br>
+Il client verifica il certificato del server, se fallisce stacca la connessione, altrienti invia al server il certificato e la pre-master key cifrata con lachiave pubblica del server.<br>
+Poi inizia la comunicazione.</p>
+</li>
+<li>
+<p>SERVER -&gt; CLIENT:<br>
+il server accetta il certificato e inizia la comunicazione cifrata.</p>
+</li>
+</ol>
+<p>dopo il 3° punto il server e il client sono a posto per comunicare.</p>
+<h3 id="confronto-tra-ipsec-e-ssltls">Confronto tra IPsec e SSL/TLS. </h3>
+<p>Benche IPsec sia il piu' diffuso, rimane critica la fare dello scambio di chiavi durante l'IKE.<br>
+In piu' IPsec deve richiedere un supporto lato sistema operativo, e SSL/TLS e' meno complicato di IPsec,<br>
+IPsec offre diversi meccanismi di autenticazione, mentre ssl/tls offre certificati digitali.</p>
+<p>Pero' SSL/TLS offre una autenticazione Assimmentrica (senza aspettare il client).<br>
+IPsec essendo PEER to PEER richiede autenticazione reciproca.<br>
+IPsec e SSL lavorano a livelli differenti dello stack, permettendo a IPsec di proteggere sopra all'IP.</p>
+<h2 id="bgpmpls">BGP/MPLS </h2>
+<p>In una rete Multiprotocol Lable Switching, la parte della VPN viene gestita dai Service Provider,<br>
+di cui usano:</p>
+<ul>
+<li>
+<p>CE (Customer Edge Router):<br>
+Quando si parla di CE si parla del Router in entrata/uscita delle varie sedi sparse,<br>
+che tramite il BGP (Border Gateway protocol) comunicano con il PE.</p>
+</li>
+<li>
+<p>PE (provider Edge Router):<br>
+Il PE e' il router in ingresso/uscita del Provider della VPN.</p>
+</li>
+<li>
+<p>P (Provider Core Router):<br>
+Fanno l'azione di instradare i pacchetti verso un PE (scelgono che strada dovranno seguire).</p>
+</li>
+</ul>
+<p>Le reti BGP/MPLS sono PEER to PEER.<br>
+Per trasferire i pacchetti tra 2 siti di una VPN, il PE incapsulera' (TUNNELING)<br>
+i pacchetti in transito dal CE.</p>
+<blockquote>
+<p>VRF (VPN Routing and Forwarding): il router del provider (PE) viene diviso in tanti "router virtuali" indipendenti.<br>
+Ogni azienda ha la sua tabella di routing privata (VRF) dentro il router del provider.</p>
+<p>Questo evita che il traffico di una azienda si mischi con un altra.<br>
+il PE quindi dovra' gestire tot tabelle in base a quanti utilizzatori diversi si hanno.</p>
+</blockquote>
+<p>Un PE possiede anche la GFT (Global Forwarding Table) che gli permette di indirizzare i pacchetti verso un altro PE usando un sistema di Lable.<br>
+La lable di BGP/MPLS e' composta da:</p>
+<ul>
+<li>parte esterna:<br>
+Indirizza il pacchetto verso il next hop per la rete BGP/MPLS di cui conterra' l'identificativo del prossimo PE che dovra' attraversare.</li>
+<li>parte interna:<br>
+Viene indicato il nodo di uscita dalla rete BGP/MPLS.</li>
+</ul>
+<h2 id="vpn-di-fiducia-e-secure-vpn">VPN di fiducia e SECURE VPN </h2>
+<p>Le VPN son divise in:</p>
+<ul>
+<li>
+<p>Trusted VPN:<br>
+La Trusted si affida al ISP per occuparsi di tutto per gestire la VPN.<br>
+Non usa tunneling o altro, ma garantisce tunnel dedicati, garantendone la sicurezza.</p>
+<p>Al layer 2 si usano ATM e tecnologia BGP/MPLS.<br>
+Al layer 3 si usa BGP/MPLS con limitate informazioni.</p>
+</li>
+<li>
+<p>Secured VPN:<br>
+Le Secured utilizzano il TUNNELING e la CIFRATURA.<br>
+La Secured pu' usare i protocolli:</p>
+<ul>
+<li>IPsec</li>
+<li>SSL/TLS</li>
+<li>PPTP</li>
+<li>SOCKS</li>
+<li>L2TP</li>
+<li>L2TPv3</li>
+<li>BGP/MPLS</li>
+</ul>
+</li>
+<li>
+<p>Hybrid VPN:<br>
+Le hybrid uniscono i protocolli della Secured e la applicano alla Trusted:</p>
+<ul>
+<li>La secured assicura la protezione, ma non i percorsi.</li>
+<li>La Trusted assicura i percorsi, ma non la sicurezza.</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
