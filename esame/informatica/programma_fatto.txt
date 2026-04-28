@@ -51,3 +51,5 @@ Vincoli di Integrità
 +Endpoint (HTML)
 Deployment (rilascio di un codice)
 documento dei Requisiti
+ingegneria del software
+casi d'uso
