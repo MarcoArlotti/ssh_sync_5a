@@ -130,3 +130,15 @@ Diffamation is the crime of making a false statment about someone witch damages 
 Online diffamationn is present in online social media like Twitter and Facebook, in addition of chatrooms, blogs, and websites.
 
 ### ILLEGAL CONTENT
+The law prohibit storing or distibuiting certian types of material online tipicaly related to terrorist activities or encourage of crimes and violance, Child Pornografy and Sexual Abuse.
+
+### Cybercrime
+There are laws against Haking and theft of classified information
+That are:
+- fraud,
+- extorsion,
+- identity teft,
+- spreding viruses and other malware,
+- harassment like cyberbulling and cyberstalking.
+
+## The Web Today
