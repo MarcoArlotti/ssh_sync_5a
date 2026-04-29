@@ -142,3 +142,34 @@ That are:
 - harassment like cyberbulling and cyberstalking.
 
 ## The Web Today
+The first websites where places where people went to find informations:
+- content of books,
+- magazine,
+- timetables...
+Since 1990 a new generation of sites were born clled web 2.0,
+instead of being passive consumer people becamed active participants in the development of the site.
+The web today is used for:
+
+### Information sharing
+The wikipedia encyclopedia is a vast colllection of factual information updated by the people.
+Similar site was born with the same idea, called wiki (quick in hawaiin).
+
+### Social Network
+Popular sites have gived people the possibility to set their own personal page and use it to contact very old friends or make new by exchanging messages, music, photos and video.
+Most famous one are facebook, MySpace and Google+.
+
+### Blogging
+A blog is a abbreviation of "weblog", the blog is a personal website witch can be use as a daily diary, with information on current events and a commentary.
+
+Most blog include 
+- links to others site,
+- photo,
+- graphics,
+- audio e video.
+Blogs are usualy interactive with the user allowing to leave a comment.
+
+Twitter is simpler, a informal version of a blog with shorter messages.
+
+A forum is a online discussion site in witch group of people who share the same interest can exchange opinions, informations.
+
+### Shopping
