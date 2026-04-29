@@ -17,3 +17,7 @@ Scrive un libro dove lei crea il suo alterego chiamata Lina (Una donna)
 viene violentata da un operario ed e' costretta a fare un matrimonio riparatore (per avere uno sconto di pena),
 lei decide di andare via dalla sua vita infelice perche' il marito la controllava gli doveva ubbedire e era chiusa in casa, ma andando via non potra' piu' rivedere il suo figlio.
 
+- Sibilla Teramo p346 no vita e opere leggere la trama 
+- p259
+- p260 pensiero e poetica
+- p370

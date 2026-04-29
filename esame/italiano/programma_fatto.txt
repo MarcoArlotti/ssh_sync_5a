@@ -1,3 +1,4 @@
+PROGRAMMA PRINCIPALE:
 Giacomo Leopardi
 Alessandro Manzoni
 Giovanni Pascoli
@@ -14,3 +15,9 @@ Estetismo
 Umanitarismo e Nazionalismo di Pascoli
 Futurismo
 Luigi Pirandello
+
+CIVICA:
+Matilde Serao
+Grazia Deledda
+Sibilla Aleramo
+Dacia Maraini
