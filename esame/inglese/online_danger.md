@@ -113,3 +113,20 @@ This law prohibit the unauthorised copying, distribution of:
 - musical compositions.
 
 ### PATENT PROTECTION
+With the patent, an inventor can take an invention and by officialy registering it in the national patent office, the invention gain an exclusive legal right for the commercial exploitation of the invention for a fixed time where nobody can create copys of it witout permission.
+
+### DATA PROTECTION
+Collection of data have raised a concern about privacy.
+Personal information can be shared worldwide.
+Data protection law deal with the elettronic storage of personal information.
+In many country there are legal obbligations for organizations that hold and process personal data,
+including the right of people to see the data relating to them.
+
+### DEFAMATION
+Diffamation is the crime of making a false statment about someone witch damages person's reputation.
+1. It can be done in a written form called "libel",
+2. It can be done in a spoken form called "slander".
+
+Online diffamationn is present in online social media like Twitter and Facebook, in addition of chatrooms, blogs, and websites.
+
+### ILLEGAL CONTENT
