@@ -15,7 +15,7 @@ It can be spreded  via:
 - peer-to-peer file sharing,
 - instant messaging program.
 
-The largest targhet of malware is the smartphone.
+The largest target of malware is the smartphone.
 
 The most common type of malware are:
 1. VIRUS
@@ -32,3 +32,84 @@ The most common type of malware are:
     
     It replicate itself to prevent deletion and may carry a virus or interfere with the computer operation.
 5. TROJAN
+    Is a program that enters a pc by hiding in a apperantly safe application, once inside the computer the application can take control over the pc.
+6. BOTNET
+    Is a large group of pc under control of a criminal gang, without the owner knowleadg.
+7. PHISHING
+    Is a method of tricking peaple into reavialing sensitive information, they usualy take form of a message wich looks like a genuine message
+
+## Social and ethical problem of IT
+The following are some of the social and ethical issue:
+
+### The digital divide
+The society caused a split betwen peaple who are tecnology-literate, and have the tool to prosper in the modern world.
+
+This is a economic division, beacouse tecnology are expensive, but this is also affected by the age and education of the person,
+older and poorer person feal left behind.
+
+### Interpersonal relations
+New method of comunication have changed how people interact with:
+- business meating,
+- frienship,
+- romance.
+
+Social networks have become an essential method of keeping in touch for milions of people.
+however, this expansions create less human contact with others.
+
+This impersonality and anonymity create a loss of empathy with other, creating a fenomenon of internet trolling.
+
+### Information overloard
+Data can easily be shared online,
+meaning that we are creating constantly growing mass of information now aviable on the internet.
+
+With all of this information we can't kow for sure if a information is realible or misleading.
+Becouse we are constantly updated, we are floaded of e-mail, cousing  stress and obstruct productive work.
+
+Becouse mobile tecnology is convinient, workers finds themselves in a position where they are on call 24h a day.
+
+### Censorship
+some peaple want to keep the internet as a place where anybody is free to publish anyting.
+
+In there wiew society makes progres trough the free exchange of ideas.
+
+Other fear that is a subversive or immoral opinion or materials may have a damaging effects on society, specialy on vunnerable people such as children.
+
+### Surveliance
+The smartphone we carry is the most sophisticated tracking device we have ever invented.
+
+Governments, buisness and criminal organizzation now have access to enourmous information of us.
+
+### Unemployment
+The development of new tecnology lead the dissapearence of many jobs.
+Robot and automation have eroded manual production work in factories.
+
+Shop assistant and bank clerks are being replaced by atomated systems.
+
+professional jobs are now in thret due to advances in AI software.
+
+New tecnology crerate new profession and take over other rendering it obsolete.
+
+### Erosion of cultural industries
+The internet is perfect for spreading infinite copies at no cost of products.
+This is creating devastating effect on traditional music and film indutries,
+creating a steap decline in sales of CDs and DVDs.
+
+Pirated copies of songs and films does not feel like stealing.
+
+## IT and the LAW
+
+### COPYRIGHT PROTECTION
+Copyright is a collection of rights granted to:
+- artist,
+- authors,
+- software writers,
+- musicians,
+- other creators.
+
+This law prohibit the unauthorised copying, distribution of:
+- book,
+- computers programs,
+- design,
+- musical compositions.
+
+### PATENT PROTECTION
