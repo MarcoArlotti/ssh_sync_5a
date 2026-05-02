@@ -200,3 +200,22 @@ Pirandello utilizza Belluca per illustrare alcuni dei suoi temi cardine:
 
 ### Conclusione
 Alla fine della novella, Belluca torna alla sua vita di sempre perché non può fare altrimenti. Tuttavia, ora è salvo: gli basta concedersi ogni tanto una **fuga momentanea con l'immaginazione** (ascoltando quel fischio ideale) per sopportare il peso della realtà.
+
+
+
+
+
+
+
+
+
+### uno nessuno centomila
+da leggere da soli
+
+scritto nel 1909 romanzo filosofico,
+riflessione sulla identita', perche' ogni persona e' diversa davanti alle persone,
+litangelo impazzisce perche' il suo naso pende verso a destra, lui non si e' mai accorto, lui realizza che lei la vede diversa da come si vede da solo e impazzisce,
+io sono = uno nessuno centomila
+
+appartiene alla media borghesia, dona una casa a marcoiddio, per farsi convincere che non e' un usurario.
+

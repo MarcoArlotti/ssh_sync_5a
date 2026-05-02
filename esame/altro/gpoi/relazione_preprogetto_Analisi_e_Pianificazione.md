@@ -20,12 +20,12 @@ gantt
     axisFormat  %y-%m-%d
     
     section Analisi Applicazioni (Backend)
-    Scansione App (Pontellini, Kamil)          :a1, 2026-05-01, 3d
+     App (Pontellini, Kamil)          :a1, 2026-05-01, 3d
     Salvataggio Classe Computer (Sanchi)       :a2, 2026-05-01, 3d
     Ottimizzazione & Bug Fix (Monticelli, Rossi) :a3, after a1, 2d
 
     section Gestione Installazioni (Backend)
-    Aggiunta App alla lista (Ponte, Kamil, Sanchi) :b1, 2026-05-04, 9d
+    scansione delle app presenti sul pc (Ponte, Kamil, Sanchi) :b1, 2026-05-04, 9d
     Ottimizzazione & Bug Fix (Monticelli, Rossi) :b2, after b1, 2d
     Esecuzione Setup Applicazioni (Ponte, Kamil, Sanchi) :b3, 2026-05-13, 8d
     Ottimizzazione & Bug Fix (Monticelli, Rossi) :b4, after b3, 2d
@@ -42,7 +42,7 @@ gantt
 ## Analisi dei costi
 
 1. **Analisi Applicazioni (Backend)** ***5750€***
-    - Scansione App (Pontellini, Kamil)
+    - scansione delle app presenti sul pc (Pontellini, Kamil)
     - Salvataggio Classe Computer (Sanchi)
     - Ottimizzazione & Bug Fix (Monticelli, Rossi)
 

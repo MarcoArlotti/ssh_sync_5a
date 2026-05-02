@@ -173,3 +173,83 @@ Twitter is simpler, a informal version of a blog with shorter messages.
 A forum is a online discussion site in witch group of people who share the same interest can exchange opinions, informations.
 
 ### Shopping
+Many online shops sell things on the net like:
+- music,
+- films,
+- books.
+
+There are auction sites where you can sell your own goods on sales like ebay.
+
+Large chain or smaller shop have their own website selling enormous varius range of goods.
+Many shoppers regulary check on the internet before buying expensive article.
+
+### Virtual Worlds and Gaming
+Virtual world like Second Life, witch is a recreation of our world in witch trough the computer it is possible to live and interact
+with other user by controlling a character called avatar.
+
+Social Gaming sites like Zynga, offer a range of more traditional game that user can play against another online.
+
+Online Casinos, sport betting sites and other forms of gambling are very common.
+
+### Entertainment sharing
+Many sites give access to music and video either by allowing users to download copies or trought streaming (the user can see and ear the content but can't keep a copie).
+Spotify provide a streaming service for music,
+Youtube for video.
+
+Some sites encouradge users to uplad their own home-made videos for the pubblication on the web.
+
+Sites like Flickr allow people to store and publish their own photographs.
+
+In some cases the sites that offer music or films without the author consent is breaking copryght law and are operating illegaly,
+they use peer-to-peer file sharing tecnology for sending music and films.
+
+## How to build a website
+A personal website is your piece of cyberspace. (???)
+Anyone can puplish a website, and people can include what they want.
+The basic building blocks are words and pictures, but you can include videos and sound in you website.
+
+### What you need...
+There are numerous website that offer the possibility of building a website like Weebly Wix and Squarespace.
+Most of this site don't require programming skills.
+This sites are works with drag and drop and point and click tools.
+
+You can also follow a template (ready made layout that you can use).
+
+For hosting a website you need around 10 Mb (???).
+Your ISP may provide you with that space,
+otherwise you can use external company for hosting a site like moonfruit and google.
+
+### Building the Site
+Starting on the home page,
+you can place a message or a guide with a welcome message or introducing your website.
+
+You can also include a newsflash on the page to keep the page fresh,
+you can also divide your site in different web pages, picture can be putted on the site form a digital file on the computer,
+is important to keep small the weight of the pictures for preventing slowdown on the loading of the site.
+
+The web is all about links, that enable users to jump in a different page by clicking on a word,
+the jump redirect you to another site or a different page from the same page.
+
+The page need to be simple for every user, people lose patience quicly.
+
+### Protect yourself
+Don't include any personal information on the site becouse anyone can read it,
+same upply to your username and password.
+
+## E-commerce
+E-commerce is the conduct of buisness trought the internet.
+The buing can be done from a computer-to-computer, an email, via the web or trough smartphone apps.
+
+The payment often involves EFT (elettronic funds tranfer) that is made from not a phisical form such as cash.
+Credit card and smart card are key of the e-commerce, the important is that the payment is automatic.
+
+### Pros and Cons
+E-commerce offers several advantages to buisness, the automatic payment cut down costs,
+and transaction are faster and more convinient. 
+Buisness can reach wider markets, potentialy world wide.
+
+Setting a e-commerce is complicated and expensive, and there are also cost for publicizing the website.
+
+e-commerce rais the problem of fraud.
+
+For the customer
