@@ -1,0 +1,60 @@
+- switch BLU:
+
+enable
+conf t
+vlan 10
+exit
+interface range GigabitEthernet9/1-GigabitEthernet8/1
+
+[interface range (porta-porta)]
+
+switchport access vlan 10
+exit
+interface GigabitEthernet7/1
+switchport mode trunk
+switchport trunk allow vlan 10
+
+- switch VIOLA:
+
+enable
+conf t
+vlan 20
+exit
+interface range GigabitEthernet6/1-GigabitEthernet7/1
+
+[interface range (porta-porta)]
+
+switchport access vlan 20
+exit
+interface GigabitEthernet8/1
+switchport mode trunk
+switchport trunk allow vlan 20
+
+- switch ROSSO:
+enable
+conf t
+vlan 30
+exit
+interface range GigabitEthernet6/1-GigabitEthernet7/1
+
+[interface range (porta-porta)]
+
+switchport access vlan 30
+exit
+interface GigabitEthernet8/1
+switchport mode trunk
+switchport trunk allow vlan 30
+
+- switch centrale:
+enable
+conf t
+vlan 10
+exit
+vlan 20
+exit
+interface GigabitEthernet8/1
+switchport mode trunk
+switchport trunk allowed vlan 10-20
+exit
+
+- Router
