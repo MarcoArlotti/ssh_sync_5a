@@ -252,4 +252,38 @@ Setting a e-commerce is complicated and expensive, and there are also cost for p
 
 e-commerce rais the problem of fraud.
 
-For the customer
+For the customers the main attraction is the easy and speed of finding products from the conforts of their home.
+
+The range of goods is enourmous, including items witch might otherwise be very hard to obtain, and the price is often lower,
+and customers can compare price from diffent suppliers, and get news of the product including rewiews and reports.
+
+There are certain drawbacks...
+Altrough photographs may be included, the customers cannot phisicaly examine the product on sale,
+and many customers are afraid of e-commerce becouse of frauds, in addition customers have to wait for the product to be shipped, and then when it arive it may be problems about returning the product.
+
+## Use the internet safely
+
+### Install a firewall
+A Firewall is a software or harware that that build a defensive wall around your computer,
+it checks data coming from the network and then chose to block or let it pass certain type of data,
+what the firewall let pass is chosen by configuring his settings.
+
+### Keep Software up to date
+Most malware attack is made from criminal gang who have found ways of infiltrating known security weak spot,
+there for is important to istall the lastest updates offered by the software makers or operating system makers,
+most of the malware attack comes form the web browser so you need to update also that.
+
+### Use protection software
+Anti-virus programs scan e-mail and programs in the computer and search for virus in them.
+If one is found the program either isolates it or it delete it automaticaly befour it create a damage.
+Anti-virus also scan existing software to find any viruses present.
+
+New malware is identified every day so it is important that the anti-virus have an automatic update capability.
+
+It is important to never install anti-virus software from pop-up ad.
+
+### Take special care with e-mail
+Be careful when opening e-mail attachments, becouse it can be a virus hidden in the file, and it is important to be careful when clicking on hyperlink, consider istalling a spam filter to prevent spam e-mail form reaching you.
+
+Never repound to a spam e-mail, just unsubscribe, your reply may indicate a confirmation of your e-mail address.
+
