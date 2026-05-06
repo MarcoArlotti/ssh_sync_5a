@@ -1,113 +1,101 @@
 <mxfile host="65bd71144e">
     <diagram id="8BaDLxpBYahv4rUdU4Tn" name="Page-1">
-        <mxGraphModel dx="805" dy="708" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#660066" math="0" shadow="0" adaptiveColors="auto">
+        <mxGraphModel dx="871" dy="486" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#660066" math="0" shadow="0" adaptiveColors="auto">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="39" value="LIVELLO 0: PROGETTO" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="39" value="LIVELLO 1: SOTTOPROGETTO" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="37" y="289" width="692" height="200" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" value="scansione delle app presenti sul pc (Pontellini, Kamil)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="39">
-                    <mxGeometry x="251" y="49.5" width="99" height="99" as="geometry"/>
+                <mxCell id="28" value="scansione delle app presenti sul pc (Pontellini, Kamil)" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="39" vertex="1">
+                    <mxGeometry x="216" y="52.5" width="115" height="115" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" value="Esecuzione Setup Applicazioni (Ponte, Kamil, Sanchi)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="39">
-                    <mxGeometry x="100" y="49.5" width="100" height="100" as="geometry"/>
+                <mxCell id="33" value="Esecuzione Setup Applicazioni (Ponte, Kamil, Sanchi)" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="39" vertex="1">
+                    <mxGeometry x="83" y="53" width="114" height="114" as="geometry"/>
                 </mxCell>
-                <mxCell id="36" value="Sviluppo UI &amp;amp; Integrazione con il Backend (Team UI)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="39">
+                <mxCell id="36" value="Sviluppo UI &amp;amp; Integrazione con il Backend (Team UI)" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" parent="39" vertex="1">
                     <mxGeometry x="393" y="49.5" width="101" height="101" as="geometry"/>
                 </mxCell>
-                <mxCell id="35" value="Come organizzare la Struttura UI (Tomasetti, Ivagnes, Uva, Di Luca)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="39">
+                <mxCell id="35" value="Come organizzare la Struttura UI (Tomasetti, Ivagnes, Uva, Di Luca)" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" parent="39" vertex="1">
                     <mxGeometry x="518" y="49.5" width="101" height="101" as="geometry"/>
                 </mxCell>
-                <mxCell id="48" value="" style="endArrow=none;html=1;" edge="1" parent="39">
+                <mxCell id="69" value="" style="endArrow=none;html=1;strokeWidth=6;" edge="1" parent="39">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="153" y="183" as="sourcePoint"/>
-                        <mxPoint x="153" y="151" as="targetPoint"/>
+                        <mxPoint x="141" y="37" as="sourcePoint"/>
+                        <mxPoint x="306" y="36" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="49" value="" style="endArrow=none;html=1;" edge="1" parent="39">
+                <mxCell id="70" value="" style="endArrow=none;html=1;strokeWidth=6;exitX=0.447;exitY=0.012;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="39">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="300" y="184" as="sourcePoint"/>
-                        <mxPoint x="300.33000000000004" y="148.5" as="targetPoint"/>
+                        <mxPoint x="144.1" y="51.69999999999999" as="sourcePoint"/>
+                        <mxPoint x="144" y="36" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="50" value="" style="endArrow=none;html=1;" edge="1" parent="39">
+                <mxCell id="71" value="" style="endArrow=none;html=1;strokeWidth=6;" edge="1" parent="39">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="443.33" y="182.5" as="sourcePoint"/>
-                        <mxPoint x="443.33" y="150.5" as="targetPoint"/>
+                        <mxPoint x="304" y="52" as="sourcePoint"/>
+                        <mxPoint x="303" y="33.80000000000001" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="51" value="" style="endArrow=none;html=1;" edge="1" parent="39">
+                <mxCell id="78" value="" style="endArrow=none;html=1;strokeWidth=6;entryX=0.291;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="39">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="572.9999999999999" y="182.5" as="sourcePoint"/>
-                        <mxPoint x="572.9999999999999" y="150.5" as="targetPoint"/>
+                        <mxPoint x="127" y="232.5" as="sourcePoint"/>
+                        <mxPoint x="125" y="167.5" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="52" value="" style="endArrow=none;html=1;" edge="1" parent="39">
+                <mxCell id="79" value="" style="endArrow=none;html=1;strokeWidth=6;entryX=0.291;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="39">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="154" y="183" as="sourcePoint"/>
-                        <mxPoint x="573" y="183" as="targetPoint"/>
+                        <mxPoint x="243" y="232" as="sourcePoint"/>
+                        <mxPoint x="241" y="167" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="53" value="" style="endArrow=none;html=1;" edge="1" parent="39">
+                <mxCell id="60" value="LIVELLO 0: PROGETTO" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="37" y="89" width="692" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="CREAZIONE DELLA APPLICAZIONE" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="60">
+                    <mxGeometry x="174" y="50" width="96" height="96" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="CREAZIONE DELLA PARTE GRAFICA" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="60">
+                    <mxGeometry x="439" y="50" width="96" height="96" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="" style="endArrow=none;html=1;strokeWidth=6;entryX=0.291;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="60">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="237" y="235" as="sourcePoint"/>
-                        <mxPoint x="237" y="182" as="targetPoint"/>
+                        <mxPoint x="223" y="240" as="sourcePoint"/>
+                        <mxPoint x="221" y="146" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="54" value="" style="endArrow=none;html=1;" edge="1" parent="39">
+                <mxCell id="81" value="" style="endArrow=none;html=1;strokeWidth=6;" edge="1" parent="60">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="461" y="236" as="sourcePoint"/>
-                        <mxPoint x="461" y="182" as="targetPoint"/>
+                        <mxPoint x="416" y="237" as="sourcePoint"/>
+                        <mxPoint x="581" y="236" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="40" value="LIVELLO 1: SOTTO-PROGETTO" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="82" value="" style="endArrow=none;html=1;strokeWidth=6;exitX=0.447;exitY=0.012;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="60">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="419.1" y="251.7" as="sourcePoint"/>
+                        <mxPoint x="419" y="236" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="83" value="" style="endArrow=none;html=1;strokeWidth=6;" edge="1" parent="60">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="579" y="252" as="sourcePoint"/>
+                        <mxPoint x="578" y="233.8" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="84" value="" style="endArrow=none;html=1;strokeWidth=6;entryX=0.291;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="60">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="498" y="240" as="sourcePoint"/>
+                        <mxPoint x="496" y="146" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="LIVELLO 1: ATTIVITA&#39;" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="37" y="484" width="692" height="200" as="geometry"/>
                 </mxCell>
-                <mxCell id="32" value="Ottimizzazione &amp;amp; Bug Fix gestione installazioni (Monticelli, Rossi)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="40">
-                    <mxGeometry x="173" y="37" width="103" height="103" as="geometry"/>
+                <mxCell id="32" value="Ottimizzazione &amp;amp; Bug Fix gestione installazioni (Monticelli, Rossi)" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="40" vertex="1">
+                    <mxGeometry x="54" y="37" width="103" height="103" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" value="Ottimizzazione &amp;amp; Bug Fix analisi delle applicazioni da cercare (Monticelli, Rossi)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="40">
-                    <mxGeometry x="399" y="36" width="104" height="104" as="geometry"/>
-                </mxCell>
-                <mxCell id="55" value="" style="endArrow=none;html=1;" edge="1" parent="40">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="231" y="175" as="sourcePoint"/>
-                        <mxPoint x="231" y="140" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="56" value="" style="endArrow=none;html=1;" edge="1" parent="40">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="452" y="175" as="sourcePoint"/>
-                        <mxPoint x="452" y="141" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="57" value="" style="endArrow=none;html=1;" edge="1" parent="40">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="231" y="175" as="sourcePoint"/>
-                        <mxPoint x="452" y="175" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="59" value="" style="endArrow=none;html=1;" edge="1" parent="40">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="326" y="262" as="sourcePoint"/>
-                        <mxPoint x="326" y="175" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="45" value="LIVELLO 1: SOTTO-PROGETTO" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="37" y="686" width="692" height="200" as="geometry"/>
-                </mxCell>
-                <mxCell id="31" value="Aggiunta App alla lista (Ponte, Kamil, Sanchi)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="45">
-                    <mxGeometry x="177" y="40" width="115" height="115" as="geometry"/>
-                </mxCell>
-                <mxCell id="29" value="Salvataggio Classe Computer (Sanchi)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="45">
-                    <mxGeometry x="394" y="40" width="114" height="114" as="geometry"/>
-                </mxCell>
-                <mxCell id="60" value="" style="endArrow=none;html=1;entryX=0.005;entryY=0.162;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.163;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="45" source="31" target="29">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="304" y="84" as="sourcePoint"/>
-                        <mxPoint x="354" y="34" as="targetPoint"/>
-                    </mxGeometry>
+                <mxCell id="30" value="Ottimizzazione &amp;amp; Bug Fix analisi delle applicazioni da cercare (Monticelli, Rossi)" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="40" vertex="1">
+                    <mxGeometry x="201" y="37" width="104" height="104" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

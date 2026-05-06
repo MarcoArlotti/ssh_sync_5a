@@ -1,219 +1,102 @@
-<mxfile host="app.diagrams.net">
-  <diagram id="ejg7XAkI5eyrEGzogAvs" name="PERT semplice">
-    <mxGraphModel dx="103068" dy="63824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="36" edge="1" parent="1" source="4" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="8" value="">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="520" y="210" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="4" parent="1" value="Salvataggio Classe&#xa;3g" vertex="1">
-          <mxGeometry height="60" width="102" x="360" y="180" as="geometry" />
-        </mxCell>
-        <mxCell id="5" parent="1" value="ottimizzazione/bug fix&#xa;4g" vertex="1">
-          <mxGeometry height="60" width="143" x="817" y="180" as="geometry" />
-        </mxCell>
-        <mxCell id="6" parent="1" value="Scansione App&#xa;9g" vertex="1">
-          <mxGeometry height="60" width="180" x="114" y="180" as="geometry" />
-        </mxCell>
-        <mxCell id="8" parent="1" value="Setup Applicazioni&#xa;8g" vertex="1">
-          <mxGeometry height="60" width="162" x="610" y="180" as="geometry" />
-        </mxCell>
-        <mxCell id="15" edge="1" parent="1" />
-        <mxCell id="16" edge="1" parent="1" target="4" />
-        <mxCell id="17" edge="1" parent="1" target="5" />
-        <mxCell id="18" edge="1" parent="1" source="6" />
-        <mxCell id="19" edge="1" parent="1" source="8" />
-        <mxCell id="20" edge="1" parent="1" source="10" target="11" />
-        <mxCell id="21" edge="1" parent="1" />
-        <mxCell id="22" edge="1" parent="1" source="5" />
-        <mxCell id="23" edge="1" parent="1" />
-        <mxCell id="24" edge="1" parent="1" />
-        <mxCell id="25" edge="1" parent="1" source="11" />
-        <mxCell id="26" edge="1" parent="1" />
-        <mxCell id="27" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="INIZI DEL PROGETTO" vertex="1">
-          <mxGeometry height="80" width="80" x="-60" y="190" as="geometry" />
-        </mxCell>
-        <mxCell id="32" edge="1" parent="1" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="10" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="20" y="240" as="sourcePoint" />
-            <mxPoint x="70" y="190" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="33" edge="1" parent="1" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="6" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="20" y="240" as="sourcePoint" />
-            <mxPoint x="70" y="190" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="34" edge="1" parent="1" source="6" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="4" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="340" y="210" as="sourcePoint" />
-            <mxPoint x="400" y="160" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="37" edge="1" parent="1" source="8" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="5" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="470" y="370" as="sourcePoint" />
-            <mxPoint x="520" y="320" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="39" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(0, 0, 170); font-family: &amp;quot;Droid Sans Mono&amp;quot;, monospace; font-weight: normal; line-height: 16px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-01-01/&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-10-01&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="200" width="190" x="110" y="150" as="geometry" />
-        </mxCell>
-        <mxCell id="10" parent="39" value="Design UI&#xa;9g" vertex="1">
-          <mxGeometry height="60" width="182" x="4" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="40" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(0, 0, 170); font-family: &amp;quot;Droid Sans Mono&amp;quot;, monospace; font-weight: normal; line-height: 16px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-10-01/&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-14-01&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="170" x="350" y="150" as="geometry" />
-        </mxCell>
-        <mxCell id="42" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(0, 0, 170); font-family: &amp;quot;Droid Sans Mono&amp;quot;, monospace; font-weight: normal; line-height: 16px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-14-01/&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-22-01&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="160" x="612" y="150" as="geometry" />
-        </mxCell>
-        <mxCell id="43" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(0, 0, 170); font-family: &amp;quot;Droid Sans Mono&amp;quot;, monospace; font-weight: normal; line-height: 16px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-22-01/&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-27-01&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="160" x="810" y="150" as="geometry" />
-        </mxCell>
-        <mxCell id="45" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="FINE" vertex="1">
-          <mxGeometry height="80" width="80" x="1050" y="200" as="geometry" />
-        </mxCell>
-        <mxCell id="46" edge="1" parent="1" source="41" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="45" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="530" y="300" as="sourcePoint" />
-            <mxPoint x="580" y="250" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="48" edge="1" parent="1" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="45" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="970" y="210" as="sourcePoint" />
-            <mxPoint x="910" y="160" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-48" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="LIVELLO 0: PROGETTO" vertex="1">
-          <mxGeometry height="200" width="692" x="179.9961904761908" y="-539.9966666666679" as="geometry" />
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-49" parent="Y38EScTD4is49PK0UTqy-48" style="whiteSpace=wrap;html=1;aspect=fixed;" value="scansione delle app presenti sul pc (Pontellini, Kamil)" vertex="1">
-          <mxGeometry height="99" width="99" x="251" y="49.5" as="geometry" />
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-50" parent="Y38EScTD4is49PK0UTqy-48" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Esecuzione Setup Applicazioni (Ponte, Kamil, Sanchi)" vertex="1">
-          <mxGeometry height="100" width="100" x="100" y="49.5" as="geometry" />
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-51" parent="Y38EScTD4is49PK0UTqy-48" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Sviluppo UI &amp;amp; Integrazione con il Backend (Team UI)" vertex="1">
-          <mxGeometry height="101" width="101" x="393" y="49.5" as="geometry" />
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-52" parent="Y38EScTD4is49PK0UTqy-48" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Come organizzare la Struttura UI (Tomasetti, Ivagnes, Uva, Di Luca)" vertex="1">
-          <mxGeometry height="101" width="101" x="518" y="49.5" as="geometry" />
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-53" edge="1" parent="Y38EScTD4is49PK0UTqy-48" style="endArrow=none;html=1;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="153" y="183" as="sourcePoint" />
-            <mxPoint x="153" y="151" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-54" edge="1" parent="Y38EScTD4is49PK0UTqy-48" style="endArrow=none;html=1;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="300" y="184" as="sourcePoint" />
-            <mxPoint x="300.33000000000004" y="148.5" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-55" edge="1" parent="Y38EScTD4is49PK0UTqy-48" style="endArrow=none;html=1;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="443.33" y="182.5" as="sourcePoint" />
-            <mxPoint x="443.33" y="150.5" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-56" edge="1" parent="Y38EScTD4is49PK0UTqy-48" style="endArrow=none;html=1;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="572.9999999999999" y="182.5" as="sourcePoint" />
-            <mxPoint x="572.9999999999999" y="150.5" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-57" edge="1" parent="Y38EScTD4is49PK0UTqy-48" style="endArrow=none;html=1;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="154" y="183" as="sourcePoint" />
-            <mxPoint x="573" y="183" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-58" edge="1" parent="Y38EScTD4is49PK0UTqy-48" style="endArrow=none;html=1;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="237" y="235" as="sourcePoint" />
-            <mxPoint x="237" y="182" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-59" edge="1" parent="Y38EScTD4is49PK0UTqy-48" style="endArrow=none;html=1;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="461" y="236" as="sourcePoint" />
-            <mxPoint x="461" y="182" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-60" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="LIVELLO 1: SOTTO-PROGETTO" vertex="1">
-          <mxGeometry height="200" width="692" x="179.9961904761908" y="-344.9966666666679" as="geometry" />
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-61" parent="Y38EScTD4is49PK0UTqy-60" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Ottimizzazione &amp;amp; Bug Fix gestione installazioni (Monticelli, Rossi)" vertex="1">
-          <mxGeometry height="103" width="103" x="173" y="37" as="geometry" />
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-62" parent="Y38EScTD4is49PK0UTqy-60" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Ottimizzazione &amp;amp; Bug Fix analisi delle applicazioni da cercare (Monticelli, Rossi)" vertex="1">
-          <mxGeometry height="104" width="104" x="399" y="36" as="geometry" />
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-63" edge="1" parent="Y38EScTD4is49PK0UTqy-60" style="endArrow=none;html=1;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="231" y="175" as="sourcePoint" />
-            <mxPoint x="231" y="140" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-64" edge="1" parent="Y38EScTD4is49PK0UTqy-60" style="endArrow=none;html=1;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="452" y="175" as="sourcePoint" />
-            <mxPoint x="452" y="141" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-65" edge="1" parent="Y38EScTD4is49PK0UTqy-60" style="endArrow=none;html=1;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="231" y="175" as="sourcePoint" />
-            <mxPoint x="452" y="175" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-66" edge="1" parent="Y38EScTD4is49PK0UTqy-60" style="endArrow=none;html=1;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="326" y="262" as="sourcePoint" />
-            <mxPoint x="326" y="175" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-67" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="LIVELLO 1: SOTTO-PROGETTO" vertex="1">
-          <mxGeometry height="200" width="692" x="179.9961904761908" y="-142.99666666666792" as="geometry" />
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-68" parent="Y38EScTD4is49PK0UTqy-67" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Aggiunta App alla lista (Ponte, Kamil, Sanchi)" vertex="1">
-          <mxGeometry height="115" width="115" x="177" y="40" as="geometry" />
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-69" parent="Y38EScTD4is49PK0UTqy-67" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Salvataggio Classe Computer (Sanchi)" vertex="1">
-          <mxGeometry height="114" width="114" x="394" y="40" as="geometry" />
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-70" edge="1" parent="Y38EScTD4is49PK0UTqy-67" source="Y38EScTD4is49PK0UTqy-68" style="endArrow=none;html=1;entryX=0.005;entryY=0.162;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.163;exitDx=0;exitDy=0;exitPerimeter=0;" target="Y38EScTD4is49PK0UTqy-69" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="304" y="84" as="sourcePoint" />
-            <mxPoint x="354" y="34" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="41" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(0, 0, 170); font-family: &amp;quot;Droid Sans Mono&amp;quot;, monospace; font-weight: normal; line-height: 16px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-10-01/&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-19-01&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="170" x="612" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="11" parent="41" value="Sviluppo UI&#xa;8g" vertex="1">
-          <mxGeometry height="60" width="160" x="10" y="20" as="geometry" />
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-73" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="41" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="520" y="210" as="sourcePoint" />
-            <mxPoint x="570" y="160" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Y38EScTD4is49PK0UTqy-75" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="300" y="300" as="sourcePoint" />
-            <mxPoint x="350" y="210" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram id="WdF2u9gWD-N_87uOkHId" name="Page-1">
+        <mxGraphModel dx="2371" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="520" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="Salvataggio Classe&#xa;3g" parent="1" vertex="1">
+                    <mxGeometry x="360" y="180" width="102" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="ottimizzazione/bug fix&#xa;4g" parent="1" vertex="1">
+                    <mxGeometry x="817" y="180" width="143" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Scansione App&#xa;9g" parent="1" vertex="1">
+                    <mxGeometry x="114" y="180" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Setup Applicazioni&#xa;8g" parent="1" vertex="1">
+                    <mxGeometry x="610" y="180" width="162" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="INIZI DEL PROGETTO" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="-60" y="190" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="13" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="20" y="240" as="sourcePoint"/>
+                        <mxPoint x="70" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="5" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="20" y="240" as="sourcePoint"/>
+                        <mxPoint x="70" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="5" target="3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="340" y="210" as="sourcePoint"/>
+                        <mxPoint x="400" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6" target="4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="470" y="370" as="sourcePoint"/>
+                        <mxPoint x="520" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(0, 0, 170); font-family: &amp;quot;Droid Sans Mono&amp;quot;, monospace; font-weight: normal; line-height: 16px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-01-01/&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-10-01&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="150" width="190" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Design UI&#xa;9g" parent="12" vertex="1">
+                    <mxGeometry x="4" y="120" width="182" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(0, 0, 170); font-family: &amp;quot;Droid Sans Mono&amp;quot;, monospace; font-weight: normal; line-height: 16px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-10-01/&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-14-01&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="150" width="170" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(0, 0, 170); font-family: &amp;quot;Droid Sans Mono&amp;quot;, monospace; font-weight: normal; line-height: 16px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-14-01/&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-22-01&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="612" y="150" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(0, 0, 170); font-family: &amp;quot;Droid Sans Mono&amp;quot;, monospace; font-weight: normal; line-height: 16px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-22-01/&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-27-01&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="810" y="150" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="FINE" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="1050" y="200" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="43" target="17" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="530" y="300" as="sourcePoint"/>
+                        <mxPoint x="580" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="17" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="970" y="210" as="sourcePoint"/>
+                        <mxPoint x="910" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(0, 0, 170); font-family: &amp;quot;Droid Sans Mono&amp;quot;, monospace; font-weight: normal; line-height: 16px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-10-01/&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;2026-19-01&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="612" y="260" width="170" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="Sviluppo UI&#xa;8g" parent="43" vertex="1">
+                    <mxGeometry x="10" y="20" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="43" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="520" y="210" as="sourcePoint"/>
+                        <mxPoint x="570" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="300" y="300" as="sourcePoint"/>
+                        <mxPoint x="350" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>
