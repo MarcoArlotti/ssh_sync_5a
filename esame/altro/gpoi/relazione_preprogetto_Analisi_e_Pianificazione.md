@@ -20,7 +20,6 @@ gantt
     axisFormat  %y-%m-%d
     
     section Analisi Applicazioni (Backend)
-     App (Pontellini, Kamil)          :a1, 2026-05-01, 3d
     Salvataggio Classe Computer (Sanchi)       :a2, 2026-05-01, 3d
     Ottimizzazione & Bug Fix (Monticelli, Rossi) :a3, after a1, 2d
 

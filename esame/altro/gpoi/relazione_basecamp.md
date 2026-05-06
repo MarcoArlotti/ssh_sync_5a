@@ -25,6 +25,6 @@ I requisiti del programma, in parte possono essere trovati nel file [Analisi dei
 ## Gli steackholder
 Gli steackhlder principali interessati al progetto sono:
 - [Ponte's casino](https://3.basecamp.com/6191942/)
-- Galo's coding Team
+- [Galo's coding Team](https://cristianuva.me/)
 - [FDL's professional sotware](https://federicodiluca.github.io/)
 >La tabella completa con gli steackholder e' presente nel [project charter](https://3.basecamp.com/6200225/buckets/47023703/vaults/9822468676).
