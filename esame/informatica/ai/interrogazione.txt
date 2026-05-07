@@ -1,0 +1,41 @@
+Fondamenti di Python e Gestione Progetto
+
+    -Python: Tipizzazione dinamica vs statica e utilità dei suoi Type Hints .
+    -Ambiente di lavoro: L'uso di venv (perché isolare i progetti?) e il file requirements.txt.
+    -Versionamento: Il ruolo di .gitignore e la sicurezza dei file sensibili su GitHub.
+    -Variabili d'Ambiente: Uso del file .env e protezione della SECRET_KEY.
+
+Progettazione Database (Modello ER e Vincoli)
+
+    -Modello ER: Componenti (Entità, Attributi, Relazioni) e cardinalità (1:1, 1:N, N:N).
+    -Logica Relazionale: La tabella di raccordo per le relazioni molti-a-molti.
+    -Integrità e Qualità: Chiavi Primarie (PK) vs Chiavi Esterne (FK); vincoli UNIQUE, NOT NULL e CHECK.
+    -Design-First: L'importanza dell'analisi dei requisiti prima di scrivere codice.
+
+Normalizzazione, DBMS e Transazioni (ACID)
+
+    Normalizzazione: Differenza tra 1NF, 2NF e 3NF; quali anomalie risolvono?
+    DBMS: Differenza tra dati (DB) e software di gestione (DBMS); controllo della concorrenza.
+    Proprietà ACID: Focus particolare su Atomicità (tutto o niente) e Durabilità.
+    NoSQL: Confronto con il modello relazionale e scenari di utilizzo (es. Big Data, dati non strutturati).
+
+ Linguaggio SQL e Integrazione con Flask
+
+    Comandi SQL: Differenza tra DDL (struttura) e DML (dati); uso avanzato di GROUP BY, HAVING e le JOIN (Inner vs Left).
+    Sicurezza DB: Cos'è  e come prevenirla.
+    Flask & DB: Gestione dei file .sqlite e della cartella instance.
+    Pattern Architetturali: Il  (perché separare le query dalle route?).
+
+ Architettura Web con Flask e Jinja2
+
+    Struttura App: Ruolo di __init__.py e organizzazione in Blueprint per progetti scalabili.
+    Frontend Dinamico: Il motore di template Jinja2 e il concetto di ereditarietà dei file HTML ({% extends %}).
+    Ciclo Request/Response: Funzionamento degli Status Code e differenza tra i metodi GET e POST.
+    Protocollo HTTP: Perché è  e come le Sessioni mantengono lo stato dell'utente.
+
+ API, Sicurezza e Deployment
+
+    Concetto di API: L'analogia del ristorante e i principi dello stile REST.
+    Endpoint: Struttura (URL + Metodo) ed esempi pratici.
+    Sicurezza Utenti: Differenza tra Autenticazione e Autorizzazione; hashing delle password (generate_password_hash) e Audit.
+    Messa in produzione: Differenza tra ambiente di Sviluppo e Produzione; perché usare Gunicorn (WSGI) e il problema dei dati "effimeri" su piattaforme come Render.

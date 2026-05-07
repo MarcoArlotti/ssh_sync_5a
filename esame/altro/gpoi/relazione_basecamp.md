@@ -11,7 +11,47 @@ I maggiori rischi che il progetto puo' avere sono :
 - Ritardo nella consegna del software,
 - Problemi di integrazione con il pacchetto sotware FDL's professional sotware.
 
->maggiori informazioni sono nel [project charter](https://3.basecamp.com/6200225/buckets/47023703/vaults/9822468676).
+---
+
+## La comunicazione con il team
+
+Per comunicare aggiornamenti e notifiche, abbiamo usato il tool Basecamp,
+che ci permettera' di unificare tutte le comunicazioni con tutte le persone connesse al progetto.
+
+### Dashboard
+Questa e' la dashboard principale del progetto:
+![immagine della dashboard](homepage.jpg)
+
+### Docs & files
+Se ci si sposta nella sezione docs, si troveranno tutti i documenti del progetto,
+di cui:
+- analisi dei requisiti,
+- project chart,
+- matrice degli steackholder,
+- il WBS del progetto,
+- il gaant (dentro l'analisi dei requisiti).
+
+![immagine dei docs](docs.jpg)
+
+### Thread
+
+I dipendenti possono discutere dei loro problemi relativi al progetto e alle incomprensioni che hanno riscosso,
+ogni thread crea una chat isolata dove ognuno dentro al progetto potra' discutere con gli altri
+
+![immagine dei thread](thread.jpg)
+
+---
+>il [PROJECT CHARTER](https://3.basecamp.com/6200225/buckets/47023703/vaults/9822468676) del progetto.
+
+### La TODO list
+
+Una todo list serve a ricordare e ha organizzare meglio le tempistiche del progetto, facendo vedere molto facilmente una rappresentazione grafica dell'andamento del progetto.
+
+In piu' la todo list mostra chi e' a carico di un determinato compito.
+
+![immagine dei todo](todo.jpg)
+
+---
 
 ## I ruoli degli attori
 I ruoli nel progetto sono stati organizzati dentro [all'analisi dei requisiti](https://3.basecamp.com/6200225/buckets/47023703/documents/9826382636)
