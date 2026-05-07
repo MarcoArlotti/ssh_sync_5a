@@ -107,4 +107,53 @@ I WT comunicano direttamente tra loro con IBSS (Indipendent Basic Service Set).
 
 La rete ad hoc funziona similmente come una rete PEER-TO-PEER.
 
-## WMAN
+## WMAN 802.16
+Consente di collegare un agglomerato di case tramite potenti antenne.
+
+Esistono gli WISP (Wireless Internet Service Provider) che mettono a disposizione le WMAN.
+
+La connessione con una WMAN puo essere:
+- POINT to POINT: (Sono 2 antenne che sono connesse l'una con l'altra, ad esempio per collegare 2 edifici tra loro)
+- POINT to MULTIPOINT: (Prevede un'antenna unidirezionale a cui si collegano gli edifici tramite una antenna direzinale).
+
+>Dal 802.16 e' nato il progetto WinMAX forum (Worldwide Interoperability for Microwave Access).
+
+### *NON*-LINE-OF-SIGHT
+cioe' la trasmissione di dati su frequenze basse in ambienti urbani dove il segnale puo' finire pe essere schermato.
+
+>Il range delle frequenze si aggira sui 2-11 GHz.
+
+### LINE-OF-SIGHT
+Utilizza frequenze molto alte, dove si e' sicuro che si avra' poca schermatura del segnale,
+e aree molto estese, circa 50 Km.
+
+>Le frequenze si aggirano sui 60 GHz
+
+WWAM
+Le WAM coprono vaste aree geografiche (stati, continenti), le infrastrutture per il segnale vengono costruite dai WISP.
+
+Grazie alle WWMAN un utente ha internet garantito in scala mondiale.
+
+## 2.1 La sicurezza delle reti Wireless
+E' importante perche' i segnali si propagano attraverso un mezzo che non si puo' facilmente bloccare.
+
+### SNIFFINING
+Il wireless facilita' l'attivita' degli HACKER nella possibilita' di intercettare i pacchetti che passano per la rete.
+
+### ACCESSO NON AUTORIZZATO
+Il wireless facilita' l'attivita' degli HACKER nella possibilita' di entrare nelle reti wireless private delle persone.
+
+La tecnica piu' efficace e' la APR (Access Point Rougue) cioe' un AP non autorizzato, ovvero dispositivi con poca sicurezza che fanno da falla nella rete.
+
+>la tecnica ARP e' applicabile anche per le reti LAN
+
+### SPOOFING TRAMITE SOSTITUZIONE DEL SID (Security IDentifier)
+Ad ogni utente viene assegnato un SID univoco con autorizzazioni precise.
+
+Un HACKER  puo' sostituire il SID mettendolo in un suo dispositivo(WTR, Wireless Terminal Rougue) permettendo lo spoofing facendosi credere un dispositivo dentro la rete.
+
+Come soluzione nasce il SARP (Secured ARP) che fornisce un tunnel protetto tra ogni client, per poi ignorare le altre richieste.
+
+>Questa soluzione richiede software particolari, quindi nn adatti a HOTSPOT pubblici.
+
+### ATTACCO DOS
