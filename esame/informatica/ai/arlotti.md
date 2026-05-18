@@ -122,13 +122,46 @@ Analizzare requisiti e creare **diagrammi ER prima di scrivere codice** evita ri
 # Normalizzazione, DBMS e Transazioni (ACID)
 
 ## Normalizzazione
+Le tre forme di normalizzazione non si applicano direttamente al diagramma **ER (Entity-Relationship)**, ma al **modello relazionale** (cioè alle tabelle e ai database logici) che si ottiene traducendo quel diagramma ER.
 
-* **1NF**: rimuove dati ripetuti in colonne separate
-* **2NF**: rimuove dipendenze parziali su PK composite
-* **3NF**: rimuove dipendenze transitiva tra attributi non chiave
+La normalizzazione è un processo di ottimizzazione. Il suo scopo principale è **eliminare la ridondanza dei dati** e **prevenire le anomalie** di inserimento, modifica e cancellazione.
 
-Risolve anomalie di **inserimento, aggiornamento e cancellazione**.
+Ecco a cosa servono e cosa fanno, passo dopo passo, le prime tre forme normali (1NF, 2NF, 3NF):
 
+---
+
+### 1. Prima Forma Normale (1NF): *Garantire l'atomicità*
+
+Serve a fare in modo che ogni cella di una tabella contenga un solo valore e che non ci siano gruppi di dati ripetuti.
+
+* **Cosa elimina:** Campi multimvalore (es. una cella "Telefono" con dentro tre numeri diversi) o tabelle nidificate.
+* **Regola:** Tutti gli attributi devono essere **atomici** (non ulteriormente scomponibili) e deve essere definita una chiave primaria.
+
+### 2. Seconda Forma Normale (2NF): *Eliminare la dipendenza parziale*
+
+Si applica solo alle tabelle che hanno una **chiave primaria composta** (fatta da più colonne). Serve a garantire che ogni dato nella tabella dipenda dall'intera chiave e non solo da un pezzo di essa.
+
+* **Cosa elimina:** La ridondanza causata da dati che si riferiscono solo a una parte della chiave.
+* **Regola:** La tabella deve essere in 1NF e tutti gli attributi non-chiave devono dipendere interamente dall'intera chiave primaria.
+* *Esempio:* Se hai una tabella `Dettaglio_Ordine` con chiave (`IdOrdine`, `IdProdotto`), il campo `PrezzoProdotto` dipende solo da `IdProdotto`, non dall'ordine. Va quindi spostato in una tabella separata `Prodotti`.
+
+### 3. Terza Forma Normale (3NF): *Eliminare la dipendenza transitiva*
+
+Serve a fare in modo che i dati non-chiave dipendano *solo* dalla chiave primaria, e non da altri campi non-chiave.
+
+* **Cosa elimina:** L'effetto "catena" o dipendenza indiretta.
+* **Regola:** La tabella deve essere in 2NF e nessun attributo non-chiave deve dipendere da un altro attributo non-chiave.
+* *Esempio:* Se in una tabella `Impiegati` hai `IdImpiegato` (chiave), `IdDipartimento` e `NomeDipartimento`, il `NomeDipartimento` dipende dall'ID del dipartimento, non direttamente dall'impiegato. Per essere in 3NF, i dati del dipartimento vanno isolati in una tabella `Dipartimenti`.
+
+---
+
+### In sintesi: perché sono fondamentali?
+
+Se non si normalizza il database derivato dall'ER, si va incontro a tre grossi problemi:
+
+1. **Anomalie di Inserimento:** Non puoi inserire un dato se non ne conosci un altro (es. non puoi registrare un nuovo dipartimento se non gli assegni almeno un impiegato).
+2. **Anomalie di Cancellazione:** Se cancelli un record, rischi di perdere informazioni importanti per sempre (es. se cancelli l'unico impiegato di un dipartimento, scompare anche l'esistenza del dipartimento stesso).
+3. **Anomalie di Modifica:** Se devi cambiare un dato ripetuto (es. il nome di un fornitore), devi modificarlo in centinaia di righe diverse, con il rischio di creare incongruenze se ne dimentichi qualcuna.
 ---
 
 ## DBMS
